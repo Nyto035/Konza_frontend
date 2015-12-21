@@ -1,0 +1,3728 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Unit Tests - Unit Test Results</title>
+    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}h1{margin-bottom:0;}h2{margin-top:0;color:#999;}table{width:100%;margin-top:20px;margin-bottom:20px;table-layout:fixed;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;word-break:break-all;word-wrap:break-word;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
+  </head>
+  <body>
+    <h1>Unit Tests</h1>
+    <h2>Unit Test Results</h2>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36">Browser: Chrome 47.0.2526 (Linux 0.0.0)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: Fri Dec 18 2015 12:53:25 GMT+0300 (EAT)</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          367 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 4.874s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should load huqasApp successfully</td>
+        <td>Test huqasApp load</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.072s</td>
+        <td>should test auth login controller</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.045s</td>
+        <td>should call backend and login and save user credentials: success</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should call backend and login and save user credentials: success (load prev state)</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should call backend and login and save user credentials: fail</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should call backend and login a user: success</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.025s</td>
+        <td>should logout a user on successful revoke of token</td>
+        <td>Test logout controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should logout a user on failed revoke of token</td>
+        <td>Test logout controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should request for a password reset</td>
+        <td>Test reset pwd controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should show an error on fail to request for a password reset</td>
+        <td>Test reset pwd controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should reset a password</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should show an error on fail to reset a password (uid fail)</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should show an error on fail to reset a password (token fail)</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should show an error on fail to validate</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should store get token from storage</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should return null if store is empty</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should remove expired token from storage</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should fetch a token from oauth2 provider and store it</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should allow another token request on failure</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should not issue multiple unresolved requests to fetch a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should refresh a token from oauth2 provider and store new token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should set XHR authorization headers after fetching a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should set a token refresh timeout</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should revoke a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should not revoke an empty token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should not set XHR authorization headers it token is not defined</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not allow non-loggedin users</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow loggedin users without permission</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not allow loggedin users without feature</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should allow loggedin users with permissions</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should not allow loggedin users without all permissions</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should allow loggedin users with features (and)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should allow loggedin users with all features (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should allow loggedin users with some features (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow loggedin users without any feature (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should not allow loggedin users without all features</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should not allow if permission is not valid</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should disallow element without permission</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should allow element</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should remove element if not logged in</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove element if logged in but without permission</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should remove element without feature</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should allow element</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should remove element if not logged in</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should remove element if logged in but without feature</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should have auth login service defined</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should have all the methods defined</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.024s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should call isLoggedIn method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should call isLoggedIn method: logged in is null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should call isLoggedIn method: getToken is null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should call isLoggedIn method: getToken and isLoggedIn are null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test getUser method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test logout method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not load state without user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should load state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not load state from another user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not dump state without user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should dump state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should clear state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should start timeout if user is loggedin</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not start timeout if user is not loggedin</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should stop timeout</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should listen to state changes</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.048s</td>
+        <td>should allow loggedin users to access states</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should redirect loggedin users from login state to home</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should stop users without permission from going to a state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should stop users without feature from going to a state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should allow loggedin users to logout</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should allow non-loggedin users to logout</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should redirect non-loggedin users to login state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should be able to stop listening</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should fail silently if stop is called repeatedly</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should redirect to specified state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should roadblock user until password is changed</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should not roadblock user if page is password change</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should fetch current user information</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should update current user information</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should update current user's password</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should reject password change request if they don't match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should reject password change request if new and old passwords match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should send a password reset request</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should reject password reset request if both passwords don't match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should reset a user's password</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should go to /login url</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should go to /logout url</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should go to reset password page</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should go to reset password page</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.038s</td>
+        <td>Should create a content slide-in element</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>Should default duration to fast</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.029s</td>
+        <td>Should show view of the content slide-in</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>Should hide view of the content slide-in</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test header controller</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.041s</td>
+        <td>should logout user on idle timeout (user loggedin)</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should logout user on idle timeout (not on login page)</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should listen to idletimeout and do nothing if user is out</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should export to excel</td>
+        <td>Test export module &raquo; test export service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should export including extra params</td>
+        <td>Test export module &raquo; test export service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should define export function</td>
+        <td>Test export module &raquo; test export controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should require sil-grid</td>
+        <td>Test export module &raquo; test export directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.025s</td>
+        <td>should compile</td>
+        <td>Test export module &raquo; test export directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>Should have contact_type filter defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>Should return contact type given a list of contact_type id</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>dateFilter should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should give Expected output</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>Should test titlecase filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should have the boolean filter return 'Yes' given 'true'</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should have the boolean filter return 'No' given 'false'</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should have the boolean filter return undefined given ''</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.001s</td>
+        <td>optionName should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should text option name filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>manufacturerInstruments should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should text option name filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should do nothing if form is undefined</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.001s</td>
+        <td>should skip clean forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.001s</td>
+        <td>should do nothing for empty dirty forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should return changed values in dirty forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.039s</td>
+        <td>should watch errors</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should hide wiered errors</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should use default message if errors is empty </td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should watch errors</td>
+        <td>Test directives &raquo; Test drferrmsg2 directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test drferrmsg2 directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should complain if input name is not set</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should not invalidate initial input</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should use not care about other people's errors</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.053s</td>
+        <td>should compile</td>
+        <td>Test include tpl directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.04s</td>
+        <td>should create huqas list assignment directive</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.027s</td>
+        <td>should test clickedItem function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.045s</td>
+        <td>should test setItem function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.048s</td>
+        <td>should test addItems function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.029s</td>
+        <td>should test revertItems function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should complain if wrapper is not set</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should fetch revisions</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should catch revision fetch error</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should hide revisions</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should compile</td>
+        <td>Test revision &raquo; test revision directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should compile</td>
+        <td>Test statemodal directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should go to /403 url</td>
+        <td>Tests for common states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /about url</td>
+        <td>Tests for common states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should compile popover toggle directive</td>
+        <td>Directive: Testing popover toggle directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should use timeout to toggle popover</td>
+        <td>Directive: Testing popover toggle directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.038s</td>
+        <td>should test auth login controller</td>
+        <td>Testing the dashboard controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test http calls failures</td>
+        <td>Testing the dashboard controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /dashboard url</td>
+        <td>Tests for dashboard states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test edit lab controller | success</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit lab controller | fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test editing a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test editing a test event : patch event program</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a test event: fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a test event: fail without event programs</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a test event: fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should define api wrappers</td>
+        <td>Test events services</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /test_events url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test main controller</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test failure in http calls main controller</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test editing a lab instrument | manufacturer instruments success</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing a lab instrument | manufacturer instruments fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test editing a lab instrument | fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a lab instrument</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a lab instrument | fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a lab instrument | no changes</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /lab_instruments url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.033s</td>
+        <td>should test lab_programs controller |query parameter: lab_prog  | 1,1 </td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test lab_programs controller |query parameter: lab_prog  | 1,0 </td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test lab_programs controller | 1,1</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test lab_programs controller | 0</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test lab_programs controller | 1,0</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test subscriptions controller | failed calls</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyte() | success</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyte() | fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyteReagent() | success</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyteReagent() | fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test editing a subscription | PATCH</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should test editing a subscription | PATCH fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test creating a subscription | POST</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a subscription | empty form</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a subscription | POST fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should go to /lab_programs url</td>
+        <td>Tests for lab_programs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test edit lab controller | creating</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test edit lab controller | success POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test edit lab controller | success POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should test edit lab controller | fail POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit lab controller | success PATCH | form not empty</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test edit lab controller | PATCH fail &gt; form empty</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test edit lab controller | PATCH fail &gt; backend</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test edit lab controller | fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test lab_program controller | programs &amp; lab_programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test lab program controller | new  &amp; edit program fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should have no changes after saving in lab_program controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.026s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.047s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab_user controller | users &amp; lab_users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab user controller | new  &amp; edit user fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should have no changes after saving in lab_user controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test lab_contact controller | lab_contacts | backend FAIL</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test lab_contact controller | lab_contacts</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test lab_contact controller | lab_contacts = 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test lab_contact controller | lab_contacts greater than 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test lab contact controller | new  &amp; edit user fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should have no changes after saving in lab_contact controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.039s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should have lab wrappers defined</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.validationOnLoad: items &gt; 1</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.validationOnLoad: items &lt; 1</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.uiStepEdit: form showing</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.uiStepEdit: form hidden</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.uiStepEditUser: form showing</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test multiStepHelper.uiStepEditUser: form hidden</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should go to /labs url</td>
+        <td>Tests for labs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test 'reports' controller</td>
+        <td>Testing the reports controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should go to /reports url</td>
+        <td>Tests for reports states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test 'results' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'results' controller no enrollments</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test failure to get enrollments</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test is result state</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test not result state</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'results' controller with stateParam</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test is quantitative</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test fail to fetch subscriptions</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test 'results' controller : http failures</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test 'results' controller : http failures</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test create confirmation function</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test create confirmation function two</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should test create confirmation function: fail</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test create confirmation function</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test 'enrollment' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test reversal of enrollment success</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test reversal of enrollment fail</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test 'enrollment' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test get enrollment:fail </td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'enrollment' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test 'results' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'samples' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test get programs:fail </td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test sample counter &gt; posting counter</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test sample counter &lt; posting counter</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should go to /results url</td>
+        <td>Tests for results states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit analytes controller</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test analytes controller : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a analyte</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing a analyte : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a analyte : success</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a analyte : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a analyte</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test main controller</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test edit manufacturer controller</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test manufacturer controller : fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a manufacturer</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a manufacturer: fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a manufacturer : success</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a manufacturer: fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test creating a manufacturer</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit categories controller | success</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test edit categories controller | fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test editing a category</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a category: fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a category : success</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a category: fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test creating a category</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test main coa controller</td>
+        <td>Testing the coa controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test main coa controller | fail</td>
+        <td>Testing the coa controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test edit drugs controller | success</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test edit drugs controller | fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test editing a drug</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a drug: fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test creating a drug : success</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.034s</td>
+        <td>should test creating a drug: fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating a drug</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test edit eval critetrion controller</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test edit eval criterion controller</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing an evaluation criterion</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing an evaluation criterion: fail</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating an evalutaion criterion : success</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test creating an evaluation criterion: fail</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating an evaluation criterion : no call</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test edit instruments controller | success</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test edit instruments controller | fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test editing an instrument</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.027s</td>
+        <td>should test editing a instrument: fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test creating a instrument : success</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test creating an instrument: fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test creating an instrument</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test edit methods controller</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test methods controller : fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test editing a method</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should test editing a method: fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test creating a method : success</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test creating a method: fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test creating a method</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.062s</td>
+        <td>should test main programs controller</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test edit programs controller | fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test editing a program</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should test editing a program: fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test creating a program : success</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test creating a program: fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a program</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit reagents controller</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test reagents controller : fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing a reagent</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a reagent: fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a reagents : success</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a reagent : fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a reagent</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test main result_codes controller</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test edit result code controller | fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a result code</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test editing a result code: fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a result code : success</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a result code: fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a result code</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test main controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.031s</td>
+        <td>should test edit sample controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test samples controller : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test editing a sample</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a sample : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a sample : success</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a sample : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a samples</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test edit sample type controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test sample_types controller : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing a sample_types</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a sample_types : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating a sample_types : success</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating a sample_types : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a sample_types</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test edit units controller | success</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test edit units controller | fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing a unit</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test editing a unit: fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test creating a unit : success</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a unit: fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating an unit</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should go to /analyte_setup url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should go to /categories url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.079s</td>
+        <td>should go to /programs url</td>
+        <td>Tests for programs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.043s</td>
+        <td>should go to /result_codes url</td>
+        <td>Tests for result codes states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test users controller | success</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing an user</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a user: fail</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a user : success</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating an user: fail</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating an user</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should go to /users url</td>
+        <td>Tests for users states :</td>
+      </tr>
+    </table>
+    <hr/>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0">Browser: Firefox 43.0.0 (Ubuntu 0.0.0)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: Fri Dec 18 2015 12:53:30 GMT+0300 (EAT)</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          367 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 5.745s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.001s</td>
+        <td>should load huqasApp successfully</td>
+        <td>Test huqasApp load</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.052s</td>
+        <td>should test auth login controller</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should call backend and login and save user credentials: success</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.025s</td>
+        <td>should call backend and login and save user credentials: success (load prev state)</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.028s</td>
+        <td>should call backend and login and save user credentials: fail</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should call backend and login a user: success</td>
+        <td>Testing the auth login controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.028s</td>
+        <td>should logout a user on successful revoke of token</td>
+        <td>Test logout controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.026s</td>
+        <td>should logout a user on failed revoke of token</td>
+        <td>Test logout controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.037s</td>
+        <td>should request for a password reset</td>
+        <td>Test reset pwd controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.059s</td>
+        <td>should show an error on fail to request for a password reset</td>
+        <td>Test reset pwd controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.053s</td>
+        <td>should reset a password</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.045s</td>
+        <td>should show an error on fail to reset a password (uid fail)</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should show an error on fail to reset a password (token fail)</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should show an error on fail to validate</td>
+        <td>Test reset pwd confirm controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.056s</td>
+        <td>should store get token from storage</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should return null if store is empty</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove expired token from storage</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should fetch a token from oauth2 provider and store it</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should allow another token request on failure</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should not issue multiple unresolved requests to fetch a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should refresh a token from oauth2 provider and store new token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should set XHR authorization headers after fetching a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should set a token refresh timeout</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should revoke a token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should not revoke an empty token</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should not set XHR authorization headers it token is not defined</td>
+        <td>Test huqas.auth.oauth2 service :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow non-loggedin users</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should not allow loggedin users without permission</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow loggedin users without feature</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should allow loggedin users with permissions</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow loggedin users without all permissions</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should allow loggedin users with features (and)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should allow loggedin users with all features (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.066s</td>
+        <td>should allow loggedin users with some features (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not allow loggedin users without any feature (or)</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should not allow loggedin users without all features</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not allow if permission is not valid</td>
+        <td>Testing permissions module : &raquo; Testing permission checker service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.026s</td>
+        <td>should disallow element without permission</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should allow element</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should remove element if not logged in</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove element if logged in but without permission</td>
+        <td>Testing permissions module : &raquo; Testing requires-permission directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove element without feature</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should allow element</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove element if not logged in</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should remove element if logged in but without feature</td>
+        <td>Testing permissions module : &raquo; Testing requires-user-feature directive :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should have auth login service defined</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should have all the methods defined</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should call isLoggedIn method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should call isLoggedIn method: logged in is null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should call isLoggedIn method: getToken is null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should call isLoggedIn method: getToken and isLoggedIn are null</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test getUser method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should send user details to login Api: successfully</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test logout method</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not load state without user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should load state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should not load state from another user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should not dump state without user</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should dump state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should clear state</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should start timeout if user is loggedin</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should not start timeout if user is not loggedin</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should stop timeout</td>
+        <td>Test auth login service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should listen to state changes</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should allow loggedin users to access states</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.032s</td>
+        <td>should redirect loggedin users from login state to home</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.024s</td>
+        <td>should stop users without permission from going to a state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should stop users without feature from going to a state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should allow loggedin users to logout</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should allow non-loggedin users to logout</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should redirect non-loggedin users to login state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should be able to stop listening</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should fail silently if stop is called repeatedly</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should redirect to specified state</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should roadblock user until password is changed</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should not roadblock user if page is password change</td>
+        <td>Test auth statecheck service: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should fetch current user information</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should update current user information</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should update current user's password</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should reject password change request if they don't match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should reject password change request if new and old passwords match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should send a password reset request</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should reject password reset request if both passwords don't match</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should reset a user's password</td>
+        <td>Test profile service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should go to /login url</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should go to /logout url</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should go to reset password page</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should go to reset password page</td>
+        <td>Tests for auth states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>Should create a content slide-in element</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>Should default duration to fast</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>Should show view of the content slide-in</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>Should hide view of the content slide-in</td>
+        <td>Testing Directive: contentSlideIn</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test header controller</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should logout user on idle timeout (user loggedin)</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should logout user on idle timeout (not on login page)</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should listen to idletimeout and do nothing if user is out</td>
+        <td>Test common controllers </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should export to excel</td>
+        <td>Test export module &raquo; test export service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should export including extra params</td>
+        <td>Test export module &raquo; test export service</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should define export function</td>
+        <td>Test export module &raquo; test export controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should require sil-grid</td>
+        <td>Test export module &raquo; test export directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.031s</td>
+        <td>should compile</td>
+        <td>Test export module &raquo; test export directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>Should have contact_type filter defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>Should return contact type given a list of contact_type id</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>dateFilter should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should give Expected output</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>Should test titlecase filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should have the boolean filter return 'Yes' given 'true'</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should have the boolean filter return 'No' given 'false'</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should have the boolean filter return undefined given ''</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>optionName should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should text option name filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>manufacturerInstruments should be defined</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should text option name filter</td>
+        <td>Filters: testing huqas app common filters</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should do nothing if form is undefined</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.001s</td>
+        <td>should skip clean forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should do nothing for empty dirty forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should return changed values in dirty forms</td>
+        <td>Test form changes</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should watch errors</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should hide wiered errors</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should use default message if errors is empty </td>
+        <td>Test directives &raquo; Test drferrmsg directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should watch errors</td>
+        <td>Test directives &raquo; Test drferrmsg2 directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test drferrmsg2 directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should complain if input name is not set</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should not invalidate initial input</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should use defined error key</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should use not care about other people's errors</td>
+        <td>Test directives &raquo; Test apichecker directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should compile</td>
+        <td>Test include tpl directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.05s</td>
+        <td>should create huqas list assignment directive</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.036s</td>
+        <td>should test clickedItem function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.104s</td>
+        <td>should test setItem function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.042s</td>
+        <td>should test addItems function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.044s</td>
+        <td>should test revertItems function</td>
+        <td>Directive: Testing the list assign directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should complain if wrapper is not set</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should fetch revisions</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should catch revision fetch error</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should hide revisions</td>
+        <td>Test revision &raquo; test revision controller</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should compile</td>
+        <td>Test revision &raquo; test revision directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should compile</td>
+        <td>Test statemodal directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /403 url</td>
+        <td>Tests for common states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /about url</td>
+        <td>Tests for common states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should compile popover toggle directive</td>
+        <td>Directive: Testing popover toggle directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should use timeout to toggle popover</td>
+        <td>Directive: Testing popover toggle directive</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.088s</td>
+        <td>should test auth login controller</td>
+        <td>Testing the dashboard controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.031s</td>
+        <td>should test http calls failures</td>
+        <td>Testing the dashboard controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /dashboard url</td>
+        <td>Tests for dashboard states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test edit lab controller | success</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit lab controller | fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test editing a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a test event : patch event program</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test editing a test event: fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should test editing a test event: fail without event programs</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test creating a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.038s</td>
+        <td>should test creating a test event: fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test creating a test event</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should define api wrappers</td>
+        <td>Test events services</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should go to /test_events url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test main controller</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.042s</td>
+        <td>should test failure in http calls main controller</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a lab instrument | manufacturer instruments success</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test editing a lab instrument | manufacturer instruments fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test editing a lab instrument | fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a lab instrument</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a lab instrument | fail</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.021s</td>
+        <td>should test creating a lab instrument | no changes</td>
+        <td>Testing the lab instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /lab_instruments url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab_programs controller |query parameter: lab_prog  | 1,1 </td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test lab_programs controller |query parameter: lab_prog  | 1,0 </td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.035s</td>
+        <td>should test lab_programs controller | 1,1</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab_programs controller | 0</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test lab_programs controller | 1,0</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test subscriptions controller | failed calls</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyte() | success</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyte() | fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyteReagent() | success</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test subscriptions controller | getConfigurationsAnalyteReagent() | fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.024s</td>
+        <td>should test editing a subscription | PATCH</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a subscription | PATCH fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test creating a subscription | POST</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a subscription | empty form</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a subscription | POST fail</td>
+        <td>Testing the lab_programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should go to /lab_programs url</td>
+        <td>Tests for lab_programs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test edit lab controller | creating</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test edit lab controller | success POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.028s</td>
+        <td>should test edit lab controller | success POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test edit lab controller | fail POST</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test edit lab controller | success PATCH | form not empty</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test edit lab controller | PATCH fail &gt; form empty</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test edit lab controller | PATCH fail &gt; backend</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test edit lab controller | fail</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test lab_program controller | programs &amp; lab_programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab program controller | new  &amp; edit program fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should have no changes after saving in lab_program controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.026s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test lab programs | CREATE | reFETCH lab programs &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.038s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test lab programs | EDIT | reFETCH lab programs &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab_user controller | users &amp; lab_users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.046s</td>
+        <td>should test lab user controller | new  &amp; edit user fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should have no changes after saving in lab_user controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | CREATE | reFETCH lab users &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 0,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test lab users | EDIT | reFETCH lab users &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab_contact controller | lab_contacts | backend FAIL</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test lab_contact controller | lab_contacts</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab_contact controller | lab_contacts = 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.126s</td>
+        <td>should test lab_contact controller | lab_contacts greater than 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab contact controller | new  &amp; edit user fns</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should have no changes after saving in lab_contact controller</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.03s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1,0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test lab contacts | CREATE | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 1,1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 0</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test lab contacts | EDIT | reFETCH lab contacts &gt; 1</td>
+        <td>Testing the labs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should have lab wrappers defined</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should test multiStepHelper.validationOnLoad: items &gt; 1</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should test multiStepHelper.validationOnLoad: items &lt; 1</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should test multiStepHelper.uiStepEdit: form showing</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should test multiStepHelper.uiStepEdit: form hidden</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.uiStepEditUser: form showing</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test multiStepHelper.uiStepEditUser: form hidden</td>
+        <td>Test labs module services &raquo; Test api wrappers</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should go to /labs url</td>
+        <td>Tests for labs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should test 'reports' controller</td>
+        <td>Testing the reports controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should go to /reports url</td>
+        <td>Tests for reports states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should test 'results' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test 'results' controller no enrollments</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test failure to get enrollments</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test is result state</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test not result state</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test 'results' controller with stateParam</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.026s</td>
+        <td>should test is quantitative</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test fail to fetch subscriptions</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'results' controller : http failures</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test 'results' controller : http failures</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test create confirmation function</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test create confirmation function two</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test create confirmation function: fail</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test create confirmation function</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test 'enrollment' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test reversal of enrollment success</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test reversal of enrollment fail</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'enrollment' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.054s</td>
+        <td>should test get enrollment:fail </td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test 'enrollment' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test 'results' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test 'samples' controller get enrollment</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test get programs:fail </td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test sample counter &gt; posting counter</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test 'program samples' controller</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test sample counter &lt; posting counter</td>
+        <td>Testing the results controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should go to /results url</td>
+        <td>Tests for results states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test edit analytes controller</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test analytes controller : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing a analyte</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a analyte : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a analyte : success</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a analyte : fail</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a analyte</td>
+        <td>Testing the analytes controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.019s</td>
+        <td>should test main controller</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should test edit manufacturer controller</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test manufacturer controller : fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a manufacturer</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test editing a manufacturer: fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test creating a manufacturer : success</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test creating a manufacturer: fail</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a manufacturer</td>
+        <td>Testing the analyte_setup controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test edit categories controller | success</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test edit categories controller | fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.033s</td>
+        <td>should test editing a category</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should test editing a category: fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test creating a category : success</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating a category: fail</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a category</td>
+        <td>Testing the categories controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test main coa controller</td>
+        <td>Testing the coa controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.018s</td>
+        <td>should test main coa controller | fail</td>
+        <td>Testing the coa controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test edit drugs controller | success</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test edit drugs controller | fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a drug</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a drug: fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a drug : success</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a drug: fail</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a drug</td>
+        <td>Testing the drugs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit eval critetrion controller</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test edit eval criterion controller</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing an evaluation criterion</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing an evaluation criterion: fail</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating an evalutaion criterion : success</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating an evaluation criterion: fail</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating an evaluation criterion : no call</td>
+        <td>Testing the evaluation criteria controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test edit instruments controller | success</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit instruments controller | fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing an instrument</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.062s</td>
+        <td>should test editing a instrument: fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a instrument : success</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating an instrument: fail</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating an instrument</td>
+        <td>Testing the instruments controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit methods controller</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test methods controller : fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a method</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a method: fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a method : success</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a method: fail</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a method</td>
+        <td>Testing the method controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test main programs controller</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit programs controller | fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing a program</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test editing a program: fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test creating a program : success</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating a program: fail</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a program</td>
+        <td>Testing the programs controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test edit reagents controller</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test reagents controller : fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a reagent</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should test editing a reagent: fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test creating a reagents : success</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a reagent : fail</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a reagent</td>
+        <td>Testing the reagents controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test main result_codes controller</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit result code controller | fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test editing a result code</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a result code: fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a result code : success</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a result code: fail</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a result code</td>
+        <td>Testing the result code controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test main controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit sample controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test samples controller : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.057s</td>
+        <td>should test editing a sample</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a sample : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a sample : success</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a sample : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.007s</td>
+        <td>should test creating a samples</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test edit sample type controller</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test sample_types controller : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a sample_types</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test editing a sample_types : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should test creating a sample_types : success</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a sample_types : fail</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating a sample_types</td>
+        <td>Testing the sample controllers: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test edit units controller | success</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test edit units controller | fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test editing a unit</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should test editing a unit: fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should test creating a unit : success</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should test creating a unit: fail</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.008s</td>
+        <td>should test creating an unit</td>
+        <td>Testing the units controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.013s</td>
+        <td>should go to /analyte_setup url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.036s</td>
+        <td>should go to /categories url</td>
+        <td>Tests for events states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should go to /programs url</td>
+        <td>Tests for programs states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.343s</td>
+        <td>should go to /result_codes url</td>
+        <td>Tests for result codes states :</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should test users controller | success</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.023s</td>
+        <td>should test editing an user</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.017s</td>
+        <td>should test editing a user: fail</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should test creating a user : success</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.016s</td>
+        <td>should test creating an user: fail</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should test creating an user</td>
+        <td>Testing the users controller: </td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.009s</td>
+        <td>should go to /users url</td>
+        <td>Tests for users states :</td>
+      </tr>
+    </table>
+    <hr/>
+  </body>
+</html>

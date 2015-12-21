@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/events/tests/event_controllers.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/events/tests/</a> event_controllers.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.16% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/74</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.38% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.16% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/74</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function () {
+    "use strict";
+&nbsp;
+    describe("Testing the dashboard controller: ", function () {
+        var controller, rootScope, SERVER_URL, state, httpBackend, stateParams;
+&nbsp;
+        beforeEach(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            module("huqasAppConfig");</span>
+<span class="cstat-no" title="statement not covered" >            module("ui.router");</span>
+<span class="cstat-no" title="statement not covered" >            module("huqas.common.forms");</span>
+<span class="cstat-no" title="statement not covered" >            module("huqas.events.controllers");</span>
+<span class="cstat-no" title="statement not covered" >            module("huqas.events.services");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            inject(["$rootScope", "$controller", "SERVER_URL", "$httpBackend",</span>
+                "$state", "huqas.events.wrappers", "$stateParams",
+<span class="fstat-no" title="function not covered" >                function ($rootScope, $controller, SERVER_URL, _$httpBackend_,</span>
+                    $state, wrappers, $stateParams) {
+<span class="cstat-no" title="statement not covered" >                    rootScope = $rootScope;</span>
+<span class="cstat-no" title="statement not covered" >                    httpBackend = _$httpBackend_;</span>
+<span class="cstat-no" title="statement not covered" >                    SERVER_URL = SERVER_URL;</span>
+<span class="cstat-no" title="statement not covered" >                    state = $state;</span>
+<span class="cstat-no" title="statement not covered" >                    stateParams = $stateParams;</span>
+<span class="cstat-no" title="statement not covered" >                    wrappers = wrappers;</span>
+<span class="cstat-no" title="statement not covered" >                    controller = <span class="fstat-no" title="function not covered" >function (name, data) {</span></span>
+<span class="cstat-no" title="statement not covered" >                        return $controller("huqas.events.controllers." + name, data);</span>
+                    };
+                }
+            ]);
+        });
+&nbsp;
+        it("should test main events controller listing events", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            var scope = rootScope.$new();</span>
+<span class="cstat-no" title="statement not covered" >            var data = {</span>
+                "$scope": scope
+            };
+<span class="cstat-no" title="statement not covered" >            var httpResponse = {"name" : "get"};</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.expectGET(SERVER_URL +</span>
+                "api/v1/events/test_events/").respond(200, httpResponse);
+<span class="cstat-no" title="statement not covered" >            controller("main", data);</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.flush();</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.verifyNoOutstandingRequest();</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.verifyNoOutstandingExpectation();</span>
+        });
+        it("should test main events controller listing events: fail",
+<span class="fstat-no" title="function not covered" >            function () {</span>
+<span class="cstat-no" title="statement not covered" >            var scope = rootScope.$new();</span>
+<span class="cstat-no" title="statement not covered" >            var data = {</span>
+                "$scope": scope
+            };
+<span class="cstat-no" title="statement not covered" >            httpBackend.expectGET(SERVER_URL +</span>
+                "api/v1/events/test_events/").respond(500, {});
+<span class="cstat-no" title="statement not covered" >            controller("main", data);</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.flush();</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.verifyNoOutstandingRequest();</span>
+<span class="cstat-no" title="statement not covered" >            httpBackend.verifyNoOutstandingExpectation();</span>
+        });
+        it("should test editing a test event",
+<span class="fstat-no" title="function not covered" >            function () {</span>
+<span class="cstat-no" title="statement not covered" >            inject(["huqas.common.forms.changes", <span class="fstat-no" title="function not covered" >function (formChanges) {</span></span>
+<span class="cstat-no" title="statement not covered" >                var scope = rootScope.$new();</span>
+<span class="cstat-no" title="statement not covered" >                var data = {</span>
+                    "$scope": scope,
+                    "$stateParams" : {
+                        event_id : 1
+                    },
+                    "$state" : state,
+                    "huqas.common.forms.changes": formChanges
+                };
+<span class="cstat-no" title="statement not covered" >                spyOn(state, "go");</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectGET(SERVER_URL +</span>
+                    "api/v1/catalog/programs/").respond(200, {results : []});
+<span class="cstat-no" title="statement not covered" >                spyOn(formChanges, "whatChanged").and.returnValue({"name": "get"});</span>
+<span class="cstat-no" title="statement not covered" >                controller("edit_event", data);</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectGET(SERVER_URL +</span>
+                    "api/v1/events/test_event/1/").respond(200, {results :[]});
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectPATCH(SERVER_URL +</span>
+                    "api/v1/events/test_event/1/")
+                    .respond(200, {"name" :"get"});
+<span class="cstat-no" title="statement not covered" >                data.$scope.save();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.flush();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingRequest();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingExpectation();</span>
+            }]);
+        });
+        it("should test creating a test event",
+<span class="fstat-no" title="function not covered" >            function () {</span>
+<span class="cstat-no" title="statement not covered" >            inject(["huqas.common.forms.changes", <span class="fstat-no" title="function not covered" >function (formChanges) {</span></span>
+<span class="cstat-no" title="statement not covered" >                var scope = rootScope.$new();</span>
+<span class="cstat-no" title="statement not covered" >                var data = {</span>
+                    "$scope": scope,
+                    "$stateParams" : {
+                        event_id : null
+                    },
+                    "$state" : state,
+                    "huqas.common.forms.changes": formChanges
+                };
+<span class="cstat-no" title="statement not covered" >                spyOn(state, "go");</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectGET(SERVER_URL +</span>
+                    "api/v1/catalog/programs/").respond(200, {results : []});
+<span class="cstat-no" title="statement not covered" >                spyOn(formChanges, "whatChanged").and.returnValue({"name": "get"});</span>
+<span class="cstat-no" title="statement not covered" >                controller("edit_event", data);</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectPOST(SERVER_URL +</span>
+                    "api/v1/events/test_event/")
+                    .respond(200, {"name" :"get"});
+<span class="cstat-no" title="statement not covered" >                data.$scope.save();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.flush();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingRequest();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingExpectation();</span>
+            }]);
+        });
+        it("should test creating a test event",
+<span class="fstat-no" title="function not covered" >            function () {</span>
+<span class="cstat-no" title="statement not covered" >            inject(["huqas.common.forms.changes", <span class="fstat-no" title="function not covered" >function (formChanges) {</span></span>
+<span class="cstat-no" title="statement not covered" >                var scope = rootScope.$new();</span>
+<span class="cstat-no" title="statement not covered" >                var data = {</span>
+                    "$scope": scope,
+                    "$stateParams" : {
+                        event_id : null
+                    },
+                    "$state" : state,
+                    "huqas.common.forms.changes": formChanges
+                };
+<span class="cstat-no" title="statement not covered" >                spyOn(state, "go");</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.expectGET(SERVER_URL +</span>
+                    "api/v1/catalog/programs/").respond(200, {results : []});
+<span class="cstat-no" title="statement not covered" >                spyOn(formChanges, "whatChanged").and.returnValue({});</span>
+<span class="cstat-no" title="statement not covered" >                controller("edit_event", data);</span>
+<span class="cstat-no" title="statement not covered" >                data.$scope.save();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.flush();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingRequest();</span>
+<span class="cstat-no" title="statement not covered" >                httpBackend.verifyNoOutstandingExpectation();</span>
+            }]);
+        });
+    });
+})();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Dec 01 2015 17:29:05 GMT+0300 (EAT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

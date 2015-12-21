@@ -1,0 +1,5 @@
+<section class="section row">
+  <div ui-view="header"></div>
+  <div class="content fade-content" ui-view="grid-view" ng-if="loggedInUser.is_staff"></div>
+  <div class="content fade-content" ui-view="lab-view" ng-if="!loggedInUser.is_staff"></div>
+</section>

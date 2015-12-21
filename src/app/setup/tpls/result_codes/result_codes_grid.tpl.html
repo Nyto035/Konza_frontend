@@ -1,0 +1,22 @@
+<div class="content-header">
+    <div class="action-container content-header-extra pad-r-20">
+        <a  tooltip-placement="bottom" tooltip="New Category" class="action-btn action-btn-md action-btn-default" ui-sref="dashboard.result_codes.add_result_code">
+            <i class="fa fa-plus"></i>
+        </a>
+   </div>
+   <h2 class="content-title">
+        <span class="main-title">
+            <i class="fa fa-barcode"></i> Result Codes
+        </span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+<div class="col-xs-12 margin-t-30">
+    <div class="col-xs-12">
+        <sil-grid template="setup/tpls/result_codes/result_codes_list.tpl.html" grid-for="events" api-key="result_codes" data="result_codes" filters="filters" error="alert"></sil-grid>
+    </div>
+</div>

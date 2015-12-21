@@ -1,0 +1,30 @@
+<div>
+    <div id="no-more-tables" class="col-xs-12 margin-t-15">
+        <table class="table table-hover table-condensed fs-14">
+            <thead>
+                <th>Name</th>
+                <th>Active</th>
+                <th></th>
+            </thead>
+            <tbody class="example-animate-container">
+                <tr class="animate-repeat" ng-repeat="lab in labs | filter: search.query">
+                    <td data-title="Name" class="pad-t-15">
+                        {{lab.name}}
+                    </td>
+                    <td data-title="Name" class="pad-t-15">
+                        {{lab.active}}
+                    </td>
+                    <td class="text-right">
+                        <a ui-sref="labs.edit({lab_id:lab.id})" class="action-btn action-btn-grid action-btn-success" tooltip="Edit">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody ng-if="labs.length===0">
+                <tr><td class="text-center" colspan="9">Sorry, no data is available</td></tr>
+            </tbody>
+        </table>
+        <sil-grid-pagination> </sil-grid-pagination>
+    </div>
+</div>

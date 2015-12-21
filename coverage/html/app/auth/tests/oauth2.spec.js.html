@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/auth/tests/oauth2.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/auth/tests/</a> oauth2.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>134/134</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>30/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>134/134</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function (angular, jQuery, moment) {
+    "use strict";
+&nbsp;
+    describe("Test huqas.auth.oauth2 service :", function () {
+        var access_token, refresh_token, store_key;
+&nbsp;
+        beforeEach(function () {
+            angular.module("xyz", []).constant("CREDENTIALS", {
+                "client_id": "a",
+                "client_secret": "b",
+                "token_url": "http://a.server/o/token/",
+                "revoke_url": "http://a.server/o/revoke_token/"
+            });
+            module("huqas.auth.oauth2");
+            module("xyz");
+        });
+&nbsp;
+        beforeEach(function () {
+            access_token = {
+                "access_token": "pcQyIBpcsklNuZlAflBruEmREvpl8a",
+                "token_type": "Bearer",
+                "expires_in": 36000,
+                "refresh_token": "jwBcSt8ms4kJEtcF8Bl6jjrqG7YQb8",
+                "scope": "read write"
+            };
+            refresh_token = {
+                "access_token": "typo",
+                "token_type": "Bearer",
+                "expires_in": 36000,
+                "refresh_token": "pypo",
+                "scope": "read write"
+            };
+            store_key = "auth.token";
+        });
+&nbsp;
+        afterEach(function () {
+            inject(["$window", "$http", function ($window, $http) {
+                $window.localStorage.removeItem(store_key);
+                delete $http.defaults.headers.common.Authorization;
+            }]);
+        });
+&nbsp;
+        it("should store get token from storage", function () {
+            inject(["$window", "api.oauth2", function ($window, oauth2) {
+                access_token.expire_at = moment().add(1, "year");
+                $window.localStorage.setItem(store_key, JSON.stringify(access_token));
+                var token = oauth2.getToken();
+                expect(token.expires_in).toEqual(access_token.expires_in);
+                expect(token.scope).toEqual(access_token.scope);
+                expect(token.access_token).toEqual(access_token.access_token);
+                expect(token.refresh_token).toEqual(access_token.refresh_token);
+            }]);
+        });
+&nbsp;
+        it("should return null if store is empty", function () {
+            inject(["$window", "api.oauth2", function ($window, oauth2) {
+                $window.localStorage.removeItem(store_key);
+                var token = oauth2.getToken();
+                expect(token).toBe(null);
+            }]);
+        });
+&nbsp;
+        it("should remove expired token from storage", function () {
+            inject(["$window", "api.oauth2", function ($window, oauth2) {
+                access_token.expire_at = moment().subtract(1, "year");
+                $window.localStorage.setItem(store_key, JSON.stringify(access_token));
+                var token = oauth2.getToken();
+                expect(token).toBe(null);
+                expect($window.localStorage.getItem(store_key)).toBe(null);
+            }]);
+        });
+&nbsp;
+        it("should fetch a token from oauth2 provider and store it", function () {
+            inject(["$window", "$httpBackend", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, credz, oauth2) {
+                    var payload =
+                        "grant_type=" + "password" +
+                        "&amp;username=" + "username" +
+                        "&amp;password=" + "password" +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(200, access_token);
+&nbsp;
+                    oauth2.fetchToken("username", "password");
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+&nbsp;
+                    var token = JSON.parse($window.localStorage.getItem(store_key));
+                    expect(token.expires_in).toEqual(access_token.expires_in);
+                    expect(token.scope).toEqual(access_token.scope);
+                    expect(token.access_token).toEqual(access_token.access_token);
+                    expect(token.refresh_token).toEqual(access_token.refresh_token);
+                    expect(moment(token.expire_at)).toBeGreaterThan(moment());
+                }
+            ]);
+        });
+&nbsp;
+        it("should allow another token request on failure", function () {
+            inject(["$window", "$httpBackend", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, credz, oauth2) {
+                    var payload =
+                        "grant_type=" + "password" +
+                        "&amp;username=" + "username" +
+                        "&amp;password=" + "password" +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(500);
+&nbsp;
+                    var rq1 = oauth2.fetchToken("username", "password");
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+&nbsp;
+                    var rq2 = oauth2.fetchToken();
+                    expect(rq1).not.toEqual(rq2);
+                }
+            ]);
+        });
+&nbsp;
+        it("should not issue multiple unresolved requests to fetch a token", function () {
+            inject(["api.oauth2", function (oauth2) {
+                var rq = oauth2.fetchToken();
+&nbsp;
+                var rq2 = oauth2.fetchToken();
+                expect(rq).toEqual(rq2);
+&nbsp;
+                var rq3 = oauth2.refreshToken(access_token);
+                expect(rq).toEqual(rq3);
+            }]);
+        });
+&nbsp;
+        it("should refresh a token from oauth2 provider and store new token", function () {
+            inject(["$window", "$httpBackend", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, credz, oauth2) {
+                    $window.localStorage.setItem(store_key, JSON.stringify(access_token));
+&nbsp;
+                    var payload =
+                        "grant_type=" + "refresh_token" +
+                        "&amp;refresh_token=" + access_token.refresh_token +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+&nbsp;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(200, refresh_token);
+&nbsp;
+                    oauth2.refreshToken(access_token);
+&nbsp;
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+&nbsp;
+                    var token = JSON.parse($window.localStorage.getItem(store_key));
+                    expect(token.expires_in).toEqual(refresh_token.expires_in);
+                    expect(token.scope).toEqual(refresh_token.scope);
+                    expect(token.access_token).toEqual(refresh_token.access_token);
+                    expect(token.refresh_token).toEqual(refresh_token.refresh_token);
+                    expect(moment(token.expire_at)).toBeGreaterThan(moment());
+                }
+            ]);
+        });
+&nbsp;
+        it("should set XHR authorization headers after fetching a token", function () {
+            inject(["$window", "$httpBackend", "$http", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, $http, credz, oauth2) {
+                    var payload =
+                        "grant_type=" + "password" +
+                        "&amp;username=" + "username" +
+                        "&amp;password=" + "password" +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(200, access_token);
+&nbsp;
+                    oauth2.fetchToken("username", "password");
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+&nbsp;
+                    var token = JSON.parse($window.localStorage.getItem(store_key));
+                    var header_value = token.token_type + " " + token.access_token;
+&nbsp;
+                    expect($http.defaults.headers.common.Authorization).toEqual(header_value);
+                    expect(jQuery.ajaxSettings.headers.Authorization).toEqual(header_value);
+                }
+            ]);
+        });
+&nbsp;
+        it("should set a token refresh timeout", function () {
+            inject(["$window", "$httpBackend", "$timeout", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, $timeout, credz, oauth2) {
+                    var payload =
+                        "grant_type=" + "password" +
+                        "&amp;username=" + "username" +
+                        "&amp;password=" + "password" +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(200, access_token);
+&nbsp;
+                    oauth2.fetchToken("username", "password");
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+&nbsp;
+                    $httpBackend.resetExpectations();
+&nbsp;
+                    payload =
+                        "grant_type=" + "refresh_token" +
+                        "&amp;refresh_token=" + access_token.refresh_token +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+&nbsp;
+                    $httpBackend
+                        .expectPOST(credz.token_url, payload)
+                        .respond(200, refresh_token);
+&nbsp;
+                    $timeout.flush();
+&nbsp;
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingExpectation();
+                    $httpBackend.verifyNoOutstandingRequest();
+                }
+            ]);
+        });
+&nbsp;
+        it("should revoke a token", function () {
+            inject(["$window", "$httpBackend", "CREDENTIALS", "api.oauth2",
+                function ($window, $httpBackend, credz, oauth2) {
+                    $window.localStorage.setItem(store_key, JSON.stringify(access_token));
+                    var payload =
+                        "token=" + access_token.access_token +
+                        "&amp;client_id=" + credz.client_id +
+                        "&amp;client_secret=" + credz.client_secret;
+                    $httpBackend
+                        .expectPOST(credz.revoke_url, payload)
+                        .respond(200);
+&nbsp;
+                    oauth2.revokeToken(access_token);
+&nbsp;
+                    $httpBackend.flush();
+                    $httpBackend.verifyNoOutstandingRequest();
+                    $httpBackend.verifyNoOutstandingExpectation();
+&nbsp;
+                    var token = JSON.parse($window.localStorage.getItem(store_key));
+                    expect(token).toBe(null);
+                }
+            ]);
+        });
+&nbsp;
+        it("should not revoke an empty token", function () {
+            inject(["$window", "$httpBackend", "CREDENTIALS", "api.oauth2", "$q",
+                function ($window, $httpBackend, credz, oauth2) {
+                    $window.localStorage.setItem(store_key, JSON.stringify(access_token));
+&nbsp;
+                    oauth2.revokeToken();
+&nbsp;
+                    $httpBackend.verifyNoOutstandingRequest();
+                    $httpBackend.verifyNoOutstandingExpectation();
+&nbsp;
+                    var token = JSON.parse($window.localStorage.getItem(store_key));
+                    expect(token).toBe(null);
+                }
+            ]);
+        });
+&nbsp;
+        it("should not set XHR authorization headers it token is not defined", function () {
+            inject(["$http", "api.oauth2", function ($http, oauth2) {
+                oauth2.setXHRToken();
+                expect($http.defaults.headers.common.Authorization).toBe(undefined);
+&nbsp;
+                oauth2.setXHRToken(null);
+                expect($http.defaults.headers.common.Authorization).toBe(undefined);
+            }]);
+        });
+    });
+&nbsp;
+})(window.angular, window.jQuery, window.moment);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Dec 18 2015 12:53:37 GMT+0300 (EAT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

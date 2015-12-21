@@ -1,0 +1,75 @@
+<div class="content-header">
+    <div class="action-container content-header-extra pad-r-20">
+        <a tooltip-placement="bottom" tooltip="Add COA" class="action-btn action-btn-md action-btn-primary" ui-sref="coa.create">
+            <i class="fa fa-plus"></i>
+        </a>
+   </div>
+   <h2 class="content-title">
+        <span class="main-title"> Certificate of Analysis</span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+
+<div class="content-body">
+    <ul class="col-xs-3 col-lg-2 margin-t-20 pad-0 margin-b-20">
+        <li class="nav-left" ng-repeat="event in events" ng-class="{'active': css ==  $index}">
+            <a ng-click="getCoa(event.id, $index)" ng-class="{'notch-right active': css ==  $index}"
+             href="">{{event.name}}</a>
+        </li>
+    </ul>
+    <div class= "col-xs-9 col-lg-10 content-card margin-t-20 margin-b-20">
+        <table class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Analyte</th>
+                        <th>Sample</th>
+                        <th>Response</th>
+                    </tr>
+                </thead>
+                <tbody class="fade-content">
+                    <tr>
+                       <td>Qualitative</td>
+                    </tr>
+                    <tr ng-repeat="coa in coa_qualitative">
+                        <td class="col-md-2 pad-t-15" data-title="Analyte:">{{coa.analyte_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Sample:">{{coa.sample_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Response:">{{coa.response}}</td>
+                    </tr>
+                </tbody>
+                <tbody class="fade-content">
+                    <tr>
+                       <td>Quantitative</td>
+                    </tr>
+                    <tr ng-repeat="coa in coa_quantitative">
+                        <td class="col-md-2 pad-t-15" data-title="Analyte:">{{coa.analyte_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Sample:">{{coa.sample_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Response:">{{coa.response}}</td>
+                    </tr>
+                </tbody>
+                <tbody class="fade-content">
+                    <tr>
+                       <td>Semi </td>
+                    </tr>
+                    <tr ng-repeat="coa in coa_semi">
+                        <td class="col-md-2 pad-t-15" data-title="Analyte:">{{coa.analyte_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Sample:">{{coa.sample_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Response:">{{coa.response}}</td>
+                    </tr>
+                </tbody>
+                <tbody class="fade-content">
+                    <tr>
+                       <td>Drugs</td>
+                    </tr>
+                    <tr ng-repeat="coa in coa_drugs">
+                        <td class="col-md-2 pad-t-15" data-title="Analyte:">{{coa.analyte_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Sample:">{{coa.sample_name}}</td>
+                        <td class="col-md-2 pad-t-15" data-title="Response:">{{coa.response}}</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+</div>

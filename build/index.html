@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]>
+    <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Huqas EQA</title>
+    
+    <link rel="stylesheet" type="text/css" href="assets/huqas_web-0.0.1a1.css" />
+    </head>
+    <section class="section">
+        <div style="padding:100px 50px 50px 50px;min-height:400px">
+            <h1><strong>HuQAS EQA website:</strong></h1>
+            <h1>Your browser version is not supported. Please update your browser.</h1>
+               <h2>You may install any of the latest versions of the following browsers:</h2>
+                <div class="container-fluid" style="margin-top:30px;margin-bottom:30px;">
+                    <div class="row-fluid">
+                        <div class="col-xs-3 row-fluid">
+                           <a target="blank" href="https://www.google.com/chrome/browser/desktop/index.html"><i class="sprite sprite-chrome"></i></a>
+                            Chrome
+                        </div>
+                        <div class="col-xs-3 row-fluid">
+                           <a target="blank" href="https://www.mozilla.org/en-US/firefox/new/"><i class="sprite sprite-firefox"></i></a>
+                            Firefox
+                        </div>
+                        <div class="col-xs-3 row-fluid">
+                           <a target="blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"><i class="sprite sprite-ie"></i></a>
+                            Internet Explorer
+                        </div>
+                        <div class="col-xs-3 row-fluid">
+                           <a target="blank" href="http://www.opera.com/computer"><i class="sprite sprite-opera"></i></a>
+                            Opera
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js indexeddb" lang="en" ng-app="huqasApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>HuQAS EQA</title>
+         
+        <link rel="icon"  href="" />
+        <link rel="stylesheet" type="text/css" href="assets/huqas_web-0.0.1a1.css" />
+        <style>
+        </style>
+    </head>
+    <noscript>
+        <section class="section">
+            <div style="padding:50px 50px 50px 50px;height:100vh">
+                <h1><strong>HuQAS EQA:</strong></h1>
+                <h2>The browser has JavaScript disabled or is not supported. Please enable Javascript or update your browser.</h2>
+                    <h3>You may install any of the latest versions of the following browsers:</h3>
+                    <div class="container-fluid" style="margin-top:30px">
+                        <div class="row-fluid">
+                            <div class="col-xs-3">
+                               <a target="blank" href="https://www.google.com/chrome/browser/desktop/index.html"><i class="sprite sprite-chrome"></i></a>
+                                Chrome
+                            </div>
+                            <div class="col-xs-3">
+                               <a target="blank" href="https://www.mozilla.org/en-US/firefox/new/"><i class="sprite sprite-firefox"></i></a>
+                                Firefox
+                            </div>
+                            <div class="col-xs-3">
+                               <a target="blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"><i class="sprite sprite-ie"></i></a>
+                                Internet Explorer
+                            </div>
+                            <div class="col-xs-3">
+                               <a target="blank" href="http://www.opera.com/computer"><i class="sprite sprite-opera"></i></a>
+                                Opera
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </noscript>
+<!--<![endif]-->
+    <body>
+        <div ui-view="main" class="margin-t-1 container-fluid">
+            <div>
+                <div class="main-ui-view-loader">
+                    <div class="loader"></div>
+                    <div class="row">
+                        <h3 class="text-center loader-text">Please wait...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="col-xs-12 black">
+               <div class="row margin-10">
+                   <p class="text-center margin-t-10">
+                       <a href="http://savannahinformatics.com" target="_blank">Powered by Savannah Informatics</a>
+                   </p>
+               </div>
+            </div>
+        </footer>
+        <!-- compiled JavaScript -->
+        
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="vendor/underscore/underscore.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="vendor/angular/angular.js"></script>
+        <script type="text/javascript" src="vendor/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+        <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="vendor/angular-ui-select/dist/select.js"></script>
+        <script type="text/javascript" src="node_modules/ng-fx/dist/ng-fx.js"></script>
+        <script type="text/javascript" src="vendor/angular-sanitize/angular-sanitize.js"></script>
+        <script type="text/javascript" src="vendor/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="vendor/stacktrace-js/dist/stacktrace.js"></script>
+        <script type="text/javascript" src="vendor/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js"></script>
+        <script type="text/javascript" src="vendor/ng-tags-input/ng-tags-input.js"></script>
+        <script type="text/javascript" src="vendor/moment/moment.js"></script>
+        <script type="text/javascript" src="vendor/angular-loading-bar/build/loading-bar.js"></script>
+        <script type="text/javascript" src="vendor/ng-idle/angular-idle.js"></script>
+        <script type="text/javascript" src="vendor/angular-auto-validate/dist/jcs-auto-validate.js"></script>
+        <script type="text/javascript" src="vendor/angular-toasty/dist/angular-toasty.js"></script>
+        <script type="text/javascript" src="vendor/angularjs-datepicker/src/js/angular-datepicker.js"></script>
+        <script type="text/javascript" src="vendor/angular-wizard/dist/angular-wizard.js"></script>
+        <script type="text/javascript" src="vendor/angular-breadcrumb/dist/angular-breadcrumb.js"></script>
+        <script type="text/javascript" src="vendor/ng-file-upload/ng-file-upload.js"></script>
+        <script type="text/javascript" src="libs/api_wrapper.js"></script>
+        <script type="text/javascript" src="libs/sil_grid/sil_grid_tpls.js"></script>
+        <script type="text/javascript" src="libs/sil_grid/sil_grid.js"></script>
+        <script type="text/javascript" src="libs/error_handler.js"></script>
+        <script type="text/javascript" src="settings.js"></script>
+        <script type="text/javascript" src="src/app/app.js"></script>
+        <script type="text/javascript" src="src/app/auth/controllers.js"></script>
+        <script type="text/javascript" src="src/app/auth/module.js"></script>
+        <script type="text/javascript" src="src/app/auth/oauth2.js"></script>
+        <script type="text/javascript" src="src/app/auth/permissions.js"></script>
+        <script type="text/javascript" src="src/app/auth/services.js"></script>
+        <script type="text/javascript" src="src/app/auth/states.js"></script>
+        <script type="text/javascript" src="src/app/common/constants.js"></script>
+        <script type="text/javascript" src="src/app/common/controllers.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/contentslidein.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/includetpl.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/list.assignment.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/module.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/statemodal.js"></script>
+        <script type="text/javascript" src="src/app/common/directives/ui.bootstrap.popover.close.js"></script>
+        <script type="text/javascript" src="src/app/common/export.js"></script>
+        <script type="text/javascript" src="src/app/common/filters.js"></script>
+        <script type="text/javascript" src="src/app/common/forms.js"></script>
+        <script type="text/javascript" src="src/app/common/messages.js"></script>
+        <script type="text/javascript" src="src/app/common/module.js"></script>
+        <script type="text/javascript" src="src/app/common/revision.js"></script>
+        <script type="text/javascript" src="src/app/common/states.js"></script>
+        <script type="text/javascript" src="src/app/config.js"></script>
+        <script type="text/javascript" src="src/app/dashboard/controllers.js"></script>
+        <script type="text/javascript" src="src/app/dashboard/modules.js"></script>
+        <script type="text/javascript" src="src/app/dashboard/services.js"></script>
+        <script type="text/javascript" src="src/app/dashboard/states.js"></script>
+        <script type="text/javascript" src="src/app/events/controllers.js"></script>
+        <script type="text/javascript" src="src/app/events/modules.js"></script>
+        <script type="text/javascript" src="src/app/events/services.js"></script>
+        <script type="text/javascript" src="src/app/events/states.js"></script>
+        <script type="text/javascript" src="src/app/lab_instruments/controllers.js"></script>
+        <script type="text/javascript" src="src/app/lab_instruments/modules.js"></script>
+        <script type="text/javascript" src="src/app/lab_instruments/states.js"></script>
+        <script type="text/javascript" src="src/app/lab_programs/controllers.js"></script>
+        <script type="text/javascript" src="src/app/lab_programs/module.js"></script>
+        <script type="text/javascript" src="src/app/lab_programs/states.js"></script>
+        <script type="text/javascript" src="src/app/labs/controllers.js"></script>
+        <script type="text/javascript" src="src/app/labs/module.js"></script>
+        <script type="text/javascript" src="src/app/labs/services.js"></script>
+        <script type="text/javascript" src="src/app/labs/states.js"></script>
+        <script type="text/javascript" src="src/app/reports/controllers.js"></script>
+        <script type="text/javascript" src="src/app/reports/module.js"></script>
+        <script type="text/javascript" src="src/app/reports/states.js"></script>
+        <script type="text/javascript" src="src/app/results/controllers.js"></script>
+        <script type="text/javascript" src="src/app/results/module.js"></script>
+        <script type="text/javascript" src="src/app/results/states.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/analytes.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/categories.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/certificate_of_analysis.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/controllers.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/drugs.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/evaluation_criteria.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/instruments.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/programs.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/results_code.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/sample_setup.js"></script>
+        <script type="text/javascript" src="src/app/setup/controllers/units.js"></script>
+        <script type="text/javascript" src="src/app/setup/modules.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/analytes.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/categories.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/certificate_of_analysis.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/drugs.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/evalution_criteria.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/instruments.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/programs.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/result_codes.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/sample_setup.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/states.js"></script>
+        <script type="text/javascript" src="src/app/setup/states/units.js"></script>
+        <script type="text/javascript" src="src/app/users/controllers.js"></script>
+        <script type="text/javascript" src="src/app/users/module.js"></script>
+        <script type="text/javascript" src="src/app/users/states.js"></script>
+        <script type="text/javascript" src="templates-common.js"></script>
+        <script type="text/javascript" src="templates-app.js"></script>
+        <toasty></toasty>
+    </body>
+</html>

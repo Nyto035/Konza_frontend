@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/common/tests/forms.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/common/tests/</a> forms.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>117/117</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>27/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>117/117</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function () {
+    "use strict";
+&nbsp;
+    describe("Test form changes", function () {
+        var changes;
+&nbsp;
+        beforeEach(function () {
+            module("huqas.common.forms");
+&nbsp;
+            inject(["huqas.common.forms.changes", function (c) {
+                changes = c;
+            }]);
+        });
+&nbsp;
+        it("should do nothing if form is undefined", function () {
+            expect(changes.whatChanged()).toEqual({});
+        });
+&nbsp;
+        it("should skip clean forms", function () {
+            expect(changes.whatChanged({"$dirty": false, "name": "val"})).toEqual({});
+        });
+&nbsp;
+        it("should do nothing for empty dirty forms", function () {
+            expect(changes.whatChanged({"$dirty": false})).toEqual({});
+        });
+&nbsp;
+        it("should return changed values in dirty forms", function () {
+            var frm = {
+                "$dirty": true,
+                "one": {
+                    "$dirty": false,
+                    "$modelValue": "one_val"
+                },
+                "two": {
+                    "$dirty": true,
+                    "$modelValue": "two_val"
+                },
+                "three": undefined,
+                "four": {
+                }
+            };
+            expect(changes.whatChanged(frm)).toEqual({"two": "two_val"});
+        });
+    });
+&nbsp;
+    describe("Test directives", function () {
+        var rootScope, compile;
+&nbsp;
+        beforeEach(function () {
+            module("huqas.common.forms");
+&nbsp;
+            inject(["$rootScope", "$compile", function (r, c) {
+                rootScope = r;
+                compile = c;
+            }]);
+        });
+&nbsp;
+        describe("Test drferrmsg directive", function () {
+&nbsp;
+            it("should watch errors", function () {
+                var tpl = "&lt;drf-err-msg&gt;&lt;/drf-err-msg&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                expect(el.html()).not.toContain("dl");
+&nbsp;
+                scope.errors = {name: ["yeah"]};
+                scope.$apply();
+                expect(el.html()).toContain("dl");
+                expect(el.html()).toContain("yeah");
+&nbsp;
+                scope.errors = null;
+                scope.$apply();
+                expect(el.html()).not.toContain("dl");
+            });
+&nbsp;
+            it("should hide wiered errors", function () {
+                var tpl = "&lt;drf-err-msg&gt;&lt;/drf-err-msg&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                expect(el.html()).not.toContain("dl");
+&nbsp;
+                scope.errors = {
+                    "name": ["yeah"],
+                    "__all__": ["something"],
+                    "detail": ["Authentication error"],
+                    "non_field_errors": ["another"]
+                };
+                scope.$apply();
+                expect(scope.err_list[""]).toEqual([
+                    "another", "something", "Authentication error"
+                ]);
+            });
+&nbsp;
+            it("should use defined error key", function () {
+                var tpl = "&lt;drf-err-msg errors='haha'&gt;&lt;/drf-err-msg&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                scope.haha = {name: ["yeah"]};
+                scope.$apply();
+                expect(el.html()).toContain("dl");
+                expect(el.html()).toContain("yeah");
+            });
+&nbsp;
+            it("should use default message if errors is empty ", function () {
+                var tpl = "&lt;drf-err-msg&gt;&lt;/drf-err-msg&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                scope.errors = {};
+                scope.$apply();
+                expect(el.html()).toContain("dl");
+                expect(el.html()).toContain("error occured");
+            });
+        });
+&nbsp;
+        describe("Test drferrmsg2 directive", function () {
+&nbsp;
+            it("should watch errors", function () {
+                var tpl = "&lt;drf-err-msg2&gt;&lt;/drf-err-msg2&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                expect(el.html()).not.toContain("dl");
+&nbsp;
+                scope.errors = {name: ["yeah"]};
+                scope.$apply();
+                expect(el.html()).toContain("dl");
+                expect(el.html()).toContain("yeah");
+&nbsp;
+                scope.errors = null;
+                scope.$apply();
+                expect(el.html()).not.toContain("dl");
+            });
+&nbsp;
+            it("should use defined error key", function () {
+                var tpl = "&lt;drf-err-msg2 errors='haha'&gt;&lt;/drf-err-msg2&gt;";
+                var scope = rootScope.$new();
+                var el = compile(tpl)(scope);
+                scope.haha = {name: ["yeah"]};
+                scope.$apply();
+                expect(el.html()).toContain("dl");
+                expect(el.html()).toContain("yeah");
+            });
+        });
+&nbsp;
+        describe("Test apichecker directive", function () {
+&nbsp;
+            it("should complain if input name is not set", function () {
+                var missing_name = function () {
+                    var tpl = "&lt;form&gt;&lt;input ng-model='desc' api-checker/&gt;&lt;/form&gt;";
+                    compile(tpl)(rootScope.$new());
+                };
+                var undefined_name = function () {
+                    var tpl = "&lt;form&gt;&lt;input ng-model='desc' api-checker name/&gt;&lt;/form&gt;";
+                    compile(tpl)(rootScope.$new());
+                };
+                var empty_name = function () {
+                    var tpl = "&lt;form&gt;&lt;input ng-model='desc' api-checker name=''/&gt;&lt;/form&gt;";
+                    compile(tpl)(rootScope.$new());
+                };
+                expect(missing_name).toThrow();
+                expect(empty_name).toThrow();
+                expect(undefined_name).toThrow();
+            });
+&nbsp;
+            it("should not invalidate initial input", function () {
+                var tpl = "&lt;form name='frm'&gt;" +
+                          "&lt;input ng-model='desc' api-checker name='name'/&gt;" +
+                          "&lt;/form&gt;";
+                var scope = rootScope.$new();
+                compile(tpl)(scope);
+                scope.frm.name.$setViewValue("hahaha");
+                expect(scope.frm.$dirty).toBe(true);
+                expect(scope.frm.$valid).toBe(true);
+            });
+&nbsp;
+            it("should use defined error key", function () {
+                var tpl = "&lt;form name='frm'&gt;" +
+                          "&lt;div class='form-group'&gt;" +
+                          "&lt;input ng-model='name' api-checker='haha' name='name'/&gt;" +
+                          "&lt;/div&gt;" +
+                          "&lt;/form&gt;";
+                var scope = rootScope.$new();
+                scope.haha = {name: ["yeah"]};
+                compile(tpl)(scope);
+                scope.$apply();
+                expect(scope.frm.name.$invalid).toBe(true);
+            });
+&nbsp;
+            it("should use not care about other people's errors", function () {
+                var tpl = "&lt;form name='frm'&gt;" +
+                          "&lt;div class='form-group' id='div_name'&gt;" +
+                          "&lt;input class='form-control' ng-model='name' api-checker name='name'/&gt;" +
+                          "&lt;/div&gt;" +
+                          "&lt;div class='form-group' id='div_age'&gt;" +
+                          "&lt;input ng-model='age' api-checker name='age'/&gt;" +
+                          "&lt;/div&gt;" +
+                          "&lt;/form&gt;";
+                var scope = rootScope.$new();
+                scope.errors = {age: ["yeah"]};
+                compile(tpl)(scope);
+                scope.$apply();
+                expect(scope.frm.name.$invalid).toBe(false);
+                expect(scope.frm.age.$invalid).toBe(true);
+            });
+        });
+    });
+})();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Dec 18 2015 12:53:37 GMT+0300 (EAT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

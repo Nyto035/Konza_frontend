@@ -1,0 +1,66 @@
+<div class="content-header">
+    <div class="action-container content-header-extra pad-r-20">
+        <a ng-if="edit_view" tooltip-placement="bottom" tooltip="Delete Drug" class="action-btn action-btn-md action-btn-default" ui-sref="dashboard.drugs.add_drug">
+            <i class="fa fa-trash text-danger"></i>
+        </a>
+   </div>
+   <h2 class="content-title">
+        <span class="main-title">
+          <i class="fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}"></i> {{edit_view ? 'Edit' : 'Add'}} Drug
+        </span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+<div class="col-xs-12">
+    <div ui-view="delete"></div>
+    <div class="col-xs-12">
+      <form name="drug_frm"  ng-submit="save(drug_frm)" novalidate>
+        <div class="fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card">
+          <drf-err-msg></drf-err-msg>
+            <div class="col-sm-12 margin-t-20 margin-b-20">
+              <div class="form-group">
+                  <label class="control-label">Name<span class="text-danger">&#42;</span></label>
+                  <input class="form-control" name="name" ng-model="drug.name" required placeholder="Name" api-checker/>
+              </div>
+              <div class="form-group">
+                  <label class="">
+                      Classification
+                  </label>
+                  <select class="form-control" name="classification" ng-model="drug.classification" api-checker>
+                      <option value="" disabled>Select Classification</option>
+                      <option ng-repeat="classification in classifications" ng-selected="{{classification.value == drug.classification}}" value="{{classification.value}}">{{classification.
+                      display_value}}</option>
+                  </select>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_antibiotic" name="is_antibiotic" ng-model="drug.is_antibiotic" api-checker >
+                    For Bacteriology
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_antiparasitic" name="is_antiparasitic" ng-model="drug.is_antiparasitic"
+                    api-checker >
+                    For Parasitology
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="active" name="active" ng-model="drug.active" tooltip="Check if drug is not retired" api-checker >
+                    Active
+                   </label>
+              </div>
+              <div class="pull-left col-sm-12 pad-0 margin-t-10 margin-b-20">
+                <button class="btn btn-primary">Save</button>
+                <a class="margin-l-10 btn btn-default margin-l-5" ui-sref="dashboard.samples">Cancel</a>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+</div>

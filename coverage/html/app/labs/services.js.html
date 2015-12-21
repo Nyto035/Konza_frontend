@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/labs/services.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">app/labs/</a> services.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>37/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>37/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">59×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function(angular){
+    "use strict";
+    /**
+     * @ngdoc module
+     *
+     * @name huqas.labs.services
+     *
+     * @description
+     * Contains the wrapper service used for labs api
+     */
+    angular.module("huqas.labs.services", [
+        "api.wrapper",
+        "huqas.common.constants"
+    ])
+&nbsp;
+    /**
+     * @ngdoc service
+     *
+     * @name labsApi
+     *
+     * @description
+     * The service used to for all lab endpoints
+     */
+    .service("labsApi", ["api","api_version",
+        function(api, api_v) {
+            return {
+                labs: api.setBaseUrl("api/" + api_v + "/labs/"),
+                programs: api.setBaseUrl("api/" + api_v + "/catalog/programs/"),
+                users: api.setBaseUrl("api/" + api_v + "/users/"),
+                contacts: api.setBaseUrl("api/" + api_v + "/catalog/programs/"),
+                lab_programs: api.setBaseUrl("api/" + api_v + "/labs/lab_programs/"),
+                lab_instruments: api.setBaseUrl("api/" + api_v + "/labs/lab_instruments/"),
+                subscriptions: api.setBaseUrl("api/" + api_v + "/labs/subscriptions/"),
+                lab_enrollments: api.setBaseUrl("api/" + api_v + "/labs/lab_enrollments/"),
+                lab_sample_conditions: api.setBaseUrl("api/" + api_v +
+                                                      "/labs/lab_sample_conditions/"),
+                lab_users: api.setBaseUrl("api/" + api_v + "/labs/lab_users/"),
+                lab_contacts: api.setBaseUrl("api/" + api_v + "/labs/lab_contacts/")
+            };
+        }
+    ])
+    .service("countries", function() {
+        this.getCountries = function () {
+            return [
+                {"name": "Algeria", "code": "DZ"},
+                {"name": "Angola", "code": "AO"},
+                {"name": "Benin", "code": "BJ"},
+                {"name": "Botswana", "code": "BW"},
+                {"name": "Burkina Faso", "code": "BF"},
+                {"name": "Burundi", "code": "BI"},
+                {"name": "Cape Verde", "code": "CV"},
+                {"name": "Central African Republic", "code": "CF"},
+                {"name": "Chad", "code": "TD"},
+                {"name": "Comoros", "code": "CM"},
+                {"name": "Congo", "code": "CG"},
+                {"name": "Congo, The Democratic Republic of the", "code": "CD"},
+                {"name": "Cote d Ivoire", "code": "CI"},
+                {"name": "Djibouti", "code": "DJ"},
+                {"name": "Egypt", "code": "EG"},
+                {"name": "Equatorial Guinea", "code": "GQ"},
+                {"name": "Eritrea", "code": "ER"},
+                {"name": "Ethiopia", "code": "ET"},
+                {"name": "Gabon", "code": "GH"},
+                {"name": "Ghana", "code": "GH"},
+                {"name": "Guinea", "code": "GN"},
+                {"name": "Guinea-Bissau", "code": "GW"},
+                {"name": "Kenya", "code": "KE"},
+                {"name": "Lesotho", "code": "LS"},
+                {"name": "Liberia", "code": "LR"},
+                {"name": "Libyan Arab Jamahiriya", "code": "LY"},
+                {"name": "Madagascar", "code": "MG"},
+                {"name": "Malawi", "code": "MW"},
+                {"name": "Malaysia", "code": "MY"},
+                {"name": "Mali", "code": "ML"},
+                {"name": "Mauritania", "code": "MR"},
+                {"name": "Mauritius", "code": "MU"},
+                {"name": "Morocco", "code": "MA"},
+                {"name": "Namibia", "code": "NA"},
+                {"name": "Niger", "code": "NE"},
+                {"name": "Nigeria", "code": "NG"},
+                {"name": "RWANDA", "code": "RW"},
+                {"name": "Sao Tome and Principe", "code": "ST"},
+                {"name": "Senegal", "code": "SN"},
+                {"name": "Seychelles", "code": "SC"},
+                {"name": "Sierra Leone", "code": "SL"},
+                {"name": "Somalia", "code": "SO"},
+                {"name": "South Africa", "code": "ZA"},
+                {"name": "Sudan", "code": "SD"},
+                {"name": "Swaziland", "code": "SZ"},
+                {"name": "Tanzania, United Republic of", "code": "TZ"},
+                {"name": "Togo", "code": "TG"},
+                {"name": "Trinidad and Tobago", "code": "TT"},
+                {"name": "Tunisia", "code": "TN"},
+                {"name": "Uganda", "code": "UG"},
+                {"name": "Western Sahara", "code": "EH"},
+                {"name": "Zambia", "code": "ZM"},
+                {"name": "Zimbabwe", "code": "ZW"}
+            ];
+        };
+    })
+    .service("multiStepHelper",[function () {
+        this.validationOnLoad = function (list_length) {
+            var params = {};
+            if(list_length &gt; 0){
+                params.show_form  = false;
+                params.exitValidation = true;
+            } else {
+                params.show_form  = true;
+                params.edit = false;
+                params.exitValidation = false;
+            }
+            return params;
+        };
+        this.validationAfterSave = function () {
+            var params = {};
+            params.select_values  = {};
+            params.show_form = false;
+            params.exitValidation = true;
+            return params;
+        };
+        this.uiSetupCreate = function (params) {
+            params.edit = false;
+            params.select_values = {};
+            params.show_form = !params.show_form;
+            return params;
+        };
+&nbsp;
+        this.uiSetupEdit = function (item,params) {
+            params.edit = true;
+            if(params.show_form !== true){
+                params.show_form = !params.show_form;
+            }
+            params.select_values  = {
+                program: {
+                        "id": item.program,
+                        "name": item.program_name
+                    }
+                };
+            return params;
+        };
+&nbsp;
+        this.uiSetupEditUser = function (item,params) {
+            params.edit = true;
+            if(params.show_form !== true){
+                params.show_form = !params.show_form;
+            }
+            params.select_values  = {
+                user: {
+                        "id": item.user,
+                        "first_name": item.first_name,
+                        "last_name": item.last_name
+                    }
+                };
+            return params;
+        };
+    }]);
+&nbsp;
+})(window.angular);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Dec 18 2015 12:53:37 GMT+0300 (EAT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

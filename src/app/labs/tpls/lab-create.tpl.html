@@ -1,0 +1,34 @@
+<div class="content-header">
+   <h2 class="content-title">
+        <span class="main-title"><i class="fa fa-plus-circle"></i> Add Lab</span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+
+<div class="content-body">
+    <div class="col-xs-12 content-card margin-t-20 margin-b-20">
+        <wizard on-finish="finishedWizard()" template="labs/tpls/labs-wizard-create.tpl.html">
+            <wz-step title="Lab Details">
+                <form>
+                    <input class="btn btn-primary" type="submit" wz-next value="Lab Programs" />
+                </form>
+            </wz-step>
+            <wz-step title="Lab Programs">
+                <input class="btn btn-primary" type="submit" wz-previous value="Lab Details" />
+                <input class="btn btn-primary pull-right" type="submit" wz-next value="Lab Users" />
+            </wz-step>
+            <wz-step title="Lab Users">
+                <input class="btn btn-primary" type="submit" wz-previous value="Lab Programs" />
+                <input class="btn btn-primary pull-right" type="submit" wz-next value="Lab Contacts" />
+            </wz-step>
+            <wz-step title="Lab Contacts">
+                <input class="btn btn-primary" type="submit" wz-previous value="Lab Users" />
+                <input class="btn btn-primary pull-right" type="submit" wz-next value="Finish" />
+            </wz-step>
+        </wizard>
+    </div>
+</div>

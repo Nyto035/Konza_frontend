@@ -1,0 +1,23 @@
+<div class="card-title col-xs-12 pad-t-5 pad-b-5">
+    <h3 class="text-purple margin-t-10 lato-light">
+        <span class="fa-stack fa-lg fs-17 text-purple pad-l-3 col-md-4">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
+        </span>
+        &nbsp;
+        <span class="fs-20 margin-t-3 col-md-11 pad-r-0">
+            {{lab_program.program_name}}
+            <span class="pull-right">
+                <a class="btn btn-danger btn-sm fs-13 fw-500" ng-if="enrolled" ui-sref="results.programs.reverse_enrollment">
+                    Reverse Enrollment
+                </a>
+            </span>
+        </span>
+    </h3>
+</div>
+<div class="fx-fade-up fx-speed-200 col-xs-12" ui-view="delete"></div>
+<div class="col-xs-12 margin-t-10" ng-if="errors">
+    <drf-err-msg2></drf-err-msg2>
+</div>
+<div class="fx-fade-up fx-speed-500 side-card col-xs-12 pad-0 bg-gray" ui-view="nested-view"></div>
+<div class="col-xs-12" style="bottom: 0; height: 40px;"></div>

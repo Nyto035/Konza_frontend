@@ -1,0 +1,43 @@
+<div class="content-header">
+    <div class="action-container content-header-extra pad-r-20">
+        <a ng-if="edit_view" tooltip-placement="bottom" tooltip="Delete Sample Type" class="action-btn action-btn-md action-btn-default" ui-sref="dashboard.sample_types.add_sample_type">
+            <i class="fa fa-trash text-danger"></i>
+        </a>
+   </div>
+   <h2 class="content-title">
+        <span class="main-title">
+          <i class="fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}"></i> {{edit_view ? 'Edit' : 'Add'}} Sample Type
+        </span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+<div class="col-xs-12">
+    <div ui-view="delete"></div>
+    <div class="col-xs-12">
+      <form name="sample_type_frm"  ng-submit="save(sample_type_frm)" novalidate>
+        <div class="fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card">
+          <drf-err-msg></drf-err-msg>
+            <div class="col-sm-12 margin-t-20 margin-b-20">
+              <div class="form-group">
+                  <label class="control-label">Name<span class="text-danger">&#42;</span></label>
+                  <input class="form-control" name="name" ng-model="sample_type.name" required placeholder="Name" api-checker/>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="active" name="active" ng-model="sample_type.active" tooltip="Check if sample type is not retired" api-checker >
+                    Active
+                   </label>
+              </div>
+              <div class="pull-left col-sm-12 pad-0 margin-t-10 margin-b-20">
+                <button class="btn btn-primary">Save</button>
+                <a class="margin-l-10 btn btn-default margin-l-5" ui-sref="dashboard.sample_types">Cancel</a>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="content-header">
+    <div class="action-container content-header-extra pad-r-20">
+        <a ng-if="edit_view" tooltip-placement="bottom" tooltip="Delete Category" class="action-btn action-btn-md action-btn-default" ui-sref="dashboard.analytes.add_analyte">
+            <i class="fa fa-trash text-danger"></i>
+        </a>
+   </div>
+   <h2 class="content-title">
+        <span class="main-title">
+          <i class="fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}"></i> {{edit_view ? 'Edit' : 'Add'}} Analyte
+        </span>
+   </h2>
+</div>
+<div class="content-control">
+    <!--breadcrumb-->
+    <div ncy-breadcrumb></div>
+    <!--/breadcrumb-->
+</div>
+<div class="col-xs-12">
+    <div ui-view="delete"></div>
+    <div class="col-xs-12">
+      <form name="analyte_frm"  ng-submit="save(analyte_frm)" novalidate>
+        <div class="fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card">
+          <drf-err-msg></drf-err-msg>
+            <div class="col-sm-12 margin-t-20 margin-b-20">
+              <div class="form-group">
+                  <label class="control-label">Name<span class="text-danger">&#42;</span></label>
+                  <input class="form-control" name="name" ng-model="analyte.name" required placeholder="Name" api-checker/>
+              </div>
+              <div class="form-group">
+                  <label class="">
+                      Program <span class="text-danger">&#42;</span>
+                  </label>
+                  <select class="form-control" name="program" ng-model="analyte.program" api-checker required>
+                      <option value="" disabled>Select Program</option>
+                      <option ng-repeat="program in programs" ng-selected="{{program.id == analyte.program}}" value="{{program.id}}">{{program.name}}</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label class="">
+                      Units <span class="text-danger">&#42;</span>
+                  </label>
+                  <select class="form-control" name="units" ng-model="analyte.unit" api-checker required>
+                      <option value="" disabled>Select Unit</option>
+                      <option ng-repeat="unit in units" ng-selected="{{unit.id == analyte.unit}}" value="{{unit.id}}">{{unit.name}}</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label class="control-label">Coefficient of Variation</label>
+                  <input class="form-control" name="cv" ng-model="analyte.cv" placeholder="Coefficient of Variation" api-checker/>
+              </div>
+              <div class="form-group">
+                  <label class="control-label">Description</label>
+                  <textarea class="form-control" name="description" ng-model="analyte.description" placeholder="Description" rows="2" api-checker></textarea>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="active" name="active" ng-model="analyte.active" tooltip="Check if analyte is not retired" api-checker >
+                    Active
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_quantitative" name="is_quantitative" ng-model="analyte.is_quantitative" api-checker >
+                    Quantitative
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_multi_response" name="is_multi_response" ng-model="analyte.is_multi_response"
+                    api-checker >
+                    Multiresponse
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_parasitology" name="is_parasitology" ng-model="analyte.is_parasitology" api-checker >
+                    Parasitology
+                   </label>
+              </div>
+              <div class="form-group checkbox">
+                  <label>
+                    <input type="checkbox" id="is_bacteriology" name="is_bacteriology" ng-model="analyte.is_bacteriology" api-checker >
+                    Bacteriology
+                   </label>
+              </div>
+
+            </div>
+        </div>
+        <!-- TODO add sample overide Add multiresponse options depending on multiresponse selection -->
+        <div class="pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20">
+          <button class="btn btn-primary">Save</button>
+          <a class="margin-l-10 btn btn-default margin-l-5" ui-sref="dashboard.analytes">Cancel</a>
+        </div>
+      </form>
+    </div>
+</div>
