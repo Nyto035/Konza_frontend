@@ -23,7 +23,7 @@
                     controller : "huqas.dashboard.controllers.main",
                     templateUrl : "dashboard/tpls/lab_dashboard.tpl.html"
                 },
-                "header@dashboard": {
+                "title@dashboard": {
                     controller: "huqas.common.controllers.header",
                     templateUrl: "common/tpls/header.tpl.html"
                 }
