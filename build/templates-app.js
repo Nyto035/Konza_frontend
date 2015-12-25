@@ -206,11 +206,58 @@ angular.module("common/tpls/header-no-login.tpl.html", []).run(["$templateCache"
 
 angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("common/tpls/header.tpl.html",
-    "<!-- Begining of bootstrap header -->\n" +
-    "<nav class=\"header border-nav text-white navbar navbar-default\">\n" +
-    "  <div class=\"\">\n" +
+    "<nav class=\"header navbar navbar-default navbar-fixed-top\">\n" +
+    "  <div class=\"container-fluid\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
-    "    <div class=\"navbar-header\">\n" +
+    "    <div class=\"navbar-header margin-t--10\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <a class=\"navbar-brand\" ui-sref=\"dashboard\"><img class=\"\" src=\"assets/images/Konza_Techno_City_Logo.png\" width=\"80px\" height=\"60px\" alt=\"logo\"></a>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n" +
+    "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
+    "        <li class=\"active\"><a href=\"#\">Link <span class=\"sr-only\">(current)</span></a></li>\n" +
+    "        <li><a href=\"#\">Link</a></li>\n" +
+    "        <li class=\"dropdown\">\n" +
+    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
+    "          <ul class=\"dropdown-menu\">\n" +
+    "            <li><a href=\"#\">Action</a></li>\n" +
+    "            <li><a href=\"#\">Another action</a></li>\n" +
+    "            <li><a href=\"#\">Something else here</a></li>\n" +
+    "            <li role=\"separator\" class=\"divider\"></li>\n" +
+    "            <li><a href=\"#\">Separated link</a></li>\n" +
+    "            <li role=\"separator\" class=\"divider\"></li>\n" +
+    "            <li><a href=\"#\">One more separated link</a></li>\n" +
+    "          </ul>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
+    "        <li><a href=\"#\">Link</a></li>\n" +
+    "        <li class=\"dropdown\">\n" +
+    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
+    "          <ul class=\"dropdown-menu\">\n" +
+    "            <li><a href=\"#\">Action</a></li>\n" +
+    "            <li><a href=\"#\">Another action</a></li>\n" +
+    "            <li><a href=\"#\">Something else here</a></li>\n" +
+    "            <li role=\"separator\" class=\"divider\"></li>\n" +
+    "            <li><a href=\"#\">Separated link</a></li>\n" +
+    "          </ul>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "    </div><!-- /.navbar-collapse -->\n" +
+    "  </div><!-- /.container-fluid -->\n" +
+    "</nav>\n" +
+    "<!-- Begining of bootstrap header -->\n" +
+    "<!-- <nav class=\"header border-nav text-white navbar navbar-default navbar-fixed-top\">\n" +
+    "  <div class=\"\"> -->\n" +
+    "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
+    " <!--    <div class=\"navbar-header\">\n" +
     "      <button id=\"expand_main_menu\" type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#links\">\n" +
     "        <span class=\"sr-only\">Toggle navigation</span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
@@ -218,10 +265,10 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
     "      <a class=\"navbar-brand\" ui-sref=\"dashboard\"><img class=\"w100\" src=\"assets/images/logo.png\" alt=\"logo\"></a>\n" +
-    "    </div>\n" +
+    "    </div> -->\n" +
     "\n" +
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
-    "    <div class=\"collapse navbar-collapse\" id=\"links\">\n" +
+    "    <!-- <div class=\"collapse navbar-collapse\" id=\"links\">\n" +
     "      <ul class=\"nav navbar-nav navbar-left header-color\">\n" +
     "        <li ui-sref-active=\"active\">\n" +
     "          <a ui-sref=\"dashboard\">Home</a>\n" +
@@ -250,7 +297,6 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right header-color\">\n" +
     "          <li class=\"dropdown\">\n" +
-    "          <!-- <div class=\"profile-nav\"> -->\n" +
     "            <a href class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n" +
     "              <span class=\"profile-username text-center\"><i class=\"fa fa-user\"></i> {{user.first_name}} {{user.last_name}}</span>\n" +
     "              <span class=\"fa fa-angle-down\"></span>\n" +
@@ -259,15 +305,14 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "              <li><a ui-sref=\"profile.basic\"><i class=\"fa fa-cog\"></i> Profile</a></li>\n" +
     "              <li><a ui-sref=\"logout\" ><i class=\"fa fa-sign-out\"></i> Log Out</a></li>\n" +
     "            </ul>\n" +
-    "          <!-- </div> -->\n" +
     "          </li>\n" +
     "          <li ui-sref-active=\"active\" >\n" +
     "              <a ui-sref=\"about\" id=\"about\">Help</a>\n" +
     "          </li>\n" +
     "      </ul>\n" +
-    "    </div><!-- /.navbar-collapse -->\n" +
-    "  </div><!-- /.container-fluid -->\n" +
-    "</nav>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav> -->\n" +
     "<!-- End of bootstrap header -->\n" +
     "");
 }]);
@@ -410,6 +455,9 @@ angular.module("dashboard/tpls/dashboard_menu.tpl.html", []).run(["$templateCach
     "   <h2 class=\"content-title\">\n" +
     "        <span class=\"main-title\">\n" +
     "            <i class=\"fa fa-dashboard\"></i> Dashboard\n" +
+    "            <span class=\"pull-right\" title=\"Hide/show advanced search\" sidebar-toogle=\"#search_frm_div\">\n" +
+    "                <i class=\"fa fa-chevron-circle-left text-primary menu-toggle-btn\"></i>\n" +
+    "            </span>\n" +
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
@@ -421,7 +469,7 @@ angular.module("dashboard/tpls/dashboard_menu.tpl.html", []).run(["$templateCach
     "<div class=\"col-xs-12 margin-t-30\">\n" +
     "\n" +
     "    <!-- Test event menu -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\">\n" +
+    "    <div class=\"col-md-6 col-xs-12\" id=\"search_frm_div\">\n" +
     "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
     "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
     "                <h1 class=\"fs-22 text-purple margin-t-10 lato-light\">\n" +
@@ -792,337 +840,229 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "   <h2 class=\"content-title\">\n" +
     "        <span class=\"main-title\">\n" +
     "            <i class=\"fa fa-dashboard\"></i> Dashboard\n" +
+    "            <span class=\"pull-right\" title=\"Hide/show advanced search\" sidebar-toogle=\"#search_frm_div\">\n" +
+    "                <i class=\"fa fa-chevron-circle-left text-primary menu-toggle-btn\"></i>\n" +
+    "            </span>\n" +
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <drf-err-msg></drf-err-msg>\n" +
-    "    </div>\n" +
-    "    <!-- PT Scheme information -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-10 pad-b-10\">\n" +
-    "                <h1 class=\"fs-20 text-purple margin-t-10 lato-light\">\n" +
-    "                    PT Scheme Information\n" +
+    "<div class=\"row\">\n" +
+    "    <div class=\"facilities-img col-xs-12 pad-0\">\n" +
+    "        <div class=\"bg-overlay col-xs-12 pad-0\">\n" +
+    "            <div class=\"col-md-10 col-md-offset-1 text-center margin-t-70\">\n" +
+    "                <h1 class=\"text-white fs-40 lato-light\">\n" +
+    "                    The Platform that connects Inventors to Investors,\n" +
+    "                    <br>\n" +
+    "                    looking to invest in the next <span class=\"text-green\">big thing</span>.\n" +
     "                </h1>\n" +
-    "            </div>\n" +
-    "            <ul class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5 col-xs-12 pad-0\" ui-sref=\"dashboard.events\">\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
+    "                <div class=\"col-xs-12 margin-t-70\">\n" +
+    "                    <div class=\"col-md-5\">\n" +
+    "                        <div class=\"col-md-6 pad-t-20\">\n" +
+    "                            <span class=\"fa-stack fa-lg fs-50 text-white pad-l-3 col-md-12 pull-right\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-user fa-stack-1x fa-inverse text-niceblue\"></i>\n" +
+    "                            </span>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-md-6 pad-t-20\">\n" +
+    "                            <div class=\"bubble fs-16\">\n" +
+    "                                I am an Inventor\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-2 pad-t-20\">\n" +
+    "                        <span class=\"col-xs-12 fs-18 text-white\">\n" +
+    "                            Connected\n" +
     "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            HUQAS PT Scheme Design & Implementation\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            HUQAS Quality Statement\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "              </li>\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5 col-xs-12 pad-0\" ui-sref=\"dashboard.events\">\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Statement of Confidentiality\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Sample Preparation & Homogeneity\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "              </li>\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5 col-xs-12 pad-0\" ui-sref=\"dashboard.events\">\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Participant Sample Handling Guide\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Subcontracted Activities\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "              </li>\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5 col-xs-12 pad-0\" ui-sref=\"dashboard.events\">\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Procedures for Statistical Analysis\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Report Interpretation Guide\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "              </li>\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5 col-xs-12 pad-0\" ui-sref=\"dashboard.events\">\n" +
-    "                <div class=\"col-xs-6 pad-t-5 pad-r-0\">\n" +
-    "                    <a ui-sref=\"dashboard\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-18 pad-l-3 col-md-4\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        &nbsp;\n" +
-    "                        <span class=\"fs-15 margin-b-0 col-md-8 pad-r-0 fw-600\">\n" +
-    "                            Laboratory User System Guide\n" +
-    "                        </span>\n" +
-    "                    </a>\n" +
-    "                </div>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
-    "    <!-- End of PT Scheme information -->\n" +
-    "    <!-- Test event dates -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-5 pad-b-5\">\n" +
-    "                <h1 class=\"fs-20 text-purple margin-t-10 lato-light\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-20 text-purple pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-calendar fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;\n" +
-    "                    <span class=\"fs-22 margin-t-5 col-md-8\">\n" +
-    "                        PT Scheme Calendar 2015\n" +
-    "                    </span>\n" +
-    "                </h1>\n" +
-    "            </div>\n" +
-    "            <ul class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.events\">\n" +
-    "                <span class=\"fs-16 text-purple margin-b-0 col-md-8 col-xs-7 pad-0 lato-light fw-500\">\n" +
-    "                    {{test_event.name}}\n" +
-    "                </span>\n" +
-    "                <span class=\"col-md-4 col-xs-5 text-right pad-0\">\n" +
-    "                    <span class=\"label label-primary fs-12\">\n" +
-    "                        {{test_event.sample_dispatch_date | date : 'mediumDate'}}\n" +
-    "                    </span>\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-0\">\n" +
-    "                    Sample Shipment\n" +
-    "                </span>\n" +
-    "              </li>\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.events\">\n" +
-    "                <span class=\"fs-16 margin-b-0 col-md-8 col-xs-7 lato-light fw-500 text-purple pad-0\">\n" +
-    "                    {{test_event.name}}\n" +
-    "                </span>\n" +
-    "                <span class=\"col-md-4 col-xs-5 text-right pad-0\">\n" +
-    "                    <span class=\"label label-primary fs-12\">\n" +
-    "                        {{test_event.start_date | date : 'mediumDate'}}\n" +
-    "                    </span>\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-0\">\n" +
-    "                    Event Opening\n" +
-    "                </span>\n" +
-    "              </li>\n" +
+    "                        <span class=\"col-xs-12\">\n" +
+    "                            <i class=\"stretch fs-30 text-niceblue fa fa-arrows-h\"></i>\n" +
     "\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.events\">\n" +
-    "                <span class=\"fs-16 text-purple lato-light fw-500 margin-b-0 col-md-8 col-xs-7 pad-0\">\n" +
-    "                    {{test_event.name}}\n" +
-    "                </span>\n" +
-    "                <span class=\"col-md-4 col-xs-5 text-right pad-0\">\n" +
-    "                    <span class=\"label label-primary fs-12\">\n" +
-    "                        {{test_event.end_date | date : 'mediumDate'}}\n" +
-    "                    </span>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-5\">\n" +
+    "                        <div class=\"col-md-6 pad-t-20\">\n" +
+    "                            <div class=\"bubble bubble--alt fs-18\">\n" +
+    "                                I am an Investor\n" +
+    "                            </div>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-md-6 pad-t-20\">\n" +
+    "                            <span class=\"fa-stack fa-lg fs-50 text-white pad-l-3 col-md-4\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-user-secret fa-stack-1x fa-inverse text-niceblue\"></i>\n" +
+    "                            </span>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-md-12 margin-t-30\">\n" +
+    "                    <a href=\"\" class=\"btn btn-success btn-lg\">\n" +
+    "                        Sign In\n" +
+    "                    </a>\n" +
+    "                    <a href=\"\" class=\"btn btn-default btn-lg\">\n" +
+    "                        Sign Up\n" +
+    "                    </a>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-xs-12 margin-b-50\">\n" +
+    "        <div class=\"col-md-12 margin-t-30\">\n" +
+    "            <h2 class=\"fs-35 fw-700 text-center\">\n" +
+    "                <span class=\"text-dark-green lato-light\">\n" +
+    "                    Get Access to Funds\n" +
     "                </span>\n" +
     "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-0\">\n" +
-    "                    Event Close\n" +
+    "                <span class=\"fs-30 lato-light fw-600\">\n" +
+    "                    Join us now and receive funds for that next big idea.\n" +
     "                </span>\n" +
-    "              </li>\n" +
-    "\n" +
-    "              <li class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.events\">\n" +
-    "                <span class=\"fs-16 text-purple lato-light fw-500 margin-b-0 col-md-8 col-xs-7 pad-0\">\n" +
-    "                    {{test_event.name}}\n" +
-    "                </span>\n" +
-    "                <span class=\"col-md-4 col-xs-5 text-right pad-0\">\n" +
-    "                    <span class=\"label label-primary fs-12\">\n" +
-    "                        {{test_event.expected_report_date | date : 'mediumDate'}}\n" +
-    "                    </span>\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-0\">\n" +
-    "                    Expected Test Report Release\n" +
-    "                </span>\n" +
-    "              </li>\n" +
-    "            </ul>\n" +
+    "            </h2>\n" +
     "        </div>\n" +
-    "    </div>\n" +
-    "    <!-- End of Test event dates -->\n" +
-    "    <div class=\"clearfix visible-md visible-lg hidden-sm hidden-xs margin-t-20 margin-b-20\"></div>\n" +
-    "    <!-- Results status -->\n" +
-    "    <div class=\"col-lg-6 col-md-12 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-0 pad-r-0 pad-t-5 pad-b-5 margin-b-5\">\n" +
-    "                <h1 class=\"fs-20 text-purple margin-t-10 lato-light\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-20 text-purple pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-clipboard fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;\n" +
-    "                    <span class=\"fs-20 margin-t-5 col-md-8\">\n" +
-    "                        Result Submission Status {{test_event.name}}\n" +
-    "                    </span>\n" +
-    "                </h1>\n" +
+    "        <div class=\"col-xs-12\">\n" +
+    "            <div class=\"card-container col-xs-12 margin-t-10 pad-l-0 pad-r-0\">\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0\">\n" +
+    "                    <div class=\"col-md-4\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-6 pull-left\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-users fa-stack-1x fa-inverse fs-26\"></i>\n" +
+    "                        </span>\n" +
+    "                        <span class=\"col-md-10 pad-t-0\">\n" +
+    "                            <h4 class=\"lato-ligt fs-22 fw-600 lato-light margin-b-10\">\n" +
+    "                                Become a member\n" +
+    "                            </h4>\n" +
+    "                            <p class=\"lato-light fs-16 margin-t-5\">\n" +
+    "                            Sign up inorder to enjoy some of our worthwhile opportunities.\n" +
+    "                            </p>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-4\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-6 pull-left\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-comments fa-stack-1x fa-inverse\"></i>\n" +
+    "                        </span>\n" +
+    "                        <span class=\"col-md-10 pad-t-0\">\n" +
+    "                            <h4 class=\"lato-ligt fs-22 fw-600 lato-light margin-b-10\">\n" +
+    "                                Share your Big Idea\n" +
+    "                            </h4>\n" +
+    "                            <p class=\"lato-light fs-16 margin-t-5\">\n" +
+    "                            Login and share your next big idea and showcase your company profile.\n" +
+    "                            </p>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-4\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-6 pull-left\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-link fa-stack-1x fa-inverse fs-26\"></i>\n" +
+    "                        </span>\n" +
+    "                        <span class=\"col-md-10 pad-t-0\">\n" +
+    "                            <h4 class=\"lato-ligt fs-22 fw-600 lato-light margin-b-10\">\n" +
+    "                                Link Up with Investors\n" +
+    "                            </h4>\n" +
+    "                            <p class=\"lato-light fs-16 margin-t-5\">\n" +
+    "                            Login and share your next big idea and showcase your company profile.\n" +
+    "                            </p>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
     "            </div>\n" +
-    "            <table class=\"table table-condensed table-hover table-fixed pad-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "                <thead>\n" +
-    "                    <tr class=\"col-xs-12 pad-0\">\n" +
-    "                        <th class=\"col-md-4 col-xs-4 fs-14\">Program</th>\n" +
-    "                        <th class=\"col-md-2 col-xs-2 text-center fs-14\">Total</th>\n" +
-    "                        <th class=\"col-md-2 col-xs-2 text-center fs-14\">Pending</th>\n" +
-    "                        <th class=\"col-md-2 col-xs-2 text-center fs-14\">Submitted</th>\n" +
-    "                        <th class=\"col-md-2 col-xs-2 text-center\">\n" +
-    "                            <span class=\"fs-14 visible-lg\">% Submitted</span>\n" +
-    "                            <span class=\"fs-14 visible-md\">% Submitted</span>\n" +
-    "                            <span class=\"fs-14 hidden-lg hidden-md\">% Submitted</span>\n" +
-    "                        </th>\n" +
-    "                    </tr>\n" +
-    "                </thead>\n" +
-    "                <tbody>\n" +
-    "                    <tr class=\"col-xs-12 bg-white pad-l-0 pad-r-0\" ng-repeat=\"program in lab_programs\">\n" +
-    "                        <td class=\"col-md-4 col-xs-4 fs-15 lato-light fw-600\">\n" +
-    "                            <a ui-sref=\"results.programs({program_id : program.id})\">{{program.program_name}}\n" +
-    "                            </a>\n" +
-    "                        </td>\n" +
-    "                        <td class=\"col-md-2 col-xs-2 text-center fs-15\">\n" +
-    "                            <i class=\"fa fa-minus fs-13\"></i>\n" +
-    "                        </td>\n" +
-    "                        <td class=\"col-md-2 col-xs-2 text-center fs-15\">\n" +
-    "                            <i class=\"fa fa-minus fs-13\"></i>\n" +
-    "                        </td>\n" +
-    "                        <td class=\"col-md-2 col-xs-2 text-center fs-15\">\n" +
-    "                            <i class=\"fa fa-minus fs-13\"></i>\n" +
-    "                        </td>\n" +
-    "                        <td class=\"col-md-2 col-xs-2 text-center fs-15\">\n" +
-    "                            <i class=\"fa fa-minus fs-13\"></i>\n" +
-    "                        </td>\n" +
-    "                    </tr>\n" +
-    "                </tbody>\n" +
-    "            </table>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <!-- End of Result status -->\n" +
-    "     <!-- Lab program status -->\n" +
-    "    <div class=\"col-lg-6 col-md-12 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-0 pad-r-0 pad-t-5 pad-b-5 margin-b-5\">\n" +
-    "                <h1 class=\"fs-20 text-purple margin-t-10 lato-light\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-20 text-purple pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-book fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;\n" +
-    "                    <span class=\"fs-20 margin-t-5 col-md-8\">\n" +
-    "                        Participation & Account Status\n" +
-    "                    </span>\n" +
-    "                </h1>\n" +
+    "    <div class=\"col-xs-12 pad-0\">\n" +
+    "        <section class=\"parallax parallax-demo\">\n" +
+    "          <div class=\"col-xs-12 margin-t-50\">\n" +
+    "            <h1 class=\"text-white lato-light fs-30\">Start your own company</h1>\n" +
+    "          </div>\n" +
+    "        </section>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-xs-12 margin-t-30 margin-b-20\">\n" +
+    "        <div class=\"col-xs-12\">\n" +
+    "            <div class=\"col-md-7\" style=\"border-right: 1px solid #e0e0e0;\">\n" +
+    "                <h4 class=\"lato-light text-dark-green fs-26\">\n" +
+    "                    Procedure\n" +
+    "                </h4>\n" +
+    "                <ul class=\"timeline\">\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge\"><i class=\"fa fa-check\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"glyphicon glyphicon-time\"></i> 11 hours ago via Twitter</small></p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-credit-card\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-save\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
+    "                          <hr>\n" +
+    "                          <div class=\"btn-group\">\n" +
+    "                            <button type=\"button\" class=\"btn btn-primary btn-sm dropdown-toggle\" data-toggle=\"dropdown\">\n" +
+    "                              <i class=\"glyphicon glyphicon-cog\"></i> <span class=\"caret\"></span>\n" +
+    "                            </button>\n" +
+    "                            <ul class=\"dropdown-menu\" role=\"menu\">\n" +
+    "                              <li><a href=\"#\">Action</a></li>\n" +
+    "                              <li><a href=\"#\">Another action</a></li>\n" +
+    "                              <li><a href=\"#\">Something else here</a></li>\n" +
+    "                              <li class=\"divider\"></li>\n" +
+    "                              <li><a href=\"#\">Separated link</a></li>\n" +
+    "                            </ul>\n" +
+    "                          </div>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge success\"><i class=\"fa fa-thumbs-up\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
     "            </div>\n" +
-    "            <table class=\"table table-condensed table-hover table-fixed pad-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "                <thead class=\"grey-header\">\n" +
-    "                    <th class=\"col-xs-5 fs-15\">Program</th>\n" +
-    "                    <th class=\"col-xs-2 text-center fs-15\">Report Only</th>\n" +
-    "                    <th class=\"col-xs-3 text-center fs-15\">Valid Upto</th>\n" +
-    "                    <th class=\"col-xs-2 text-center fs-15\">Fully Paid</th>\n" +
-    "                </thead>\n" +
-    "                <tr class=\"col-xs-12 bg-white pad-l-0 pad-r-0\" ng-repeat=\"lab_prog in lab_programs\">\n" +
-    "                    <td class=\"col-xs-5 fs-15\">\n" +
-    "                        {{lab_prog.program_name}}\n" +
-    "                    </td>\n" +
-    "                    <td class=\"col-xs-2 text-center\">\n" +
-    "                        <span ng-if=\"lab_prog.report_only\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
+    "            <div class=\"col-md-5\">\n" +
+    "                <div class=\"col-xs-12 margin-b-20\">\n" +
+    "                    <h4 class=\"lato-light text-dark-green fs-26\">\n" +
+    "                        Required Documents\n" +
+    "                    </h4>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 content-card\">\n" +
+    "                    <div class=\"col-md-2 text-center\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-4\">\n" +
     "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-26\"></i>\n" +
     "                        </span>\n" +
-    "                        <span ng-if=\"!lab_prog.report_only\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                    </td>\n" +
-    "                    <td class=\"col-xs-3 text-center\">\n" +
-    "                        <span class=\"label label-primary fs-12\">\n" +
-    "                            {{lab_prog.valid_to | date : 'mediumDate'}}\n" +
-    "                        </span>\n" +
-    "                    </td>\n" +
-    "                    <td class=\"col-xs-2 text-center\">\n" +
-    "                        <span ng-if=\"lab_prog.is_fully_paid\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                        <span ng-if=\"!lab_prog.is_fully_paid\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                        </span>\n" +
-    "                    </td>\n" +
-    "                </tr>\n" +
-    "            </table>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-10 pad-l-0\">\n" +
+    "                        <h4 class=\"lato-ligt fs-20 fw-600 lato-light margin-b-10\">\n" +
+    "                            Memorandum of Association\n" +
+    "                        </h4>\n" +
+    "                        <p class=\"lato-light fs-16 margin-t-5\">\n" +
+    "                        Sign up inorder to enjoy some of our worthwhile opportunities.\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <!-- End of lab program status -->\n" +
     "</div>\n" +
     "");
 }]);
@@ -1130,7 +1070,7 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
 angular.module("dashboard/tpls/main.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("dashboard/tpls/main.tpl.html",
     "<section class=\"section row\">\n" +
-    "  <div ui-view=\"header\"></div>\n" +
+    "  <div ui-view=\"title\"></div>\n" +
     "  <div class=\"content fade-content\" ui-view=\"grid-view\" ng-if=\"loggedInUser.is_staff\"></div>\n" +
     "  <div class=\"content fade-content\" ui-view=\"lab-view\" ng-if=\"!loggedInUser.is_staff\"></div>\n" +
     "</section>\n" +

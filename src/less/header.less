@@ -1,13 +1,14 @@
 /*Adds the header's theme */
 .header {
-position: relative;
+/*position: relative;*/
 padding: 0 0px;
 display: block;
 height: 60px;
-background: @header-color;
+background: #FFFFFF;
 color: #fff !important;
 border-bottom: 1px solid 221E53;
 z-index: 1000;
+box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .header-brand {
     float: left;
@@ -41,6 +42,7 @@ color: #fff;
 .navbar {
     margin-bottom: -8px !important;
     border-radius: 0px;
+    min-height : 70px !important;
 }
 .navbar-default {
     border-color: transparent;
@@ -60,15 +62,18 @@ color: #fff;
     color: @header-item-color;
 }
 .navbar-nav > li:hover > a {
-    color: @white !important;
+    color: #00796B !important;
+    background-color: #FFFFFF;
 }
 
 .navbar-nav > li:hover > a:active {
-    color: @header-item-color;
+    /*color: @header-item-color;*/
+    color : #2196F3;
+    background-color: #FFFFFF !important;
 }
 .navbar-nav > li:hover, .navbar-nav > li:active {
-    background-color: @header-item-color !important;
-    border-bottom: solid 3px #ddd;
+    /*background-color: @header-item-color !important;*/
+    border-bottom: solid 3px #00796B;
      -webkit-transition: border-bottom 70ms ease-out 70ms;
     -moz-transition: border-bottom 70ms ease-out 70ms;
     -o-transition: border-bottom 70ms ease-out 70ms;
@@ -77,7 +82,12 @@ color: #fff;
 
 .navbar-nav > li:focus,.navbar-default .navbar-nav > .active > a {
     color: @header-item-color !important;
-    background-color: @huqas-light !important;
+    background-color: #FFFFFF !important;
+    border-bottom: solid 3px #009688;
+    -webkit-transition: border-bottom 70ms ease-out 70ms;
+    -moz-transition: border-bottom 70ms ease-out 70ms;
+    -o-transition: border-bottom 70ms ease-out 70ms;
+    transition: border-bottom 70ms ease-out 70ms;
     -webkit-transition: background-color 70ms ease-out 70ms;
     -moz-transition: background-color 70ms ease-out 70ms;
     -o-transition: background-color 70ms ease-out 70ms;
@@ -100,7 +110,8 @@ color: #fff;
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: @header-item-color !important;
-    background-color: @huqas-light !important;
+    background-color: #FFFFFF !important;
+    border-bottom: solid 3px #009688;
 }
 
 .inner-nav{
@@ -129,7 +140,7 @@ color: #fff;
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: white;
-    background-color: @huqas-dark;
+    background-color: #009688;
 }
 /*This makes the main navbar collapse from 1199px solution for users such as national admin whose navabar break*/
 @grid-float-breakpoint:     @screen-sm-max;
