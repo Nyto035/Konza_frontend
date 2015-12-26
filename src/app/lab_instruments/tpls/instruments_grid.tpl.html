@@ -10,13 +10,43 @@
         </span>
    </h2>
 </div>
-<div class="content-control">
-    <!--breadcrumb-->
-    <div ncy-breadcrumb></div>
-    <!--/breadcrumb-->
+<div class="col-xs-12 pad-0">
+    <section class="parallax parallax-demo-two">
+      <div class="col-xs-12 margin-t-50">
+        <h1 class="text-white lato-light fs-30">Checkout our showcases of potential investments opportunities</h1>
+      </div>
+    </section>
 </div>
-<div class="col-xs-12 margin-t-30">
-    <div class="col-xs-12">
-        <sil-grid template="lab_instruments/tpls/instruments_list.tpl.html" grid-for="events" api-key="lab_instruments" data="lab_instruments" filters="filters" error="alert"></sil-grid>
+<div class="col-xs-12 margin-t-30 pad-0">
+    <div class="col-md-4">
+        <div class="col-xs-12 content-card">
+            <div class="form-group">
+                <label class="conrol-label">Indusry</label>
+                <select class="form-control" ng-model="lab_program.query">
+                    <option value="" disabled>Select Industry</option>
+                    <option ng-repeat="program in programs" ng-selected="{{program.id == analyte.program}}" value="{{program.id}}">{{program.name}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="conrol-label">Town</label>
+                <select class="form-control" ng-model="lab_program.query">
+                    <option value="" disabled>Select Town</option>
+                    <option ng-repeat="program in programs" ng-selected="{{program.id == analyte.program}}" value="{{program.id}}">{{program.name}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="col-xs-12 content-card">
+            <div class="col-xs-12">
+                <div class="form-group input-group">
+                    <span class="white-addon input-group-addon" id="basic-addon1">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <input class="white-input form-control" ng-model="lab_program.query" placeholder="Search Organizaions">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<div ui-view="footer"></div>

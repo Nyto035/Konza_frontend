@@ -8228,7 +8228,7 @@ td.is-hidden {
   padding-top: 14px !important;
   padding-bottom: 19px !important;
   background-color: #ffffff;
-  color: #7b2577;
+  color: #388e3c;
 }
 .navbar-nav > li:hover > a {
   color: #00796B !important;
@@ -8250,7 +8250,7 @@ td.is-hidden {
 }
 .navbar-nav > li:focus,
 .navbar-default .navbar-nav > .active > a {
-  color: #7b2577 !important;
+  color: #388e3c !important;
   background-color: #FFFFFF !important;
   border-bottom: solid 3px #009688;
   -webkit-transition: border-bottom 70ms ease-out 70ms;
@@ -8275,12 +8275,12 @@ td.is-hidden {
 }
 .navbar-nav > li:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #8f2b8a;
+  color: #3fa044;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #7b2577 !important;
+  color: #388e3c !important;
   background-color: #FFFFFF !important;
   border-bottom: solid 3px #009688;
 }
@@ -8304,7 +8304,7 @@ td.is-hidden {
   padding-bottom: 10px;
 }
 .border-nav {
-  border-bottom: 1px solid #7b2577;
+  border-bottom: 1px solid #388e3c;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -10377,7 +10377,7 @@ section.parallax h1 {
   color: #fff;
   position: relative;
   z-index: 101;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.5;
   font-weight: 700;
   text-align: center;
@@ -10385,6 +10385,10 @@ section.parallax h1 {
 }
 section.parallax.parallax-demo {
   background-image: url("images/konza-city-1170x757.jpg");
+  background-position: 100% 100%;
+}
+section.parallax.parallax-demo-two {
+  background-image: url("images/konza1.jpg");
   background-position: 100% 100%;
 }
 /*body classes*/
@@ -12892,6 +12896,9 @@ margin-20 {
 .fs-30 {
   font-size: 30px;
 }
+.fs-28 {
+  font-size: 28px;
+}
 .fs-26 {
   font-size: 26px;
 }
@@ -13097,10 +13104,11 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  background-color: #212121;
-  color: #bdc3c7;
+  height: 140px;
+  background-color: #f4f4f6;
+  color: #666666;
   z-index: 1000;
+  border-top: 1px solid #e0e0e0;
 }
 @media (min-width: 768px) {
   .navbar {

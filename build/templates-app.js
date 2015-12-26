@@ -1,4 +1,4 @@
-angular.module('templates-app', ['auth/tpls/login.tpl.html', 'auth/tpls/reset_pwd.tpl.html', 'auth/tpls/reset_pwd_confirm.tpl.html', 'common/tpls/403.tpl.html', 'common/tpls/about.tpl.html', 'common/tpls/del-pop.tpl.html', 'common/tpls/delete.tpl.html', 'common/tpls/header-no-login.tpl.html', 'common/tpls/header.tpl.html', 'common/tpls/list.assignment.tpl.html', 'common/tpls/main.tpl.html', 'common/tpls/revision.grid.tpl.html', 'common/tpls/revision.list.tpl.html', 'common/tpls/statemodal.tpl.html', 'dashboard/tpls/dashboard_menu.tpl.html', 'dashboard/tpls/lab_dashboard.tpl.html', 'dashboard/tpls/main.tpl.html', 'events/tpls/events_form.tpl.html', 'events/tpls/events_grid.tpl.html', 'events/tpls/events_list.tpl.html', 'events/tpls/main.tpl.html', 'lab_instruments/tpls/instruments_form.tpl.html', 'lab_instruments/tpls/instruments_grid.tpl.html', 'lab_instruments/tpls/instruments_list.tpl.html', 'lab_programs/tpls/lab-program-edit.tpl.html', 'lab_programs/tpls/lab-programs-grid.tpl.html', 'lab_programs/tpls/main.tpl.html', 'labs/tpls/lab-contacts.tpl.html', 'labs/tpls/lab-create.tpl.html', 'labs/tpls/lab-details.tpl.html', 'labs/tpls/lab-edit.tpl.html', 'labs/tpls/lab-programs.tpl.html', 'labs/tpls/lab-users.tpl.html', 'labs/tpls/labs-grid.tpl.html', 'labs/tpls/labs-list.tpl.html', 'labs/tpls/labs-wizard-create.tpl.html', 'reports/tpls/main.tpl.html', 'results/tpls/confirm_subscription.tpl.html', 'results/tpls/main.tpl.html', 'results/tpls/nested_content.tpl.html', 'results/tpls/program_samples.tpl.html', 'results/tpls/programs.tpl.html', 'results/tpls/quantitative_results.tpl.html', 'results/tpls/reverse_enrollment.tpl.html', 'setup/tpls/analyte/analyte_setup.tpl.html', 'setup/tpls/analyte/analytes_form.tpl.html', 'setup/tpls/analyte/analytes_grid.tpl.html', 'setup/tpls/analyte/analytes_list.tpl.html', 'setup/tpls/analyte/manufacturers_form.tpl.html', 'setup/tpls/analyte/manufacturers_grid.tpl.html', 'setup/tpls/analyte/manufacturers_list.tpl.html', 'setup/tpls/analyte/methods_form.tpl.html', 'setup/tpls/analyte/methods_grid.tpl.html', 'setup/tpls/analyte/methods_list.tpl.html', 'setup/tpls/analyte/reagents_form.tpl.html', 'setup/tpls/analyte/reagents_grid.tpl.html', 'setup/tpls/analyte/reagents_list.tpl.html', 'setup/tpls/categories/categories_form.tpl.html', 'setup/tpls/categories/categories_grid.tpl.html', 'setup/tpls/categories/categories_list.tpl.html', 'setup/tpls/categories/program_categories.tpl.html', 'setup/tpls/coa/coa_grid.tpl.html', 'setup/tpls/drugs/drugs_form.tpl.html', 'setup/tpls/drugs/drugs_grid.tpl.html', 'setup/tpls/drugs/drugs_list.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_form.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_grid.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html', 'setup/tpls/instruments/instruments_form.tpl.html', 'setup/tpls/instruments/instruments_grid.tpl.html', 'setup/tpls/instruments/instruments_list.tpl.html', 'setup/tpls/programs/programs_form.tpl.html', 'setup/tpls/programs/programs_grid.tpl.html', 'setup/tpls/programs/programs_list.tpl.html', 'setup/tpls/result_codes/result_codes_form.tpl.html', 'setup/tpls/result_codes/result_codes_grid.tpl.html', 'setup/tpls/result_codes/result_codes_list.tpl.html', 'setup/tpls/sample/sample_setup.tpl.html', 'setup/tpls/sample/sample_types_form.tpl.html', 'setup/tpls/sample/sample_types_grid.tpl.html', 'setup/tpls/sample/sample_types_list.tpl.html', 'setup/tpls/sample/samples_form.tpl.html', 'setup/tpls/sample/samples_grid.tpl.html', 'setup/tpls/sample/samples_list.tpl.html', 'setup/tpls/units/units_form.tpl.html', 'setup/tpls/units/units_grid.tpl.html', 'setup/tpls/units/units_list.tpl.html', 'users/tpls/main.tpl.html', 'users/tpls/user-edit.tpl.html', 'users/tpls/users-grid.tpl.html', 'users/tpls/users-list.tpl.html']);
+angular.module('templates-app', ['auth/tpls/login.tpl.html', 'auth/tpls/reset_pwd.tpl.html', 'auth/tpls/reset_pwd_confirm.tpl.html', 'common/tpls/403.tpl.html', 'common/tpls/about.tpl.html', 'common/tpls/del-pop.tpl.html', 'common/tpls/delete.tpl.html', 'common/tpls/footer.tpl.html', 'common/tpls/header-no-login.tpl.html', 'common/tpls/header.tpl.html', 'common/tpls/list.assignment.tpl.html', 'common/tpls/main.tpl.html', 'common/tpls/revision.grid.tpl.html', 'common/tpls/revision.list.tpl.html', 'common/tpls/statemodal.tpl.html', 'dashboard/tpls/dashboard_menu.tpl.html', 'dashboard/tpls/lab_dashboard.tpl.html', 'dashboard/tpls/main.tpl.html', 'events/tpls/events_form.tpl.html', 'events/tpls/events_grid.tpl.html', 'events/tpls/events_list.tpl.html', 'events/tpls/main.tpl.html', 'lab_instruments/tpls/instruments_form.tpl.html', 'lab_instruments/tpls/instruments_grid.tpl.html', 'lab_instruments/tpls/instruments_list.tpl.html', 'lab_programs/tpls/lab-program-edit.tpl.html', 'lab_programs/tpls/lab-programs-grid.tpl.html', 'lab_programs/tpls/main.tpl.html', 'labs/tpls/lab-contacts.tpl.html', 'labs/tpls/lab-create.tpl.html', 'labs/tpls/lab-details.tpl.html', 'labs/tpls/lab-edit.tpl.html', 'labs/tpls/lab-programs.tpl.html', 'labs/tpls/lab-users.tpl.html', 'labs/tpls/labs-grid.tpl.html', 'labs/tpls/labs-list.tpl.html', 'labs/tpls/labs-wizard-create.tpl.html', 'reports/tpls/main.tpl.html', 'results/tpls/confirm_subscription.tpl.html', 'results/tpls/main.tpl.html', 'results/tpls/nested_content.tpl.html', 'results/tpls/program_samples.tpl.html', 'results/tpls/programs.tpl.html', 'results/tpls/quantitative_results.tpl.html', 'results/tpls/reverse_enrollment.tpl.html', 'setup/tpls/analyte/analyte_setup.tpl.html', 'setup/tpls/analyte/analytes_form.tpl.html', 'setup/tpls/analyte/analytes_grid.tpl.html', 'setup/tpls/analyte/analytes_list.tpl.html', 'setup/tpls/analyte/manufacturers_form.tpl.html', 'setup/tpls/analyte/manufacturers_grid.tpl.html', 'setup/tpls/analyte/manufacturers_list.tpl.html', 'setup/tpls/analyte/methods_form.tpl.html', 'setup/tpls/analyte/methods_grid.tpl.html', 'setup/tpls/analyte/methods_list.tpl.html', 'setup/tpls/analyte/reagents_form.tpl.html', 'setup/tpls/analyte/reagents_grid.tpl.html', 'setup/tpls/analyte/reagents_list.tpl.html', 'setup/tpls/categories/categories_form.tpl.html', 'setup/tpls/categories/categories_grid.tpl.html', 'setup/tpls/categories/categories_list.tpl.html', 'setup/tpls/categories/program_categories.tpl.html', 'setup/tpls/coa/coa_grid.tpl.html', 'setup/tpls/drugs/drugs_form.tpl.html', 'setup/tpls/drugs/drugs_grid.tpl.html', 'setup/tpls/drugs/drugs_list.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_form.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_grid.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html', 'setup/tpls/instruments/instruments_form.tpl.html', 'setup/tpls/instruments/instruments_grid.tpl.html', 'setup/tpls/instruments/instruments_list.tpl.html', 'setup/tpls/programs/programs_form.tpl.html', 'setup/tpls/programs/programs_grid.tpl.html', 'setup/tpls/programs/programs_list.tpl.html', 'setup/tpls/result_codes/result_codes_form.tpl.html', 'setup/tpls/result_codes/result_codes_grid.tpl.html', 'setup/tpls/result_codes/result_codes_list.tpl.html', 'setup/tpls/sample/sample_setup.tpl.html', 'setup/tpls/sample/sample_types_form.tpl.html', 'setup/tpls/sample/sample_types_grid.tpl.html', 'setup/tpls/sample/sample_types_list.tpl.html', 'setup/tpls/sample/samples_form.tpl.html', 'setup/tpls/sample/samples_grid.tpl.html', 'setup/tpls/sample/samples_list.tpl.html', 'setup/tpls/units/units_form.tpl.html', 'setup/tpls/units/units_grid.tpl.html', 'setup/tpls/units/units_list.tpl.html', 'users/tpls/main.tpl.html', 'users/tpls/user-edit.tpl.html', 'users/tpls/users-grid.tpl.html', 'users/tpls/users-list.tpl.html']);
 
 angular.module("auth/tpls/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("auth/tpls/login.tpl.html",
@@ -177,6 +177,44 @@ angular.module("common/tpls/delete.tpl.html", []).run(["$templateCache", functio
     "");
 }]);
 
+angular.module("common/tpls/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("common/tpls/footer.tpl.html",
+    "<footer>\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "       <div class=\"row margin-10\">\n" +
+    "            <div class=\"col-md-4\"></div>\n" +
+    "            <div class=\"col-md-4 text-center\">\n" +
+    "            <div class=\"col-md-8 col-md-offset-2\">\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-facebook fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-twitter fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-google-plus fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-linkedin fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "            </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-md-4\"></div>\n" +
+    "            <div class=\"col-xs-12 text-center\">\n" +
+    "                <p class=\"text-center margin-t-10\">\n" +
+    "                   <a href=\"\">Powered by Yitchouse</a>\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "       </div>\n" +
+    "    </div>\n" +
+    "</footer>\n" +
+    "");
+}]);
+
 angular.module("common/tpls/header-no-login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("common/tpls/header-no-login.tpl.html",
     "<!-- Begining of bootstrap header -->\n" +
@@ -222,8 +260,8 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n" +
     "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
-    "        <li class=\"active\"><a href=\"#\">Link <span class=\"sr-only\">(current)</span></a></li>\n" +
-    "        <li><a href=\"#\">Link</a></li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"dashboard\">Home</a></li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"lab_instruments\">Showcase</a></li>\n" +
     "        <li class=\"dropdown\">\n" +
     "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
     "          <ul class=\"dropdown-menu\">\n" +
@@ -234,19 +272,6 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "            <li><a href=\"#\">Separated link</a></li>\n" +
     "            <li role=\"separator\" class=\"divider\"></li>\n" +
     "            <li><a href=\"#\">One more separated link</a></li>\n" +
-    "          </ul>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
-    "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
-    "        <li><a href=\"#\">Link</a></li>\n" +
-    "        <li class=\"dropdown\">\n" +
-    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
-    "          <ul class=\"dropdown-menu\">\n" +
-    "            <li><a href=\"#\">Action</a></li>\n" +
-    "            <li><a href=\"#\">Another action</a></li>\n" +
-    "            <li><a href=\"#\">Something else here</a></li>\n" +
-    "            <li role=\"separator\" class=\"divider\"></li>\n" +
-    "            <li><a href=\"#\">Separated link</a></li>\n" +
     "          </ul>\n" +
     "        </li>\n" +
     "      </ul>\n" +
@@ -979,60 +1004,99 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "                </h4>\n" +
     "                <ul class=\"timeline\">\n" +
     "                    <li>\n" +
-    "                      <div class=\"timeline-badge\"><i class=\"fa fa-check\"></i></div>\n" +
+    "                      <div class=\"timeline-badge\"><i class=\"fa fa-search\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
-    "                          <p><small class=\"text-muted\"><i class=\"glyphicon glyphicon-time\"></i> 11 hours ago via Twitter</small></p>\n" +
+    "                          <h4 class=\"timeline-title\">Name Search</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                          <p>Write a letter to the registrar reserving your name. If the name is not in use it is accepted by the registrar and reserved for 30 days</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li class=\"timeline-inverted\">\n" +
-    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-credit-card\"></i></div>\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-file-text\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Prepare Memorandum and Article of Association and Statement of Nominal Capital</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                          <p>The following documents objectives, rules, stakeholders and authorised share capital of a company. These are prepared by an advocate</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li>\n" +
-    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-save\"></i></div>\n" +
+    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-credit-card\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Pay Stump Duty</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
-    "                          <hr>\n" +
-    "                          <div class=\"btn-group\">\n" +
-    "                            <button type=\"button\" class=\"btn btn-primary btn-sm dropdown-toggle\" data-toggle=\"dropdown\">\n" +
-    "                              <i class=\"glyphicon glyphicon-cog\"></i> <span class=\"caret\"></span>\n" +
-    "                            </button>\n" +
-    "                            <ul class=\"dropdown-menu\" role=\"menu\">\n" +
-    "                              <li><a href=\"#\">Action</a></li>\n" +
-    "                              <li><a href=\"#\">Another action</a></li>\n" +
-    "                              <li><a href=\"#\">Something else here</a></li>\n" +
-    "                              <li class=\"divider\"></li>\n" +
-    "                              <li><a href=\"#\">Separated link</a></li>\n" +
-    "                            </ul>\n" +
-    "                          </div>\n" +
+    "                          <p>The amount of money that you pay depends on your declared nominal capital, but the minimum is KES. 2,140 based on the minimum nominal capital of KES. 2,000</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li class=\"timeline-inverted\">\n" +
-    "                      <div class=\"timeline-badge success\"><i class=\"fa fa-thumbs-up\"></i></div>\n" +
+    "                      <div class=\"timeline-badge success\"><i class=\"fa fa-edit\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Situation of Office Form 201</h4>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
+    "                          <p>Fill this form that notes the registered office address of the company, and to be signed by one director or the company secretary</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-edit\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">\n" +
+    "                            List of Directors Form 203\n" +
+    "                        </h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Fill this form that lists the directors and secretary of the company. This is stamped by the company secretary</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-edit\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Declaration of Compliance Form 208</h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p> Get a commissioner of oath must sign this form on your behalf</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge default\"><i class=\"fa fa-folder-open\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">\n" +
+    "                            File Documents at Registrars office\n" +
+    "                        </h4>\n" +
+    "                        <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 12 day affair</small></p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>You then need to file your documents at Companies Registry and pay the registration fee.You should receive a certificate of incorporation after a period of about 21 days</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-certificate\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Get your Company Seal</h4>\n" +
+    "                        </div>\n" +
+    "                        <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p> This is a device that embosses your company name on documents and is used as a signature of the company.It can be purchased from a stationer.</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
@@ -1040,24 +1104,74 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "            </div>\n" +
     "            <div class=\"col-md-5\">\n" +
     "                <div class=\"col-xs-12 margin-b-20\">\n" +
-    "                    <h4 class=\"lato-light text-dark-green fs-26\">\n" +
+    "                    <h4 class=\"lato-light text-dark-green fs-24\">\n" +
     "                        Required Documents\n" +
     "                    </h4>\n" +
     "                </div>\n" +
-    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 content-card\">\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
     "                    <div class=\"col-md-2 text-center\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
     "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-26\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
     "                        </span>\n" +
     "                    </div>\n" +
     "                    <div class=\"col-md-10 pad-l-0\">\n" +
-    "                        <h4 class=\"lato-ligt fs-20 fw-600 lato-light margin-b-10\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
     "                            Memorandum of Association\n" +
     "                        </h4>\n" +
-    "                        <p class=\"lato-light fs-16 margin-t-5\">\n" +
-    "                        Sign up inorder to enjoy some of our worthwhile opportunities.\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This is document defines the relationship between the company and its stakeholders.\n" +
     "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
+    "                    <div class=\"col-md-2 text-center\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-10 pad-l-0\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
+    "                            Article of Association\n" +
+    "                        </h4>\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This document that contains the purpose of the company as well as the duties and responsibilities of its members defined and recorded clearly.\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
+    "                    <div class=\"col-md-2 text-center\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-10 pad-l-0\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
+    "                            Statement of Nominal Capital\n" +
+    "                        </h4>\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This document  indicates the authorised share capital of a company.\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "\n" +
+    "                <div class=\"col-xs-12 margin-t-30 card-container \">\n" +
+    "                    <h4 class=\"lato-light fs-22 fw-600 text-dark-green margin-b-10\">\n" +
+    "                        Patent Your Idea\n" +
+    "                    </h4>\n" +
+    "                    <p class=\"margin-t-10 lato-light fw-500 fs-15\">\n" +
+    "                        Before sharing your idea on our platform make sure you have patented it. This ensures that no one else can steal your idea. One can easily patent their ideas in a simple 5 step process:\n" +
+    "                    </p>\n" +
+    "                    <div class=\"col-xs-12 pad-l-20 margin-t-10\">\n" +
+    "                        <ul class=\"fa-ul margin-t-10 lato-light fs-13\">\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>Fill in the Request Form</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>A description of the invention with at least one mode of use in concise and exact terms</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>One or more claims defining the matter for which protection is sought</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>One or more drawings (where applicable)</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>An abstract summarizing the invention’s use. No more than 150 words.</li>\n" +
+    "                        </ul>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -1071,8 +1185,8 @@ angular.module("dashboard/tpls/main.tpl.html", []).run(["$templateCache", functi
   $templateCache.put("dashboard/tpls/main.tpl.html",
     "<section class=\"section row\">\n" +
     "  <div ui-view=\"title\"></div>\n" +
-    "  <div class=\"content fade-content\" ui-view=\"grid-view\" ng-if=\"loggedInUser.is_staff\"></div>\n" +
-    "  <div class=\"content fade-content\" ui-view=\"lab-view\" ng-if=\"!loggedInUser.is_staff\"></div>\n" +
+    "  <div class=\"content fade-content\" ui-view=\"lab-view\"></div>\n" +
+    "  <div ui-view=\"footer\"></div>\n" +
     "</section>\n" +
     "");
 }]);
@@ -1366,16 +1480,46 @@ angular.module("lab_instruments/tpls/instruments_grid.tpl.html", []).run(["$temp
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
+    "<div class=\"col-xs-12 pad-0\">\n" +
+    "    <section class=\"parallax parallax-demo-two\">\n" +
+    "      <div class=\"col-xs-12 margin-t-50\">\n" +
+    "        <h1 class=\"text-white lato-light fs-30\">Checkout our showcases of potential investments opportunities</h1>\n" +
+    "      </div>\n" +
+    "    </section>\n" +
     "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"lab_instruments/tpls/instruments_list.tpl.html\" grid-for=\"events\" api-key=\"lab_instruments\" data=\"lab_instruments\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
+    "<div class=\"col-xs-12 margin-t-30 pad-0\">\n" +
+    "    <div class=\"col-md-4\">\n" +
+    "        <div class=\"col-xs-12 content-card\">\n" +
+    "            <div class=\"form-group\">\n" +
+    "                <label class=\"conrol-label\">Indusry</label>\n" +
+    "                <select class=\"form-control\" ng-model=\"lab_program.query\">\n" +
+    "                    <option value=\"\" disabled>Select Industry</option>\n" +
+    "                    <option ng-repeat=\"program in programs\" ng-selected=\"{{program.id == analyte.program}}\" value=\"{{program.id}}\">{{program.name}}</option>\n" +
+    "                </select>\n" +
+    "            </div>\n" +
+    "            <div class=\"form-group\">\n" +
+    "                <label class=\"conrol-label\">Town</label>\n" +
+    "                <select class=\"form-control\" ng-model=\"lab_program.query\">\n" +
+    "                    <option value=\"\" disabled>Select Town</option>\n" +
+    "                    <option ng-repeat=\"program in programs\" ng-selected=\"{{program.id == analyte.program}}\" value=\"{{program.id}}\">{{program.name}}</option>\n" +
+    "                </select>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-md-8\">\n" +
+    "        <div class=\"col-xs-12 content-card\">\n" +
+    "            <div class=\"col-xs-12\">\n" +
+    "                <div class=\"form-group input-group\">\n" +
+    "                    <span class=\"white-addon input-group-addon\" id=\"basic-addon1\">\n" +
+    "                      <i class=\"fa fa-search\"></i>\n" +
+    "                    </span>\n" +
+    "                    <input class=\"white-input form-control\" ng-model=\"lab_program.query\" placeholder=\"Search Organizaions\">\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +
+    "<div ui-view=\"footer\"></div>\n" +
     "");
 }]);
 
