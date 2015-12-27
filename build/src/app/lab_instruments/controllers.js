@@ -9,19 +9,12 @@
     ])
 
     .controller("huqas.lab_instruments.controllers.main", ["$scope",
-        "huqas.events.wrappers", "huqas.auth.services.login",
-        function ($scope, wrappers, loginService) {
+        "huqas.events.wrappers", "huqas.auth.services.login","konza.showcases",
+        function ($scope, wrappers, loginService, show_case) {
             /*TODO replace hardcoded code with actual lab ID*/
             $scope.loggedInUser = loginService.getUser();
-            $scope.lab_id = $scope.loggedInUser.lab_id;
-            $scope.filters = {"lab" : $scope.lab_id};
-            wrappers.lab_instruments.filter({"lab" : $scope.lab_id})
-            .success(function (data) {
-                $scope.lab_instruments = data.results;
-            })
-            .error(function (data) {
-                $scope.errors = data;
-            });
+            /*Showcases*/
+            $scope.showcases = show_case.showcases;
         }
     ])
     .controller("huqas.lab_instruments.controllers.edit_instrument", ["$scope",

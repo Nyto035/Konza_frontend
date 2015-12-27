@@ -180,7 +180,7 @@ angular.module("common/tpls/delete.tpl.html", []).run(["$templateCache", functio
 angular.module("common/tpls/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("common/tpls/footer.tpl.html",
     "<footer>\n" +
-    "    <div class=\"col-xs-12\">\n" +
+    "    <div class=\"col-xs-12 footer-border\">\n" +
     "       <div class=\"row margin-10\">\n" +
     "            <div class=\"col-md-4\"></div>\n" +
     "            <div class=\"col-md-4 text-center\">\n" +
@@ -1490,6 +1490,9 @@ angular.module("lab_instruments/tpls/instruments_grid.tpl.html", []).run(["$temp
     "<div class=\"col-xs-12 margin-t-30 pad-0\">\n" +
     "    <div class=\"col-md-4\">\n" +
     "        <div class=\"col-xs-12 content-card\">\n" +
+    "            <h4 class=\"lato-light fs-18 margin-b-10\">\n" +
+    "                Advanced Search\n" +
+    "            </h4>\n" +
     "            <div class=\"form-group\">\n" +
     "                <label class=\"conrol-label\">Indusry</label>\n" +
     "                <select class=\"form-control\" ng-model=\"lab_program.query\">\n" +
@@ -1516,6 +1519,33 @@ angular.module("lab_instruments/tpls/instruments_grid.tpl.html", []).run(["$temp
     "                    <input class=\"white-input form-control\" ng-model=\"lab_program.query\" placeholder=\"Search Organizaions\">\n" +
     "                </div>\n" +
     "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-b-10\" ng-repeat=\"case in showcases\" >\n" +
+    "                <div class=\"col-md-2 text-center pad-l-0\">\n" +
+    "                    <span class=\"fa-stack fa-lg fs-40 text-dark-green\">\n" +
+    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                      <i class=\"fa fa-building fa-stack-1x fa-inverse fs-30\"></i>\n" +
+    "                    </span>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-md-10 pad-l-0\" style=\"border-bottom: 1px solid #e0e0e0; padding-bottom: 5px;\">\n" +
+    "                    <h4 class=\"fs-18 lato-light text-dark-green margin-b-10\">\n" +
+    "                        {{case.company_name}}\n" +
+    "                    </h4>\n" +
+    "                    <div class=\"col-xs-12 pad-l-0 margin-b-10\">\n" +
+    "                        <div class=\"col-xs-6  pad-l-0\">\n" +
+    "                            <span class=\"label label-warning fs-12\">{{case.industry}}</span>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-xs-6\">\n" +
+    "                            <span class=\"pull-right\">{{case.town}} Town</span>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-xs-12 margin-t-5 lato-light pad-l-0\">\n" +
+    "                        <p class=\"lato-light fs-14\">\n" +
+    "                            {{case.overview}}\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"clearfix margin-t-10 margin-b-10\"></div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>\n" +

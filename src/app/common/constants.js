@@ -49,5 +49,33 @@
                 value : "CM"
             }
         ]
+    })
+    .constant("konza.showcases", {
+        showcases : [
+            {
+                company_name : "Yitchouse",
+                town : "Mombasa",
+                industry : "IT",
+                overview : "This is an IT company specialized with "+
+                "developing software inline with financial industry. From"+
+                "ERPs to Accounting specific software"
+            },
+            {
+                company_name : "Owaga",
+                town : "Nairobi",
+                industry : "IT",
+                overview : "This is an IT company specialized with "+
+                "developing software inline with financial industry. From "+
+                "ERPs to Accounting specific software"
+            },
+            {
+                company_name : "TMNT Limited",
+                town : "Nairobi",
+                industry : "Agricultural",
+                overview : "This is an agriculture based company specialized"+
+                    "with green houses for growing commercial plantations."+
+                    "and rearing of fish"
+            }
+        ]
     });
 })(window.angular);
