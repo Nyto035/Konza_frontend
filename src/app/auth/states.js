@@ -16,7 +16,8 @@
                         templateUrl: "auth/tpls/login.tpl.html"
                     }
                 },
-                requireUser: false
+                requireUser: false,
+                requireLogin: false
             })
 
             .state("logout", {

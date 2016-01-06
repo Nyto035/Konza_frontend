@@ -42,11 +42,15 @@
                 "body@users": {
                     controller : "huqas.users.controllers.edit",
                     templateUrl: "users/tpls/user-edit.tpl.html"
+                },
+                "footer@users.create" : {
+                    templateUrl : "common/tpls/footer.tpl.html"
                 }
             },
             ncyBreadcrumb: {
                 label: "Add User"
-            }
+            },
+            requireUser: false
         })
         .state("users.edit", {
             url : "/edit/{user_id:int}",

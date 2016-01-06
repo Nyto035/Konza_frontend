@@ -29,7 +29,9 @@
             },
             ncyBreadcrumb: {
                 label: "Dashboard"
-            }
+            },
+            requireUser: false,
+            requireLogin: false
         });
     }]);
 })(window.angular);

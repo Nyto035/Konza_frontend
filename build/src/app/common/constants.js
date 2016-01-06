@@ -53,14 +53,35 @@
     .constant("konza.showcases", {
         showcases : [
             {
+                id : 1,
                 company_name : "Yitchouse",
                 town : "Mombasa",
                 industry : "IT",
+                contacts : [
+                    {
+                        type : "phone",
+                        contact : "0719333989"
+                    },
+                    {
+                        type : "email",
+                        contact : "yitchouse@inc.io"
+                    },
+                    {
+                        type : "address",
+                        contact : "Box 80100-83931, Mombasa, White House, Moi Avenue"
+                    }
+                ],
+                idea : "This is an agriculture based company specialized"+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "and rearing of fish",
                 overview : "This is an IT company specialized with "+
                 "developing software inline with financial industry. From"+
                 "ERPs to Accounting specific software"
             },
             {
+                id : 2,
                 company_name : "Owaga",
                 town : "Nairobi",
                 industry : "IT",
@@ -69,6 +90,7 @@
                 "ERPs to Accounting specific software"
             },
             {
+                id : 3,
                 company_name : "TMNT Limited",
                 town : "Nairobi",
                 industry : "Agricultural",

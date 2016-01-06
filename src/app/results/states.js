@@ -17,7 +17,7 @@
         $stateProvider
 
         .state("results", {
-            url : "/results/:program_id",
+            url : "/crowdfunding",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"
@@ -29,6 +29,9 @@
                 "body@results": {
                     controller: "huqas.results.controllers.results",
                     templateUrl: "results/tpls/main.tpl.html"
+                },
+                "footer@results" : {
+                    templateUrl : "common/tpls/footer.tpl.html"
                 }
             },
             ncyBreadcrumb: {

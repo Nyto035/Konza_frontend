@@ -229,7 +229,7 @@
                 if (loginService.isLoggedIn()) {
                     if (toState.redirectTo) {
                         change_state(evt, toState.redirectTo, toParams);
-                    } else if (toState.requireUser === false) {
+                    } else if ((toState.requireUser === false) && (toState.requireLogin === true)) {
                         change_state(evt, HOME_PAGE_NAME);
                     } else if (toState.permission &&
                               (! permChecker.hasPermission(toState.permission))
