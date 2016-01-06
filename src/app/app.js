@@ -20,12 +20,7 @@
         "huqas.auth",
         "huqas.dashboard",
         "huqas.events",
-        "huqas.setup",
-        "huqas.labs",
         "huqas.lab_instruments",
-        "huqas.reports",
-        "huqas.results",
-        "huqas.lab_programs",
         "huqas.users",
         "jcs-autoValidate"
     ]);

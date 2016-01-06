@@ -9,7 +9,7 @@
         $stateProvider
 
         .state("lab_instruments", {
-            url : "/lab_instruments",
+            url : "/showcase",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"
@@ -21,6 +21,9 @@
                 "header@lab_instruments": {
                     controller: "huqas.common.controllers.header",
                     templateUrl: "common/tpls/header.tpl.html"
+                },
+                "footer@lab_instruments" : {
+                    templateUrl : "common/tpls/footer.tpl.html"
                 }
             },
             ncyBreadcrumb: {

@@ -28,7 +28,7 @@
     .constant("CREDENTIALS", angular.copy(window.HUQAS_SETTINGS.CREDENTIALS))
     .constant("SESSION_TIMEOUT", angular.copy(window.HUQAS_SETTINGS.TIMEOUT))
 
-    .constant("HOME_PAGE_NAME", "dashboard")
+    .constant("HOME_PAGE_NAME", "admin")
 
     .config(["loggingConfigProvider", function(loggingConfig){
         loggingConfig.LOG_TO_SERVER = false;

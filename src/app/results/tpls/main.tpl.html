@@ -3,44 +3,7 @@
         <span class="main-title"><i class="fa fa-clipboard"></i> Results</span>
    </h2>
 </div>
-<div class="content-control">
-    <!--breadcrumb-->
-    <div ncy-breadcrumb></div>
-    <!--/breadcrumb-->
-</div>
 <div class="col-xs-12 margin-t-30">
-    <div class="fade-content col-md-3 col-xs-12 pad-r-0 margin-t-10 content-card">
-        <div class="col-xs-12 category-title">
-            <h4 class="lato-light fw-500 fs-20 margin-b-10">Registered Programs</h4>
-            <div class="form-group input-group">
-                <span class="white-addon input-group-addon" id="basic-addon1">
-                  <i class="fa fa-search"></i>
-                </span>
-                <input class="white-input form-control" ng-model="lab_program.query" placeholder="Search Programs">
-            </div>
-        </div>
-        <div class="program-list col-xs-12 pad-0 margin-b-10">
-            <div class="program-item col-xs-12 pad-l-0 pad-r-0 pad-b-5 pad-t-5 fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50" ng-repeat="program in lab_programs | filter : lab_program.query" ui-sref-active="active">
-                <a class="col-xs-12 pad-l-0 pad-r-0" ui-sref="results.programs({program_id : program.id})">
-                <div class="col-md-2 col-xs-2 pad-t-3">
-                    <span class="fa-stack fa-lg fs-15 pull-right">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
-                    </span>
-                </div>
-                <div class="col-md-10 col-xs-10 margin-t-0 pad-t-3 margin-b-0 fs-15 fw-600 pad-l-0" style="font-family : 'Lato Light', sans-serif;">
-                    <span class="pad-l-0 col-md-10 col-xs-10">
-                        {{program.program_name}}
-                    </span>
-                    <span class="col-md-2 col-xs-2 pointer text-purple pad-r-0">
-                        <i class="fa fa-chevron-right"></i>
-                    </span>
-                </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="fade-content col-md-9 col-xs-12 margin-t-10 pad-0">
-        <div class="fx-fade-up fx-speed-500fx-fade-up fx-speed-500 col-xs-12 pad-0 content-card" style="border-left: 1px solid #e0e0e0;" ui-view="side-view"></div>
-    </div>
+    Crowd funding
 </div>
+<div ui-view="footer"></div>

@@ -15,10 +15,6 @@
                     controller : "huqas.dashboard.controllers.main",
                     templateUrl : "dashboard/tpls/main.tpl.html"
                 },
-                "grid-view@dashboard" : {
-                    controller : "huqas.dashboard.controllers.main",
-                    templateUrl : "dashboard/tpls/dashboard_menu.tpl.html"
-                },
                 "lab-view@dashboard" : {
                     controller : "huqas.dashboard.controllers.main",
                     templateUrl : "dashboard/tpls/lab_dashboard.tpl.html"
@@ -26,11 +22,16 @@
                 "title@dashboard": {
                     controller: "huqas.common.controllers.header",
                     templateUrl: "common/tpls/header.tpl.html"
+                },
+                "footer@dashboard": {
+                    templateUrl : "common/tpls/footer.tpl.html"
                 }
             },
             ncyBreadcrumb: {
                 label: "Dashboard"
-            }
+            },
+            requireUser: false,
+            requireLogin: false
         });
     }]);
 })(window.angular);

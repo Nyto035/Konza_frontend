@@ -1,14 +1,291 @@
-angular.module('templates-app', ['auth/tpls/login.tpl.html', 'auth/tpls/reset_pwd.tpl.html', 'auth/tpls/reset_pwd_confirm.tpl.html', 'common/tpls/403.tpl.html', 'common/tpls/about.tpl.html', 'common/tpls/del-pop.tpl.html', 'common/tpls/delete.tpl.html', 'common/tpls/header-no-login.tpl.html', 'common/tpls/header.tpl.html', 'common/tpls/list.assignment.tpl.html', 'common/tpls/main.tpl.html', 'common/tpls/revision.grid.tpl.html', 'common/tpls/revision.list.tpl.html', 'common/tpls/statemodal.tpl.html', 'dashboard/tpls/dashboard_menu.tpl.html', 'dashboard/tpls/lab_dashboard.tpl.html', 'dashboard/tpls/main.tpl.html', 'events/tpls/events_form.tpl.html', 'events/tpls/events_grid.tpl.html', 'events/tpls/events_list.tpl.html', 'events/tpls/main.tpl.html', 'lab_instruments/tpls/instruments_form.tpl.html', 'lab_instruments/tpls/instruments_grid.tpl.html', 'lab_instruments/tpls/instruments_list.tpl.html', 'lab_programs/tpls/lab-program-edit.tpl.html', 'lab_programs/tpls/lab-programs-grid.tpl.html', 'lab_programs/tpls/main.tpl.html', 'labs/tpls/lab-contacts.tpl.html', 'labs/tpls/lab-create.tpl.html', 'labs/tpls/lab-details.tpl.html', 'labs/tpls/lab-edit.tpl.html', 'labs/tpls/lab-programs.tpl.html', 'labs/tpls/lab-users.tpl.html', 'labs/tpls/labs-grid.tpl.html', 'labs/tpls/labs-list.tpl.html', 'labs/tpls/labs-wizard-create.tpl.html', 'reports/tpls/main.tpl.html', 'results/tpls/confirm_subscription.tpl.html', 'results/tpls/main.tpl.html', 'results/tpls/nested_content.tpl.html', 'results/tpls/program_samples.tpl.html', 'results/tpls/programs.tpl.html', 'results/tpls/quantitative_results.tpl.html', 'results/tpls/reverse_enrollment.tpl.html', 'setup/tpls/analyte/analyte_setup.tpl.html', 'setup/tpls/analyte/analytes_form.tpl.html', 'setup/tpls/analyte/analytes_grid.tpl.html', 'setup/tpls/analyte/analytes_list.tpl.html', 'setup/tpls/analyte/manufacturers_form.tpl.html', 'setup/tpls/analyte/manufacturers_grid.tpl.html', 'setup/tpls/analyte/manufacturers_list.tpl.html', 'setup/tpls/analyte/methods_form.tpl.html', 'setup/tpls/analyte/methods_grid.tpl.html', 'setup/tpls/analyte/methods_list.tpl.html', 'setup/tpls/analyte/reagents_form.tpl.html', 'setup/tpls/analyte/reagents_grid.tpl.html', 'setup/tpls/analyte/reagents_list.tpl.html', 'setup/tpls/categories/categories_form.tpl.html', 'setup/tpls/categories/categories_grid.tpl.html', 'setup/tpls/categories/categories_list.tpl.html', 'setup/tpls/categories/program_categories.tpl.html', 'setup/tpls/coa/coa_grid.tpl.html', 'setup/tpls/drugs/drugs_form.tpl.html', 'setup/tpls/drugs/drugs_grid.tpl.html', 'setup/tpls/drugs/drugs_list.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_form.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_grid.tpl.html', 'setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html', 'setup/tpls/instruments/instruments_form.tpl.html', 'setup/tpls/instruments/instruments_grid.tpl.html', 'setup/tpls/instruments/instruments_list.tpl.html', 'setup/tpls/programs/programs_form.tpl.html', 'setup/tpls/programs/programs_grid.tpl.html', 'setup/tpls/programs/programs_list.tpl.html', 'setup/tpls/result_codes/result_codes_form.tpl.html', 'setup/tpls/result_codes/result_codes_grid.tpl.html', 'setup/tpls/result_codes/result_codes_list.tpl.html', 'setup/tpls/sample/sample_setup.tpl.html', 'setup/tpls/sample/sample_types_form.tpl.html', 'setup/tpls/sample/sample_types_grid.tpl.html', 'setup/tpls/sample/sample_types_list.tpl.html', 'setup/tpls/sample/samples_form.tpl.html', 'setup/tpls/sample/samples_grid.tpl.html', 'setup/tpls/sample/samples_list.tpl.html', 'setup/tpls/units/units_form.tpl.html', 'setup/tpls/units/units_grid.tpl.html', 'setup/tpls/units/units_list.tpl.html', 'users/tpls/main.tpl.html', 'users/tpls/user-edit.tpl.html', 'users/tpls/users-grid.tpl.html', 'users/tpls/users-list.tpl.html']);
+angular.module('templates-app', ['admin/tpls/events_form.tpl.html', 'admin/tpls/events_grid.tpl.html', 'admin/tpls/events_list.tpl.html', 'admin/tpls/main.tpl.html', 'auth/tpls/login.tpl.html', 'auth/tpls/reset_pwd.tpl.html', 'auth/tpls/reset_pwd_confirm.tpl.html', 'common/tpls/403.tpl.html', 'common/tpls/about.tpl.html', 'common/tpls/del-pop.tpl.html', 'common/tpls/delete.tpl.html', 'common/tpls/footer.tpl.html', 'common/tpls/header-on-login.tpl.html', 'common/tpls/header.tpl.html', 'common/tpls/list.assignment.tpl.html', 'common/tpls/main.tpl.html', 'common/tpls/revision.grid.tpl.html', 'common/tpls/revision.list.tpl.html', 'common/tpls/statemodal.tpl.html', 'dashboard/tpls/lab_dashboard.tpl.html', 'dashboard/tpls/main.tpl.html', 'labs/tpls/lab-instruments/instruments_form.tpl.html', 'labs/tpls/lab-instruments/instruments_grid.tpl.html', 'labs/tpls/lab-instruments/instruments_list.tpl.html', 'labs/tpls/lab-programs/lab-program-edit.tpl.html', 'labs/tpls/lab-programs/programs_grid.tpl.html', 'labs/tpls/lab-reports/main.tpl.html', 'labs/tpls/labs/lab-contacts.tpl.html', 'labs/tpls/labs/lab-details.tpl.html', 'labs/tpls/labs/lab-edit.tpl.html', 'labs/tpls/labs/lab-programs.tpl.html', 'labs/tpls/labs/lab-users.tpl.html', 'labs/tpls/labs/labs-grid.tpl.html', 'labs/tpls/labs/labs-list.tpl.html', 'labs/tpls/labs/labs-wizard-create.tpl.html', 'results/tpls/confirm_subscription.tpl.html', 'results/tpls/main.tpl.html', 'results/tpls/nested_content.tpl.html', 'results/tpls/program_samples.tpl.html', 'results/tpls/programs.tpl.html', 'results/tpls/quantitative_results.tpl.html', 'results/tpls/reverse_enrollment.tpl.html', 'showcase/tpls/instruments_grid.tpl.html', 'users/tpls/main.tpl.html', 'users/tpls/user-edit.tpl.html', 'users/tpls/users-grid.tpl.html', 'users/tpls/users-list.tpl.html']);
+
+angular.module("admin/tpls/events_form.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("admin/tpls/events_form.tpl.html",
+    "<div class=\"content-header\">\n" +
+    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
+    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Test Event\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"event.add_event\" ui-sref-opts=\"{reload:true}\">\n" +
+    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
+    "        </a>\n" +
+    "   </div>\n" +
+    "   <h2 class=\"content-title\">\n" +
+    "        <span class=\"main-title\">\n" +
+    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Test Event\n" +
+    "        </span>\n" +
+    "   </h2>\n" +
+    "</div>\n" +
+    "<div class=\"content-control\">\n" +
+    "    <div ncy-breadcrumb></div>\n" +
+    "</div>\n" +
+    "<div class=\"col-xs-12\">\n" +
+    "    <div ui-view=\"delete\"></div>\n" +
+    "    <div class=\"col-xs-12\">\n" +
+    "      <form name=\"event_frm\"  ng-submit=\"save(event_frm)\" novalidate>\n" +
+    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
+    "          <drf-err-msg></drf-err-msg>\n" +
+    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
+    "                  <input class=\"form-control\" name=\"name\" ng-model=\"an_event.name\" required placeholder=\"Name\" api-checker/>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label for=\"sample dispatch date\" class=\"control-label\">\n" +
+    "                      <span class=\"fs-14\">Sample Dispatch Date <span class=\"text-danger\">&#42;</span>: {{an_event.sample_dispatch_date | date}}</span>\n" +
+    "                  </label>\n" +
+    "                  <datepicker date-format=\"y-MM-dd\">\n" +
+    "                    <input class=\"form-control margin-b-10\" name=\"sample_dispatch_date\" ng-model=\"an_event.sample_dispatch_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
+    "                  </datepicker>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label for=\"start date\" class=\"control-label\">\n" +
+    "                      <span class=\"fs-14\">Start Date <span class=\"text-danger\">&#42;</span>: {{an_event.start_date | date}}</span>\n" +
+    "                  </label>\n" +
+    "                  <datepicker date-format=\"y-MM-dd\">\n" +
+    "                    <input class=\"form-control  margin-b-10\" name=\"start_date\" ng-model=\"an_event.start_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
+    "                  </datepicker>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label for=\"end date\" class=\"control-label\">\n" +
+    "                      <span class=\"fs-14\">End Date <span class=\"text-danger\">&#42;</span>: {{an_event.end_date | date}}</span>\n" +
+    "                  </label>\n" +
+    "                  <datepicker date-format=\"y-MM-dd\">\n" +
+    "                    <input class=\"form-control margin-b-10\" name=\"end_date\" ng-model=\"an_event.end_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
+    "                  </datepicker>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label for=\"expected report date\" class=\"control-label\">\n" +
+    "                      <span class=\"fs-14\">Expected Report Date <span class=\"text-danger\">&#42;</span>: {{an_event.expected_report_date | date}}</span>\n" +
+    "                  </label>\n" +
+    "                  <datepicker date-format=\"y-MM-dd\">\n" +
+    "                    <input class=\"form-control margin-b-10\" name=\"expected_report_date\" ng-model=\"an_event.expected_report_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
+    "                  </datepicker>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group\">\n" +
+    "                  <label class=\"control-label\">Description</label>\n" +
+    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"an_event.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
+    "              </div>\n" +
+    "              <div class=\"form-group checkbox\">\n" +
+    "                  <label>\n" +
+    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"an_event.active\" tooltip=\"Check if Test Event is not retired\" api-checker >\n" +
+    "                    Active\n" +
+    "                   </label>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
+    "          <div class=\"col-xs-12 category-title\">\n" +
+    "                <h4 class=\"lato-light fw-500 fs-22 margin-b-10\">Programs</h4>\n" +
+    "                <div class=\"form-group input-group\">\n" +
+    "                    <span class=\"input-group-addon\" id=\"basic-addon1\">\n" +
+    "                      <i class=\"fa fa-search\"></i>\n" +
+    "                    </span>\n" +
+    "                    <input class=\"form-control\" ng-model=\"program.query\" placeholder=\"Search Programs\">\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "          <div class=\"service-list col-xs-12 pad-0 margin-b-20\">\n" +
+    "            <div class=\"service-item col-xs-12 pad-0\" ng-repeat=\"program in programs | filter : program.query\">\n" +
+    "              <div class=\"col-md-10 col-xs-8 margin-t-10 margin-b-0\">\n" +
+    "                {{program.name}}\n" +
+    "              </div>\n" +
+    "              <div class=\"col-md-2 col-xs-4 margin-t-0\">\n" +
+    "                <div class=\"form-group checkbox\">\n" +
+    "                  <label>\n" +
+    "                    <input type=\"checkbox\" id=\"selected\" name=\"selected\" ng-model=\"program.selected\" tooltip-placement=\"bottom\" tooltip=\"Check Program to add to Test Event\" api-checker ng-change=\"manageProgramEvents(program)\">\n" +
+    "                    Add\n" +
+    "                   </label>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "            </div>\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
+    "          <button class=\"btn btn-primary\">Save</button>\n" +
+    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.events\">Cancel</a>\n" +
+    "        </div>\n" +
+    "      </form>\n" +
+    "    </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("admin/tpls/events_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("admin/tpls/events_grid.tpl.html",
+    "<div class=\"content-header\">\n" +
+    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
+    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Test Event\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.events.add_event\">\n" +
+    "            <i class=\"fa fa-plus\"></i>\n" +
+    "        </a>\n" +
+    "   </div>\n" +
+    "   <h2 class=\"content-title\">\n" +
+    "        <span class=\"main-title\">\n" +
+    "        </span>\n" +
+    "   </h2>\n" +
+    "</div>\n" +
+    "<div class=\"col-xs-12 margin-t-30\">\n" +
+    "    <div class=\"col-md-10 col-md-offset-1 col-xs-12 pad-l-0 margin-b-10\">\n" +
+    "        <h2 class=\"lato-light fs-18 fw-600\">\n" +
+    "            {{user_showcase.company_name | uppercase}}\n" +
+    "        </h2>\n" +
+    "        <h4 class=\"lato-light fs-14 fw-500\">\n" +
+    "            <span class=\"text-grey\">\n" +
+    "                <i class=\"fa fa-map-marker\"></i> {{user_showcase.town}} Town, &nbsp; <i class=\"fa fa-bank\"></i> {{user_showcase.industry}} Industry\n" +
+    "            </span>\n" +
+    "        </h4>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-md-10 col-md-offset-1 col-xs-12 content-card\">\n" +
+    "        <div class=\"col-md-3 card-section pad-l-0 pad-r-0\">\n" +
+    "            <span class=\"card-bg-overlay text-center fade-content\">\n" +
+    "                <i class=\"fa fa-camera\"></i> Update Logo\n" +
+    "            </span>\n" +
+    "            <span class=\"card-img fa-stack fa-lg fs-120 text-dark-green\">\n" +
+    "              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "              <i class=\"fa fa-building fa-stack-1x fa-inverse fs-95\"></i>\n" +
+    "            </span>\n" +
+    "            <div class=\"col-xs-12 margin-t-10\">\n" +
+    "                <div class=\"col-xs-12\">\n" +
+    "                    <h4 class=\"text-left fs-18 fw-500\">Contacts</h4>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-10 pad-r-0\">\n" +
+    "                <div class=\"col-xs-12 text-left margin-b-10\" ng-repeat=\"contact in user_showcase.contacts\">\n" +
+    "                    <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'phone'\">\n" +
+    "                        <i class=\"fs-17 fa fa-phone\"></i>\n" +
+    "                    </span>\n" +
+    "                    <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'email'\">\n" +
+    "                        <i class=\"fs-17 fa fa-envelope\"></i>\n" +
+    "                    </span>\n" +
+    "                    <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'address'\">\n" +
+    "                        <i class=\"fs-17 fa fa-map-marker\"></i>\n" +
+    "                    </span>\n" +
+    "                    <span class=\"col-md-10 pad-0 fs-13 lato-light text-dark-grey\">\n" +
+    "                        {{contact.contact}}\n" +
+    "                    </span>\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-9 card-sideview\">\n" +
+    "            <div class=\"col-xs-12 margin-t-10\">\n" +
+    "                <h3 class=\"fs-20 lato-light\">\n" +
+    "                    <i class=\"fa fa-signal fs-18\"></i> &nbsp;Business Idea\n" +
+    "                    <span class=\"pull-right\">\n" +
+    "                        <i class=\"fa fa-pencil fs-20 text-dark-grey\"></i>\n" +
+    "                    </span>\n" +
+    "                </h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-20\">\n" +
+    "                <p class=\"fs-14 text-dark-grey\">\n" +
+    "                    {{user_showcase.idea}}\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-30\">\n" +
+    "                <h3 class=\"fs-20 lato-light\">\n" +
+    "                    <i class=\"fa fa-suitcase fs-18\"></i> &nbsp;Showcase\n" +
+    "                    <span class=\"pull-right\">\n" +
+    "                        <i class=\"fa fa-pencil fs-20 text-dark-grey\"></i>\n" +
+    "                    </span>\n" +
+    "                </h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-20\">\n" +
+    "                <p class=\"fs-14 text-dark-grey\">\n" +
+    "                    {{user_showcase.industry}} Industry\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-5\">\n" +
+    "                <p class=\"fs-14 text-dark-grey\">\n" +
+    "                    {{user_showcase.overview}}\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-t-30 margin-b-20\">\n" +
+    "                <h3 class=\"fs-20 lato-light\">\n" +
+    "                    <i class=\"fa fa-phone fs-18\"></i> &nbsp;Contacts\n" +
+    "                    <span class=\"pull-right\">\n" +
+    "                        <i class=\"fa fa-pencil fs-20 text-dark-grey\"></i>\n" +
+    "                    </span>\n" +
+    "                </h3>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 text-left margin-b-10\">\n" +
+    "                <span class=\"col-md-2 pad-l-0\">\n" +
+    "                    Town\n" +
+    "                </span>\n" +
+    "                <span class=\"col-md-10 pad-0 fs-13 lato-light text-dark-grey\">\n" +
+    "                    {{user_showcase.town}}\n" +
+    "                </span>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 text-left margin-b-10\" ng-repeat=\"contact in user_showcase.contacts\">\n" +
+    "                <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'phone'\">\n" +
+    "                    Mobile Phone\n" +
+    "                </span>\n" +
+    "                <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'email'\">\n" +
+    "                    Email Address\n" +
+    "                </span>\n" +
+    "                <span class=\"col-md-2 pad-l-0\" ng-if=\"contact.type === 'address'\">\n" +
+    "                    Postal Address\n" +
+    "                </span>\n" +
+    "                <span class=\"col-md-10 pad-0 fs-13 lato-light text-dark-grey\">\n" +
+    "                    {{contact.contact}}\n" +
+    "                </span>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("admin/tpls/events_list.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("admin/tpls/events_list.tpl.html",
+    "<div class=\"col-xs-12 content-card\">\n" +
+    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
+    "        Test Events List\n" +
+    "    </h4>\n" +
+    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
+    "        <thead>\n" +
+    "            <tr>\n" +
+    "                <th class=\"col-md-2\">Name</th>\n" +
+    "                <th class=\"col-md-2\">Sample Dispatch Date</th>\n" +
+    "                <th class=\"col-md-2\">Start Date</th>\n" +
+    "                <th class=\"col-md-2\">End Date</th>\n" +
+    "                <th class=\"col-md-2\">Expected Report Date</th>\n" +
+    "                <th class=\"col-md-2\"></th>\n" +
+    "            </tr>\n" +
+    "        </thead>\n" +
+    "        <tbody class=\"fade-content\">\n" +
+    "            <tr  ng-repeat=\"event in events\">\n" +
+    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{event.name}}</td>\n" +
+    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Sample Dispatch Date:\" class=\"pad-t-15\">{{event.sample_dispatch_date | date : 'dd-MM-yyyy'}}</td>\n" +
+    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Start Date:\" class=\"pad-t-15\">{{event.start_date | date : 'dd-MM-yyyy'}}</td>\n" +
+    "                <td class=\"col-md-2 pad-t-15\" data-title=\"End Date:\" class=\"pad-t-15\">{{event.end_date | date : 'dd-MM-yyyy'}}</td>\n" +
+    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Expected Report Date:\" class=\"pad-t-15\">{{event.expected_report_date | date : 'dd-MM-yyyy'}}</td>\n" +
+    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
+    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.events.edit_event({event_id: event.id})\" class=\"btn btn-success\">\n" +
+    "                        <i class=\"fa fa-pencil\"></i>\n" +
+    "                    </a>\n" +
+    "                </td>\n" +
+    "            </tr>\n" +
+    "        </tbody>\n" +
+    "    </table>\n" +
+    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("admin/tpls/main.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("admin/tpls/main.tpl.html",
+    "<section class=\"section row\">\n" +
+    "   <div ui-view=\"header\"></div>\n" +
+    "    <div class=\"content fade-content\" ui-view=\"grid-view\">\n" +
+    "    </div>\n" +
+    "</section>\n" +
+    "");
+}]);
 
 angular.module("auth/tpls/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("auth/tpls/login.tpl.html",
-    "<div class=\"row login-content\">\n" +
-    "    <div class=\"bg-overlay\">\n" +
+    "<div class=\"row\">\n" +
     "        <div class=\"col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-md-offset-3 col-lg-6 col-lg-offset-3\">\n" +
-    "            <div class=\"margin-t-120 content-card col-xs-12\">\n" +
+    "            <div class=\"margin-t-120 card-container col-xs-12\">\n" +
     "                <div class=\"row title-line\">\n" +
     "                    <h2 class=\"text-center\">\n" +
-    "                        HuQAS EQA\n" +
+    "                        <a ui-sref=\"dashboard\" tooltip=\"Click to go to homepage\"><img src=\"assets/images/Konza_Techno_City_Logo.png\" width=\"120px\" height=\"100px\"></a>\n" +
     "                    </h2>\n" +
     "                </div>\n" +
     "                <div class=\"col-xs-12 col-md-10 col-md-offset-1 alert alert-info\" ng-if=\"params.reset_pwd||params.reset_pwd_confirm||params.timeout||params.change_pwd||logout\">\n" +
@@ -26,24 +303,29 @@ angular.module("auth/tpls/login.tpl.html", []).run(["$templateCache", function($
     "                </span>\n" +
     "                <form role=\"form\" class=\"pad-b-20\" name=\"frm_login\" ng-submit=\"submitUser(user)\" novalidate>\n" +
     "                    <div class=\"col-xs-12 col-sm-10 col-sm-offset-1 margin-b-20\">\n" +
-    "                        <div class=\"form-group\">\n" +
-    "                            <label class=\"control-label\" for=\"email\">Email Address</label>\n" +
-    "                            <input type=\"text\" ng-model=\"user.username\" required autofocus name=\"email\" id=\"email\" class=\"form-control\" ng-disabled=\"logout\">\n" +
+    "                        <div class=\"form-group input-group margin-b-20\">\n" +
+    "                            <span class=\"white-addon input-group-addon\" id=\"basic-addon1\">\n" +
+    "                              <i class=\"fa fa-envelope fs-16\"></i>\n" +
+    "                            </span>\n" +
+    "                            <input type=\"text\" ng-model=\"user.username\" required autofocus name=\"email\" placeholder=\"Enter your email\" id=\"email\" class=\"white-input form-control\" ng-disabled=\"logout\">\n" +
+    "                        </div>\n" +
+    "\n" +
+    "                        <div class=\"form-group input-group\">\n" +
+    "                            <span class=\"white-addon input-group-addon\" id=\"basic-addon1\">\n" +
+    "                              <i class=\"fa fa-lock fs-18\"></i>\n" +
+    "                            </span>\n" +
+    "                            <input type=\"password\" ng-model=\"user.password\" required name=\"password\" id=\"password\" class=\"white-input form-control\" placeholder=\"Enter your password\" ng-disabled=\"logout\">\n" +
     "                        </div>\n" +
     "\n" +
     "                        <div class=\"form-group\">\n" +
-    "                            <label class=\"control-label\" for=\"password\">Password</label>\n" +
-    "                            <input type=\"password\" ng-model=\"user.password\" required name=\"password\" id=\"password\" class=\"form-control\" ng-disabled=\"logout\">\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"form-group\">\n" +
-    "                            <div class=\"pull-left\">\n" +
-    "                                <button id=\"login_btn\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"spinner||login.$invalid||logout\">Login</button>\n" +
+    "                            <div class=\"pull-right\">\n" +
     "                                <span ng-if=\"spinner\" style=\"display: inline-block;\" class=\"margin-r-10 margin-t-5\">\n" +
     "                                    <i class=\"fa fa-spin fa-circle-o-notch\"></i>\n" +
     "                                </span>\n" +
+    "                                <button id=\"login_btn\" type=\"submit\" class=\"btn btn-primary\" ng-disabled=\"spinner||login.$invalid||logout\">Login</button>\n" +
+    "\n" +
     "                            </div>\n" +
-    "                            <div class=\"pull-right\">\n" +
+    "                            <div class=\"pull-left margin-t-5\">\n" +
     "                                <a ui-sref=\"reset_pwd\">Forgot password</a>\n" +
     "                            </div>\n" +
     "                        </div>\n" +
@@ -51,7 +333,6 @@ angular.module("auth/tpls/login.tpl.html", []).run(["$templateCache", function($
     "                </form>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "    </div>\n" +
     "</div>\n" +
     "");
 }]);
@@ -177,30 +458,135 @@ angular.module("common/tpls/delete.tpl.html", []).run(["$templateCache", functio
     "");
 }]);
 
-angular.module("common/tpls/header-no-login.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("common/tpls/header-no-login.tpl.html",
-    "<!-- Begining of bootstrap header -->\n" +
-    "<nav class=\"header text-white navbar navbar-default\">\n" +
-    "  <div class=\"\">\n" +
+angular.module("common/tpls/footer.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("common/tpls/footer.tpl.html",
+    "<footer>\n" +
+    "    <div class=\"col-xs-12 footer-border\">\n" +
+    "       <div class=\"row margin-10\">\n" +
+    "            <div class=\"col-md-4\"></div>\n" +
+    "            <div class=\"col-md-4 text-center\">\n" +
+    "            <div class=\"col-md-8 col-md-offset-2\">\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-facebook fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-twitter fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-google-plus fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "                <span class=\"fa-stack fa-lg fs-28 text-dark-green pad-l-3 col-md-12\">\n" +
+    "                  <i class=\"fa fa-circle-o fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-linkedin fa-stack-1x fa-inverse text-dark-green\"></i>\n" +
+    "                </span>\n" +
+    "            </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-md-4\"></div>\n" +
+    "            <div class=\"col-xs-12 text-center\">\n" +
+    "                <p class=\"text-center margin-t-10\">\n" +
+    "                   <a href=\"\">Powered by Yitchouse</a>\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "       </div>\n" +
+    "    </div>\n" +
+    "</footer>\n" +
+    "");
+}]);
+
+angular.module("common/tpls/header-on-login.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("common/tpls/header-on-login.tpl.html",
+    "<nav class=\"header navbar navbar-default navbar-fixed-top\">\n" +
+    "  <div class=\"container-fluid\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
-    "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n" +
+    "    <div class=\"navbar-header margin-t--10\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n" +
     "        <span class=\"sr-only\">Toggle navigation</span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" ui-sref=\"dashboard\">HuQAS</a>\n" +
+    "      <a class=\"navbar-brand\" ui-sref=\"dashboard\"><img class=\"\" src=\"assets/images/Konza_Techno_City_Logo.png\" width=\"80px\" height=\"60px\" alt=\"logo\"></a>\n" +
     "    </div>\n" +
     "\n" +
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n" +
-    "      <ul class=\"nav navbar-nav navbar-right header-color\">\n" +
+    "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"dashboard\">Home</a></li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"lab_instruments\">Showcase</a></li>\n" +
+    "        <li class=\"dropdown\">\n" +
+    "        <!-- <div class=\"profile-nav\"> -->\n" +
+    "          <a href class=\"dropdown-toggle\" data-toggle=\"dropdown\" style=\"padding-top: 10px !important; padding-bottom: 13px !important;\">\n" +
+    "            <span class=\"profile-username text-center\">\n" +
+    "              <span class=\"fa-stack fa-lg fs-14 text-dark-green\">\n" +
+    "                <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                <i class=\"fa fa-user fa-stack-1x fa-inverse\"></i>\n" +
+    "              </span>\n" +
+    "              {{user.first_name}} {{user.last_name}}</span>\n" +
+    "            <span class=\"fa fa-angle-down\"></span>\n" +
+    "          </a>\n" +
+    "          <ul class=\"fade-content dropdown-menu animated dropdown-width\" role=\"menu\">\n" +
+    "            <li><a ui-sref=\"profile.basic\"><i class=\"fa fa-cog\"></i> Profile</a></li>\n" +
+    "            <li><a ui-sref=\"logout\" ><i class=\"fa fa-sign-out\"></i> Log Out</a></li>\n" +
+    "          </ul>\n" +
+    "        <!-- </div> -->\n" +
+    "        </li>\n" +
+    "        <li ui-sref-active=\"active\" >\n" +
+    "            <a href title=\"Inboxs\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" style=\"padding-bottom: 12px !important;\">\n" +
+    "                <!-- <i class=\"header-menu-icon icon-only fa fa-envelope-o fs-20\"></i> -->\n" +
+    "                <span class=\"header-menu-icon icon-only fa-stack fa-lg fs-16 text-dark-green\" style=\"margin-top: -7px;\">\n" +
+    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                  <i class=\"fa fa-envelope fa-stack-1x fa-inverse fs-14\"></i>\n" +
+    "                </span>\n" +
+    "                <i class=\"not-counter\">3</i>\n" +
+    "            </a>\n" +
+    "            <ul class=\"fade-content dropdown-menu dropdown-extend pull-right\" role=\"menu\" style=\"width : 300px;\">\n" +
+    "              <li class=\"text-grey dropdown-header\" style=\"font-size: 14px; padding-bottom: 5px;\">You have 3 new messages</li><!-- /dropdown-header -->\n" +
+    "              <li class=\"notif-media\" data-toggle=\"niceScroll\" data-scroll-cursorcolor=\"#ecf0f1\" style=\"overflow: hidden; outline: none;\" tabindex=\"5001\">\n" +
+    "                  <a class=\"notif-item\" href=\"#\" style=\"padding-left: 15px;\">\n" +
+    "                      <div class=\"margin-r-10 notif-img pull-left\">\n" +
+    "                          <span class=\"fa-stack fa-lg fs-18 text-niceblue\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-user fa-stack-1x fa-inverse\"></i>\n" +
+    "                          </span>\n" +
+    "                      </div>\n" +
+    "                      <h4 class=\"lato-light fs-14 fw-600\">Account Team</h4>\n" +
+    "                      <p class=\"notif-text fs-13 text-grey margin-t-5\">Spread the Word &amp; Earn!</p>\n" +
+    "                  </a><!-- /notif-item -->\n" +
+    "                  <a class=\"notif-item\" href=\"#\" style=\"padding-left: 15px;\">\n" +
+    "                      <div class=\"margin-r-10 notif-img pull-left\">\n" +
+    "                          <span class=\"fa-stack fa-lg fs-18 text-niceblue\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-user fa-stack-1x fa-inverse\"></i>\n" +
+    "                          </span>\n" +
+    "                      </div>\n" +
+    "                      <h4 class=\"lato-light fs-14 fw-600\">Timothy Lucas</h4>\n" +
+    "                      <p class=\"notif-text fs-13 text-grey margin-t-5\">Elit odio, sed leo ligula semper,veh...</p>\n" +
+    "                  </a><!-- /notif-item -->\n" +
+    "                  <a class=\"notif-item\" href=\"#\" style=\"padding-left: 15px;\">\n" +
+    "                      <div class=\"margin-r-10 notif-img pull-left\">\n" +
+    "                          <span class=\"fa-stack fa-lg fs-18 text-niceblue\">\n" +
+    "                            <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                            <i class=\"fa fa-user fa-stack-1x fa-inverse\"></i>\n" +
+    "                          </span>\n" +
+    "                      </div>\n" +
+    "                      <h4 class=\"lato-light fs-14 fw-600\">Raymond Rios</h4>\n" +
+    "                      <p class=\"notif-text fs-13 text-grey margin-t-5\">Risus suscipit urna, tristique somet...</p>\n" +
+    "                  </a>\n" +
+    "              </li><!-- /dropdown-alert -->\n" +
+    "              <li class=\"dropdown-footer bg-cloud\">\n" +
+    "                  <a class=\"view-all\" tabindex=\"-1\" href=\"#\">\n" +
+    "                      <i class=\"fa fa-angle-right pull-right\"></i> See all messages\n" +
+    "                  </a>\n" +
+    "              </li><!-- /dropdown-footer -->\n" +
+    "          </ul>\n" +
+    "        </li>\n" +
     "      </ul>\n" +
     "    </div><!-- /.navbar-collapse -->\n" +
     "  </div><!-- /.container-fluid -->\n" +
     "</nav>\n" +
-    "<!-- End of bootstrap header -->\n" +
     "");
 }]);
 
@@ -222,98 +608,15 @@ angular.module("common/tpls/header.tpl.html", []).run(["$templateCache", functio
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n" +
     "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
-    "        <li class=\"active\"><a href=\"#\">Link <span class=\"sr-only\">(current)</span></a></li>\n" +
-    "        <li><a href=\"#\">Link</a></li>\n" +
-    "        <li class=\"dropdown\">\n" +
-    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
-    "          <ul class=\"dropdown-menu\">\n" +
-    "            <li><a href=\"#\">Action</a></li>\n" +
-    "            <li><a href=\"#\">Another action</a></li>\n" +
-    "            <li><a href=\"#\">Something else here</a></li>\n" +
-    "            <li role=\"separator\" class=\"divider\"></li>\n" +
-    "            <li><a href=\"#\">Separated link</a></li>\n" +
-    "            <li role=\"separator\" class=\"divider\"></li>\n" +
-    "            <li><a href=\"#\">One more separated link</a></li>\n" +
-    "          </ul>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
-    "      <ul class=\"nav navbar-nav navbar-right margin-t-10\">\n" +
-    "        <li><a href=\"#\">Link</a></li>\n" +
-    "        <li class=\"dropdown\">\n" +
-    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n" +
-    "          <ul class=\"dropdown-menu\">\n" +
-    "            <li><a href=\"#\">Action</a></li>\n" +
-    "            <li><a href=\"#\">Another action</a></li>\n" +
-    "            <li><a href=\"#\">Something else here</a></li>\n" +
-    "            <li role=\"separator\" class=\"divider\"></li>\n" +
-    "            <li><a href=\"#\">Separated link</a></li>\n" +
-    "          </ul>\n" +
-    "        </li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"dashboard\">Home</a></li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"lab_instruments\">Showcase</a></li>\n" +
+    "        <li ui-sref-active=\"active\"><a ui-sref=\"results\">Crowd Fund</a></li>\n" +
+    "        <li ><a href=\"\">Investment Opportunities</a></li>\n" +
+    "        <li ><a href=\"\">Projects</a></li>\n" +
     "      </ul>\n" +
     "    </div><!-- /.navbar-collapse -->\n" +
     "  </div><!-- /.container-fluid -->\n" +
     "</nav>\n" +
-    "<!-- Begining of bootstrap header -->\n" +
-    "<!-- <nav class=\"header border-nav text-white navbar navbar-default navbar-fixed-top\">\n" +
-    "  <div class=\"\"> -->\n" +
-    "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
-    " <!--    <div class=\"navbar-header\">\n" +
-    "      <button id=\"expand_main_menu\" type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#links\">\n" +
-    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "      </button>\n" +
-    "      <a class=\"navbar-brand\" ui-sref=\"dashboard\"><img class=\"w100\" src=\"assets/images/logo.png\" alt=\"logo\"></a>\n" +
-    "    </div> -->\n" +
-    "\n" +
-    "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
-    "    <!-- <div class=\"collapse navbar-collapse\" id=\"links\">\n" +
-    "      <ul class=\"nav navbar-nav navbar-left header-color\">\n" +
-    "        <li ui-sref-active=\"active\">\n" +
-    "          <a ui-sref=\"dashboard\">Home</a>\n" +
-    "        </li>\n" +
-    "         <li ui-sref-active=\"active\" ng-if=\"user.is_staff\">\n" +
-    "          <a ui-sref=\"labs\">Labs</a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\" ng-if=\"!user.is_staff\">\n" +
-    "          <a ui-sref=\"lab_instruments\">Instruments</a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\" ng-if=\"!user.is_staff\">\n" +
-    "          <a ui-sref=\"lab_programs\">Programs</a>\n" +
-    "        </li>\n" +
-    "         <li ui-sref-active=\"active\" ng-if=\"!user.is_staff\">\n" +
-    "          <a ui-sref=\"results\">Results</a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\" ng-if=\"!user.is_staff\">\n" +
-    "          <a ui-sref=\"reports\">Reports</a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\" ng-if=\"user.is_staff\">\n" +
-    "          <a ui-sref=\"coa\">COA</a>\n" +
-    "        </li>\n" +
-    "        <li ui-sref-active=\"active\" ng-if=\"user.is_staff\">\n" +
-    "          <a ui-sref=\"users\">Users</a>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
-    "      <ul class=\"nav navbar-nav navbar-right header-color\">\n" +
-    "          <li class=\"dropdown\">\n" +
-    "            <a href class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n" +
-    "              <span class=\"profile-username text-center\"><i class=\"fa fa-user\"></i> {{user.first_name}} {{user.last_name}}</span>\n" +
-    "              <span class=\"fa fa-angle-down\"></span>\n" +
-    "            </a>\n" +
-    "            <ul class=\"dropdown-menu animated dropdown-width\" role=\"menu\">\n" +
-    "              <li><a ui-sref=\"profile.basic\"><i class=\"fa fa-cog\"></i> Profile</a></li>\n" +
-    "              <li><a ui-sref=\"logout\" ><i class=\"fa fa-sign-out\"></i> Log Out</a></li>\n" +
-    "            </ul>\n" +
-    "          </li>\n" +
-    "          <li ui-sref-active=\"active\" >\n" +
-    "              <a ui-sref=\"about\" id=\"about\">Help</a>\n" +
-    "          </li>\n" +
-    "      </ul>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "</nav> -->\n" +
-    "<!-- End of bootstrap header -->\n" +
     "");
 }]);
 
@@ -449,391 +752,6 @@ angular.module("common/tpls/statemodal.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("dashboard/tpls/dashboard_menu.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("dashboard/tpls/dashboard_menu.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-dashboard\"></i> Dashboard\n" +
-    "            <span class=\"pull-right\" title=\"Hide/show advanced search\" sidebar-toogle=\"#search_frm_div\">\n" +
-    "                <i class=\"fa fa-chevron-circle-left text-primary menu-toggle-btn\"></i>\n" +
-    "            </span>\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "\n" +
-    "    <!-- Test event menu -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\" id=\"search_frm_div\">\n" +
-    "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
-    "                <h1 class=\"fs-22 text-purple margin-t-10 lato-light\">\n" +
-    "                    Test Event Setup\n" +
-    "                </h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.events\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-calendar fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;\n" +
-    "                <span class=\"fs-18 text-blue margin-b-0 col-md-8\">\n" +
-    "                    Test Events\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-20\">\n" +
-    "                    View, add & edit test events\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"events\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-link fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Events Program Sample History\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Event Program Sample History\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"programs\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-external-link fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Link Events to Analytes\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Setup analytes for different events\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
-    "    <!-- End of Test event menu -->\n" +
-    "\n" +
-    "    <!-- Analysis setup menu -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
-    "                <h1 class=\"fs-22 margin-t-10 text-purple lato-light\">\n" +
-    "                    Analysis Setup\n" +
-    "                </h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.result_codes\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-barcode fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;\n" +
-    "                <span class=\"fs-18 text-blue margin-b-0 col-md-8\">\n" +
-    "                    Result Code\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-20\">\n" +
-    "                    Manage Result Codes\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.evaluation_criteria\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-th-list fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Evaluation Criteria\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Evaluation Criteria\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"programs\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-certificate fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Certificate of Analysis\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Certificate of Analysis\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
-    "    <!-- End of test event setup menu -->\n" +
-    "    <div class=\"clearfix visible-md visible-lg hidden-sm hidden-xs margin-t-20 margin-b-20\"></div>\n" +
-    "    <!-- program setup menu -->\n" +
-    "    <div class=\"col-md-6 col-xs-12 pad-0\">\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "                <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
-    "                    <h1 class=\"fs-22 margin-t-10 text-purple lato-light\">\n" +
-    "                        Program Setup\n" +
-    "                    </h1>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.categories\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-book fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;\n" +
-    "                    <span class=\"fs-18 text-blue margin-b-0 col-md-8\">\n" +
-    "                        Categories\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"fs-14 text-black margin-l-20\">\n" +
-    "                        Manage Categories\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.programs\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-sitemap fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Programs\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        Manage Programs\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"programs\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-list-alt fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Program Samples\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        Manage Program Samples\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.analytes\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-flask fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Analyte\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        Manage Analyte\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "         <!-- Analysis setup menu -->\n" +
-    "        <div class=\"col-xs-12\">\n" +
-    "            <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "                <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
-    "                    <h1 class=\"fs-22 margin-t-10 text-purple lato-light\">\n" +
-    "                        Lab Setup\n" +
-    "                    </h1>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"result_codes\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-ticket fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;\n" +
-    "                    <span class=\"fs-18 text-blue margin-b-0 col-md-8\">\n" +
-    "                        Subscriptions\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"fs-14 text-black margin-l-20\">\n" +
-    "                        View Lab Subscriptions\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"evaluation_criteria\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-briefcase fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Enrollments\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        View Lab Enrollments\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"programs\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-clipboard fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Results\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        View Lab Results\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                  <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"programs\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-user-md fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                        Log in as Lab User\n" +
-    "                    </span>\n" +
-    "                    <br>\n" +
-    "                    <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                        Log in as Lab User to act on Lab Enrollments\n" +
-    "                    </span>\n" +
-    "                  </a>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <!-- End of Test event menu -->\n" +
-    "    </div>\n" +
-    "    <!--  -->\n" +
-    "    <!-- End of program setup menu -->\n" +
-    "    <!-- Master data menu -->\n" +
-    "    <div class=\"col-md-6 col-xs-12\">\n" +
-    "        <div class=\"col-xs-12 content-card pad-0\" style=\"border-bottom: 1px solid #e0e0e0;border-left: 1px solid #e0e0e0;\">\n" +
-    "            <div class=\"bg-white col-xs-12 pad-l-5 pad-t-15 pad-b-15\">\n" +
-    "                <h1 class=\"fs-22 margin-t-10 text-purple lato-light\">\n" +
-    "                    Master Data Setup\n" +
-    "                </h1>\n" +
-    "            </div>\n" +
-    "            <div class=\"col-xs-12 list-group pad-0 margin-b-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.manufacturers\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-building fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;\n" +
-    "                <span class=\"fs-18 text-blue margin-b-0 col-md-8\">\n" +
-    "                    Manufacturer\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"fs-14 text-black margin-l-20\">\n" +
-    "                    Manage Manufacturer\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.methods\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-server fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Methods\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Methods\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.instruments\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-sliders fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Instruments & Instrument Models\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Instruments & Instrument Models\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.units\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-superscript fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Units & Unit Conversions\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Units & Unit Conversions\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.samples\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-eyedropper fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Samples\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Samples\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.sample_types\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-pie-chart fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Sample Types\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Sample Types\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.reagents\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-database fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Reagents\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Reagents\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "              <a class=\"list-group-item fs-18 pad-t-5 pad-b-5\" ui-sref=\"dashboard.drugs\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-22 text-blue pad-l-3 col-md-4\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-medkit fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "                &nbsp;<span class=\"fs-18 text-blue col-md-8\">\n" +
-    "                    Drugs\n" +
-    "                </span>\n" +
-    "                <br>\n" +
-    "                <span class=\"margin-l-20 fs-14 text-black\">\n" +
-    "                    Manage Drugs\n" +
-    "                </span>\n" +
-    "              </a>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
-    "    <!-- End of Master data menu -->\n" +
-    "    <div class=\"clearfix visible-md visible-lg hidden-sm hidden-xs margin-t-20 margin-b-20\"></div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
 angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("dashboard/tpls/lab_dashboard.tpl.html",
     "<div class=\"content-header\">\n" +
@@ -893,10 +811,10 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"col-md-12 margin-t-30\">\n" +
-    "                    <a href=\"\" class=\"btn btn-success btn-lg\">\n" +
+    "                    <a ui-sref=\"login\" class=\"btn btn-success btn-lg\">\n" +
     "                        Sign In\n" +
     "                    </a>\n" +
-    "                    <a href=\"\" class=\"btn btn-default btn-lg\">\n" +
+    "                    <a ui-sref=\"users.create\" class=\"btn btn-default btn-lg\">\n" +
     "                        Sign Up\n" +
     "                    </a>\n" +
     "                </div>\n" +
@@ -979,60 +897,99 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "                </h4>\n" +
     "                <ul class=\"timeline\">\n" +
     "                    <li>\n" +
-    "                      <div class=\"timeline-badge\"><i class=\"fa fa-check\"></i></div>\n" +
+    "                      <div class=\"timeline-badge\"><i class=\"fa fa-search\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
-    "                          <p><small class=\"text-muted\"><i class=\"glyphicon glyphicon-time\"></i> 11 hours ago via Twitter</small></p>\n" +
+    "                          <h4 class=\"timeline-title\">Name Search</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                          <p>Write a letter to the registrar reserving your name. If the name is not in use it is accepted by the registrar and reserved for 30 days</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li class=\"timeline-inverted\">\n" +
-    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-credit-card\"></i></div>\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-file-text\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Prepare Memorandum and Article of Association and Statement of Nominal Capital</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds.</p>\n" +
+    "                          <p>The following documents objectives, rules, stakeholders and authorised share capital of a company. These are prepared by an advocate</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li>\n" +
-    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-save\"></i></div>\n" +
+    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-credit-card\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Pay Stump Duty</h4>\n" +
+    "                          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
-    "                          <hr>\n" +
-    "                          <div class=\"btn-group\">\n" +
-    "                            <button type=\"button\" class=\"btn btn-primary btn-sm dropdown-toggle\" data-toggle=\"dropdown\">\n" +
-    "                              <i class=\"glyphicon glyphicon-cog\"></i> <span class=\"caret\"></span>\n" +
-    "                            </button>\n" +
-    "                            <ul class=\"dropdown-menu\" role=\"menu\">\n" +
-    "                              <li><a href=\"#\">Action</a></li>\n" +
-    "                              <li><a href=\"#\">Another action</a></li>\n" +
-    "                              <li><a href=\"#\">Something else here</a></li>\n" +
-    "                              <li class=\"divider\"></li>\n" +
-    "                              <li><a href=\"#\">Separated link</a></li>\n" +
-    "                            </ul>\n" +
-    "                          </div>\n" +
+    "                          <p>The amount of money that you pay depends on your declared nominal capital, but the minimum is KES. 2,140 based on the minimum nominal capital of KES. 2,000</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
     "                    <li class=\"timeline-inverted\">\n" +
-    "                      <div class=\"timeline-badge success\"><i class=\"fa fa-thumbs-up\"></i></div>\n" +
+    "                      <div class=\"timeline-badge success\"><i class=\"fa fa-edit\"></i></div>\n" +
     "                      <div class=\"timeline-panel\">\n" +
     "                        <div class=\"timeline-heading\">\n" +
-    "                          <h4 class=\"timeline-title\">Mussum ipsum cacilds</h4>\n" +
+    "                          <h4 class=\"timeline-title\">Situation of Office Form 201</h4>\n" +
     "                        </div>\n" +
     "                        <div class=\"timeline-body\">\n" +
-    "                          <p>Mussum ipsum cacilds, vidis litro abertis..</p>\n" +
+    "                          <p>Fill this form that notes the registered office address of the company, and to be signed by one director or the company secretary</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-edit\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">\n" +
+    "                            List of Directors Form 203\n" +
+    "                        </h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>Fill this form that lists the directors and secretary of the company. This is stamped by the company secretary</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge info\"><i class=\"fa fa-edit\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Declaration of Compliance Form 208</h4>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p> Get a commissioner of oath must sign this form on your behalf</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li>\n" +
+    "                      <div class=\"timeline-badge default\"><i class=\"fa fa-folder-open\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">\n" +
+    "                            File Documents at Registrars office\n" +
+    "                        </h4>\n" +
+    "                        <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 12 day affair</small></p>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p>You then need to file your documents at Companies Registry and pay the registration fee.You should receive a certificate of incorporation after a period of about 21 days</p>\n" +
+    "                        </div>\n" +
+    "                      </div>\n" +
+    "                    </li>\n" +
+    "                    <li class=\"timeline-inverted\">\n" +
+    "                      <div class=\"timeline-badge warning\"><i class=\"fa fa-certificate\"></i></div>\n" +
+    "                      <div class=\"timeline-panel\">\n" +
+    "                        <div class=\"timeline-heading\">\n" +
+    "                          <h4 class=\"timeline-title\">Get your Company Seal</h4>\n" +
+    "                        </div>\n" +
+    "                        <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 1 day affair</small></p>\n" +
+    "                        <div class=\"timeline-body\">\n" +
+    "                          <p> This is a device that embosses your company name on documents and is used as a signature of the company.It can be purchased from a stationer.</p>\n" +
     "                        </div>\n" +
     "                      </div>\n" +
     "                    </li>\n" +
@@ -1040,24 +997,74 @@ angular.module("dashboard/tpls/lab_dashboard.tpl.html", []).run(["$templateCache
     "            </div>\n" +
     "            <div class=\"col-md-5\">\n" +
     "                <div class=\"col-xs-12 margin-b-20\">\n" +
-    "                    <h4 class=\"lato-light text-dark-green fs-26\">\n" +
+    "                    <h4 class=\"lato-light text-dark-green fs-24\">\n" +
     "                        Required Documents\n" +
     "                    </h4>\n" +
     "                </div>\n" +
-    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 content-card\">\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
     "                    <div class=\"col-md-2 text-center\">\n" +
-    "                        <span class=\"fa-stack fa-lg fs-30 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
     "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-26\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
     "                        </span>\n" +
     "                    </div>\n" +
     "                    <div class=\"col-md-10 pad-l-0\">\n" +
-    "                        <h4 class=\"lato-ligt fs-20 fw-600 lato-light margin-b-10\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
     "                            Memorandum of Association\n" +
     "                        </h4>\n" +
-    "                        <p class=\"lato-light fs-16 margin-t-5\">\n" +
-    "                        Sign up inorder to enjoy some of our worthwhile opportunities.\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This is document defines the relationship between the company and its stakeholders.\n" +
     "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
+    "                    <div class=\"col-md-2 text-center\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-10 pad-l-0\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
+    "                            Article of Association\n" +
+    "                        </h4>\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This document that contains the purpose of the company as well as the duties and responsibilities of its members defined and recorded clearly.\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-xs-12 pad-l-0 pad-r-0 pad-t-10 results-card\">\n" +
+    "                    <div class=\"col-md-2 text-center\">\n" +
+    "                        <span class=\"fa-stack fa-lg fs-28 text-niceblue pad-l-3 col-md-4\">\n" +
+    "                          <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                          <i class=\"fa fa-file-text fa-stack-1x fa-inverse fs-24\"></i>\n" +
+    "                        </span>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-md-10 pad-l-0\">\n" +
+    "                        <h4 class=\"lato-ligt fs-18 fw-600 lato-light margin-b-10\">\n" +
+    "                            Statement of Nominal Capital\n" +
+    "                        </h4>\n" +
+    "                        <p class=\"lato-light fs-15 margin-t-5\">\n" +
+    "                        This document  indicates the authorised share capital of a company.\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "\n" +
+    "                <div class=\"col-xs-12 margin-t-30 card-container \">\n" +
+    "                    <h4 class=\"lato-light fs-22 fw-600 text-dark-green margin-b-10\">\n" +
+    "                        Patent Your Idea\n" +
+    "                    </h4>\n" +
+    "                    <p class=\"margin-t-10 lato-light fw-500 fs-15\">\n" +
+    "                        Before sharing your idea on our platform make sure you have patented it. This ensures that no one else can steal your idea. One can easily patent their ideas in a simple 5 step process:\n" +
+    "                    </p>\n" +
+    "                    <div class=\"col-xs-12 pad-l-20 margin-t-10\">\n" +
+    "                        <ul class=\"fa-ul margin-t-10 lato-light fs-13\">\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>Fill in the Request Form</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>A description of the invention with at least one mode of use in concise and exact terms</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>One or more claims defining the matter for which protection is sought</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>One or more drawings (where applicable)</li>\n" +
+    "                          <li><i class=\"fa-li fa fa-arrow-circle-right text-niceblue\"></i>An abstract summarizing the invention’s use. No more than 150 words.</li>\n" +
+    "                        </ul>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -1071,196 +1078,14 @@ angular.module("dashboard/tpls/main.tpl.html", []).run(["$templateCache", functi
   $templateCache.put("dashboard/tpls/main.tpl.html",
     "<section class=\"section row\">\n" +
     "  <div ui-view=\"title\"></div>\n" +
-    "  <div class=\"content fade-content\" ui-view=\"grid-view\" ng-if=\"loggedInUser.is_staff\"></div>\n" +
-    "  <div class=\"content fade-content\" ui-view=\"lab-view\" ng-if=\"!loggedInUser.is_staff\"></div>\n" +
+    "  <div class=\"content fade-content\" ui-view=\"lab-view\"></div>\n" +
+    "  <div ui-view=\"footer\"></div>\n" +
     "</section>\n" +
     "");
 }]);
 
-angular.module("events/tpls/events_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("events/tpls/events_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Test Event\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"event.add_event\" ui-sref-opts=\"{reload:true}\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Test Event\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"event_frm\"  ng-submit=\"save(event_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"an_event.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label for=\"sample dispatch date\" class=\"control-label\">\n" +
-    "                      <span class=\"fs-14\">Sample Dispatch Date <span class=\"text-danger\">&#42;</span>: {{an_event.sample_dispatch_date | date}}</span>\n" +
-    "                  </label>\n" +
-    "                  <datepicker date-format=\"y-MM-dd\">\n" +
-    "                    <input class=\"form-control margin-b-10\" name=\"sample_dispatch_date\" ng-model=\"an_event.sample_dispatch_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
-    "                  </datepicker>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label for=\"start date\" class=\"control-label\">\n" +
-    "                      <span class=\"fs-14\">Start Date <span class=\"text-danger\">&#42;</span>: {{an_event.start_date | date}}</span>\n" +
-    "                  </label>\n" +
-    "                  <datepicker date-format=\"y-MM-dd\">\n" +
-    "                    <input class=\"form-control  margin-b-10\" name=\"start_date\" ng-model=\"an_event.start_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
-    "                  </datepicker>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label for=\"end date\" class=\"control-label\">\n" +
-    "                      <span class=\"fs-14\">End Date <span class=\"text-danger\">&#42;</span>: {{an_event.end_date | date}}</span>\n" +
-    "                  </label>\n" +
-    "                  <datepicker date-format=\"y-MM-dd\">\n" +
-    "                    <input class=\"form-control margin-b-10\" name=\"end_date\" ng-model=\"an_event.end_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
-    "                  </datepicker>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label for=\"expected report date\" class=\"control-label\">\n" +
-    "                      <span class=\"fs-14\">Expected Report Date <span class=\"text-danger\">&#42;</span>: {{an_event.expected_report_date | date}}</span>\n" +
-    "                  </label>\n" +
-    "                  <datepicker date-format=\"y-MM-dd\">\n" +
-    "                    <input class=\"form-control margin-b-10\" name=\"expected_report_date\" ng-model=\"an_event.expected_report_date\" type=\"text\"  placeholder=\"yy-MM-dd\" required api-checker/>\n" +
-    "                  </datepicker>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"an_event.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"an_event.active\" tooltip=\"Check if Test Event is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <div class=\"col-xs-12 category-title\">\n" +
-    "                <h4 class=\"lato-light fw-500 fs-22 margin-b-10\">Programs</h4>\n" +
-    "                <div class=\"form-group input-group\">\n" +
-    "                    <span class=\"input-group-addon\" id=\"basic-addon1\">\n" +
-    "                      <i class=\"fa fa-search\"></i>\n" +
-    "                    </span>\n" +
-    "                    <input class=\"form-control\" ng-model=\"program.query\" placeholder=\"Search Programs\">\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "          <div class=\"service-list col-xs-12 pad-0 margin-b-20\">\n" +
-    "            <div class=\"service-item col-xs-12 pad-0\" ng-repeat=\"program in programs | filter : program.query\">\n" +
-    "              <div class=\"col-md-10 col-xs-8 margin-t-10 margin-b-0\">\n" +
-    "                {{program.name}}\n" +
-    "              </div>\n" +
-    "              <div class=\"col-md-2 col-xs-4 margin-t-0\">\n" +
-    "                <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"selected\" name=\"selected\" ng-model=\"program.selected\" tooltip-placement=\"bottom\" tooltip=\"Check Program to add to Test Event\" api-checker ng-change=\"manageProgramEvents(program)\">\n" +
-    "                    Add\n" +
-    "                   </label>\n" +
-    "                </div>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "          </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.events\">Cancel</a>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("events/tpls/events_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("events/tpls/events_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Test Event\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.events.add_event\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-calendar\"></i> Test Events\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"events/tpls/events_list.tpl.html\" grid-for=\"events\" api-key=\"events\" data=\"events\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("events/tpls/events_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("events/tpls/events_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Test Events List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-2\">Name</th>\n" +
-    "                <th class=\"col-md-2\">Sample Dispatch Date</th>\n" +
-    "                <th class=\"col-md-2\">Start Date</th>\n" +
-    "                <th class=\"col-md-2\">End Date</th>\n" +
-    "                <th class=\"col-md-2\">Expected Report Date</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"event in events\">\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{event.name}}</td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Sample Dispatch Date:\" class=\"pad-t-15\">{{event.sample_dispatch_date | date : 'dd-MM-yyyy'}}</td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Start Date:\" class=\"pad-t-15\">{{event.start_date | date : 'dd-MM-yyyy'}}</td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"End Date:\" class=\"pad-t-15\">{{event.end_date | date : 'dd-MM-yyyy'}}</td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Expected Report Date:\" class=\"pad-t-15\">{{event.expected_report_date | date : 'dd-MM-yyyy'}}</td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.events.edit_event({event_id: event.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("events/tpls/main.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("events/tpls/main.tpl.html",
-    "<section class=\"section row\">\n" +
-    "   <div ui-view=\"header\"></div>\n" +
-    "    <div class=\"content fade-content\" ui-view=\"grid-view\">\n" +
-    "    </div>\n" +
-    "</section>\n" +
-    "");
-}]);
-
-angular.module("lab_instruments/tpls/instruments_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_instruments/tpls/instruments_form.tpl.html",
+angular.module("labs/tpls/lab-instruments/instruments_form.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-instruments/instruments_form.tpl.html",
     "<div class=\"content-header\">\n" +
     "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
     "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Drug\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"lab_instruments.add_instrument\">\n" +
@@ -1342,7 +1167,7 @@ angular.module("lab_instruments/tpls/instruments_form.tpl.html", []).run(["$temp
     "              </div>\n" +
     "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
     "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.samples\">Cancel</a>\n" +
+    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"labs.lab_instruments({lab_id:lab_id})\">Cancel</a>\n" +
     "              </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
@@ -1352,17 +1177,17 @@ angular.module("lab_instruments/tpls/instruments_form.tpl.html", []).run(["$temp
     "");
 }]);
 
-angular.module("lab_instruments/tpls/instruments_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_instruments/tpls/instruments_grid.tpl.html",
+angular.module("labs/tpls/lab-instruments/instruments_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-instruments/instruments_grid.tpl.html",
     "<div class=\"content-header\">\n" +
     "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Instrument\" class=\"action-btn action-btn-md action-btn-warm\" ui-sref=\"lab_instruments.add_instrument\">\n" +
+    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Instrument\" class=\"action-btn action-btn-md action-btn-primary\" ui-sref=\"labs.lab_instruments.add_instrument\">\n" +
     "            <i class=\"fa fa-plus\"></i>\n" +
     "        </a>\n" +
     "   </div>\n" +
     "   <h2 class=\"content-title\">\n" +
     "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-sliders\"></i> Lab Instruments\n" +
+    "            <i class=\"fa fa-sliders\"></i> {{::lab.name}} Lab\n" +
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
@@ -1373,14 +1198,14 @@ angular.module("lab_instruments/tpls/instruments_grid.tpl.html", []).run(["$temp
     "</div>\n" +
     "<div class=\"col-xs-12 margin-t-30\">\n" +
     "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"lab_instruments/tpls/instruments_list.tpl.html\" grid-for=\"events\" api-key=\"lab_instruments\" data=\"lab_instruments\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
+    "        <sil-grid template=\"labs/tpls/lab-instruments/instruments_list.tpl.html\" grid-for=\"events\" api-key=\"lab_instruments\" data=\"lab_instruments\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
     "    </div>\n" +
     "</div>\n" +
     "");
 }]);
 
-angular.module("lab_instruments/tpls/instruments_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_instruments/tpls/instruments_list.tpl.html",
+angular.module("labs/tpls/lab-instruments/instruments_list.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-instruments/instruments_list.tpl.html",
     "<div class=\"col-xs-12 content-card\">\n" +
     "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
     "        Registered Instruments\n" +
@@ -1397,12 +1222,12 @@ angular.module("lab_instruments/tpls/instruments_list.tpl.html", []).run(["$temp
     "        </thead>\n" +
     "        <tbody class=\"fade-content\">\n" +
     "            <tr  ng-repeat=\"instrument in lab_instruments\">\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{instrument.instrument_name}}</td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{instrument.instrument_model_name}}\n" +
+    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\">{{::instrument.instrument_name}}</td>\n" +
+    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Model:\">\n" +
+    "                    {{::instrument.instrument_model_name}}\n" +
     "                </td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{instrument.nickname}}\n" +
+    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Instrument:\">\n" +
+    "                    {{::instrument.nickname}}\n" +
     "                </td>\n" +
     "                <td class=\"col-md-1 pad-t-15\" data-title=\"Active\">\n" +
     "                    <span ng-if=\"instrument.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
@@ -1415,7 +1240,7 @@ angular.module("lab_instruments/tpls/instruments_list.tpl.html", []).run(["$temp
     "                    </span>\n" +
     "                </td>\n" +
     "                <td data-title=\"Actions:\" class=\"col-md-1 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"lab_instruments.edit_instruments({instrument_id: instrument.id})\" class=\"btn btn-success\">\n" +
+    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"labs.lab_instruments.edit_instruments({instrument_id: instrument.id})\">\n" +
     "                        <i class=\"fa fa-pencil\"></i>\n" +
     "                    </a>\n" +
     "                </td>\n" +
@@ -1427,8 +1252,8 @@ angular.module("lab_instruments/tpls/instruments_list.tpl.html", []).run(["$temp
     "");
 }]);
 
-angular.module("lab_programs/tpls/lab-program-edit.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_programs/tpls/lab-program-edit.tpl.html",
+angular.module("labs/tpls/lab-programs/lab-program-edit.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-programs/lab-program-edit.tpl.html",
     "<div class=\"fx-fade-up fx-dur-600 fx-ease-cubic\" ng-show=\"form_present\">\n" +
     "    <div ui-view=\"delete\"></div>\n" +
     "    <div class=\"\">\n" +
@@ -1498,7 +1323,7 @@ angular.module("lab_programs/tpls/lab-program-edit.tpl.html", []).run(["$templat
     "              </div>\n" +
     "              <div class=\"form-group checkbox\">\n" +
     "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_active\" name=\"is_active\" ng-model=\"subscription.is_active\" tooltip=\"Check if subscription is not retired\" api-checker >\n" +
+    "                    <input type=\"checkbox\" id=\"is_active\" name=\"active\" ng-model=\"subscription.active\" tooltip=\"Check if subscription is not retired\" api-checker >\n" +
     "                    Active\n" +
     "                   </label>\n" +
     "              </div>\n" +
@@ -1506,7 +1331,7 @@ angular.module("lab_programs/tpls/lab-program-edit.tpl.html", []).run(["$templat
     "        </div>\n" +
     "        <div class=\"pull-left pad-0 margin-t-10 margin-b-20\">\n" +
     "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"lab_programs\" ui-sref-opts=\"{reload:true}\">Cancel</a>\n" +
+    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"labs.lab_programs({lab_id:lab_id})\" ui-sref-opts=\"{reload:true}\">Cancel</a>\n" +
     "        </div>\n" +
     "      </form>\n" +
     "    </div>\n" +
@@ -1514,11 +1339,11 @@ angular.module("lab_programs/tpls/lab-program-edit.tpl.html", []).run(["$templat
     "");
 }]);
 
-angular.module("lab_programs/tpls/lab-programs-grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_programs/tpls/lab-programs-grid.tpl.html",
+angular.module("labs/tpls/lab-programs/programs_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-programs/programs_grid.tpl.html",
     "<div class=\"content-header\">\n" +
     "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\"> Programs</span>\n" +
+    "        <span class=\"main-title\">{{::lab.name}}</span>\n" +
     "   </h2>\n" +
     "</div>\n" +
     "<div class=\"content-control\">\n" +
@@ -1532,34 +1357,45 @@ angular.module("lab_programs/tpls/lab-programs-grid.tpl.html", []).run(["$templa
     "       <span class=\"list-title\">Programs</span>\n" +
     "        <li class=\"nav-left\" ng-repeat=\"program in lab_programs\" ng-class=\"{'active': css ==  $index}\">\n" +
     "            <a ng-click=\"getSubscriptions(program.id,program.program, $index)\" ng-class=\"{'notch-right active': css ==  $index}\"\n" +
-    "             href=\"\">{{program.program_name}}</a>\n" +
+    "             href=\"\">{{::program.program_name}}</a>\n" +
     "        </li>\n" +
     "    </ul>\n" +
     "    <div class= \"content-card margin-v-20 min-height-500\" ng-class=\"{'col-xs-9 col-lg-10': !form_present,'col-xs-3 col-lg-2': form_present}\">\n" +
     "        <div class=\"col-xs-12 pad-0\">\n" +
     "            <h4 class=\"fs-16 col-xs-6 pad-0\">{{form_present ? 'Program':'' }} Analytes</h4>\n" +
-    "            <button ng-click=\"form_present = !form_present\" class=\"pull-right margin-t-10 action-btn action-btn-grid action-btn-primary\" ui-sref=\"lab_programs.create_subscription({lab_program_id:lab_program,program_id:program})\" tooltip=\"Add Analyte\" tooltip-placement=\"left\">\n" +
+    "            <button ng-click=\"form_present = !form_present\" class=\"pull-right margin-t-10 action-btn action-btn-grid action-btn-primary\" ui-sref=\"labs.lab_programs.create_subscription({lab_program_id:lab_program,program_id:program})\" tooltip=\"Add Analyte\" tooltip-placement=\"left\">\n" +
     "                <i class=\"fa fa-plus\"></i>\n" +
     "            </button>\n" +
     "        </div>\n" +
-    "        <table class=\"table table-hover table-condensed\">\n" +
+    "        <table class=\"table table-hover table-condensed\" id=\"no-more-tables\">\n" +
     "                <thead>\n" +
     "                    <tr>\n" +
     "                        <th><span ng-hide=\"form_present\">Analyte</span></th>\n" +
     "                        <th ng-hide=\"form_present\">Instrument</th>\n" +
     "                        <th ng-hide=\"form_present\">Reagent</th>\n" +
     "                        <th ng-hide=\"form_present\">Method</th>\n" +
+    "                        <th ng-hide=\"form_present\">Active</th>\n" +
     "                        <th ng-hide=\"form_present\"></th>\n" +
     "                    </tr>\n" +
     "                </thead>\n" +
     "                <tbody class=\"fade-content\">\n" +
     "                    <tr ng-repeat=\"subscription in subscriptions\" class=\"fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50\">\n" +
-    "                        <td class=\"pad-t-15\" data-title=\"Analyte:\">{{subscription.analyte_name}}</td>\n" +
-    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Instrument:\">{{subscription.analyzer_name}}</td>\n" +
-    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Reagent:\">{{subscription.reagent_name}}</td>\n" +
-    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Method:\">{{subscription.method_name}}</td>\n" +
+    "                        <td class=\"pad-t-15\" data-title=\"Analyte:\">{{::subscription.analyte_name}}</td>\n" +
+    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Instrument:\">{{::subscription.analyzer_name}}</td>\n" +
+    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Reagent:\">{{::subscription.reagent_name}}</td>\n" +
+    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Method:\">{{::subscription.method_name}}</td>\n" +
+    "                        <td ng-hide=\"form_present\" class=\"pad-t-15\" data-title=\"Active\">\n" +
+    "                            <span ng-if=\"subscription.active\" class=\"fa-stack fs-14 text-success\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
+    "                            </span>\n" +
+    "                            <span ng-if=\"!subscription.active\" class=\"fa-stack fs-14 text-danger\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
+    "                            </span>\n" +
+    "                        </td>\n" +
     "                        <td ng-hide=\"form_present\" class=\"text-right\">\n" +
-    "                            <a ng-click=\"$parent.form_present = !$parent.form_present\" ui-sref=\"lab_programs.edit_subscription({lab_program_id:lab_program, subscription_id:subscription.id, program_id:program})\" class=\"action-btn action-btn-grid action-btn-success\" tooltip=\"Edit\">\n" +
+    "                            <a ng-click=\"$parent.form_present = !$parent.form_present\" ui-sref=\"labs.lab_programs.edit_subscription({lab_program_id:lab_program, subscription_id:subscription.id, program_id:program})\" class=\"action-btn action-btn-grid action-btn-success\" tooltip=\"Edit\">\n" +
     "                                <i class=\"fa fa-pencil\"></i>\n" +
     "                            </a>\n" +
     "                        </td>\n" +
@@ -1572,11 +1408,11 @@ angular.module("lab_programs/tpls/lab-programs-grid.tpl.html", []).run(["$templa
     "");
 }]);
 
-angular.module("lab_programs/tpls/main.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("lab_programs/tpls/main.tpl.html",
+angular.module("labs/tpls/lab-reports/main.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/lab-reports/main.tpl.html",
     "<div class=\"content-header\">\n" +
     "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\"> Programs</span>\n" +
+    "        <span class=\"main-title\"> <i class=\"fa fa-clipboard\"></i> Reports</span>\n" +
     "   </h2>\n" +
     "</div>\n" +
     "<div class=\"content-control\">\n" +
@@ -1584,11 +1420,73 @@ angular.module("lab_programs/tpls/main.tpl.html", []).run(["$templateCache", fun
     "    <div ncy-breadcrumb></div>\n" +
     "    <!--/breadcrumb-->\n" +
     "</div>\n" +
+    "<div class=\"content-body\">\n" +
+    "    <ul class=\"col-xs-3 col-lg-2 margin-t-20 pad-0 margin-b-20\">\n" +
+    "       <span class=\"list-title\">Events</span>\n" +
+    "        <li class=\"nav-left\">\n" +
+    "            <a href=\"\">Event 1</a>\n" +
+    "        </li>\n" +
+    "        <li class=\"nav-left\">\n" +
+    "            <a href=\"\">Event 2</a>\n" +
+    "        </li>\n" +
+    "        <li class=\"nav-left\">\n" +
+    "            <a href=\"\">Event 3</a>\n" +
+    "        </li>\n" +
+    "        <li class=\"nav-left\">\n" +
+    "            <a href=\"\">Event 4</a>\n" +
+    "        </li>\n" +
+    "    </ul>\n" +
+    "    <div class= \"content-card margin-v-20 min-height-500 col-xs-9 col-lg-10\" id=\"no-more-tables\">\n" +
+    "        <table class=\"table table-hover table-condensed\">\n" +
+    "                <thead>\n" +
+    "                    <tr>\n" +
+    "                        <th>Program</th>\n" +
+    "                        <th class=\"text-center\">Lab Report</th>\n" +
+    "                        <th class=\"text-center\">Participation Statistics</th>\n" +
+    "                    </tr>\n" +
+    "                </thead>\n" +
+    "                <tbody class=\"fade-content\">\n" +
+    "                    <tr class=\"fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50\">\n" +
+    "                        <td class=\"pad-t-15\" data-title=\"Program:\">\n" +
+    "                            Urine Drugs of Abuse\n" +
+    "                        </td>\n" +
+    "                        <td class=\"text-center\" data-title=\"Lab Report:\">\n" +
+    "                            <a ui-sref=\"labs.report.lab_report\" class=\"action-btn action-btn-grid action-btn-primary\" tooltip=\"Lab report\">\n" +
+    "                                <i class=\"fa fa-clipboard\"></i>\n" +
+    "                            </a>\n" +
+    "                        </td>\n" +
+    "                        <td class=\"text-center\" data-title=\"Statistics:\">\n" +
+    "                            <a ui-sref=\"labs.report.lab_statistics_ql\" class=\"action-btn action-btn-grid action-btn-success\" tooltip=\"Statistics\">\n" +
+    "                                <i class=\"fa fa-line-chart\"></i>\n" +
+    "                            </a>\n" +
+    "                        </td>\n" +
+    "                    </tr>\n" +
+    "                    <tr class=\"fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50\">\n" +
+    "                        <td class=\"pad-t-15\" data-title=\"Program:\">\n" +
+    "                            Basic Chemistry\n" +
+    "                        </td>\n" +
+    "                        <td class=\"text-center\" data-title=\"Lab Report:\">\n" +
+    "                            <a ui-sref=\"labs.report.lab_report\" class=\"action-btn action-btn-grid action-btn-primary\" tooltip=\"Lab report\">\n" +
+    "                                <i class=\"fa fa-clipboard\"></i>\n" +
+    "                            </a>\n" +
+    "                        </td>\n" +
+    "                        <td class=\"text-center\" data-title=\"Statistics:\">\n" +
+    "                            <a ui-sref=\"labs.report.lab_statistics_qn\" class=\"action-btn action-btn-grid action-btn-success\" tooltip=\"Statistics\">\n" +
+    "                                <i class=\"fa fa-line-chart\"></i>\n" +
+    "                            </a>\n" +
+    "                        </td>\n" +
+    "                    </tr>\n" +
+    "                </tbody>\n" +
+    "        </table>\n" +
+    "    </div>\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
     "");
 }]);
 
-angular.module("labs/tpls/lab-contacts.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-contacts.tpl.html",
+angular.module("labs/tpls/labs/lab-contacts.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/lab-contacts.tpl.html",
     "<div class=\"col-sm-10 fade-content col-sm-offset-1 col-xs-12\">\n" +
     "\n" +
     "\n" +
@@ -1654,7 +1552,7 @@ angular.module("labs/tpls/lab-contacts.tpl.html", []).run(["$templateCache", fun
     "                    <div class=\"form-group col-xs-12\">\n" +
     "                        <label class=\"fs-14 control-label\">Country<span class=\"text-danger\">&#42;</span></label>\n" +
     "                        <ui-select ng-model=\"multi.select_values.country\" required name=\"country\" api-checker register-custom-form-control>\n" +
-    "                            <ui-select-match placeholder=\"Select a country...\">\n" +
+    "                            <ui-select-match placeholder=\"Select a country...\" allow-clear=\"true\">\n" +
     "                                <span>{{$select.selected.name}}</span>\n" +
     "                            </ui-select-match>\n" +
     "                            <ui-select-choices repeat=\"country.name as country in countries | filter:$select.search\">\n" +
@@ -1680,47 +1578,8 @@ angular.module("labs/tpls/lab-contacts.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("labs/tpls/lab-create.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-create.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\"><i class=\"fa fa-plus-circle\"></i> Add Lab</span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "\n" +
-    "<div class=\"content-body\">\n" +
-    "    <div class=\"col-xs-12 content-card margin-t-20 margin-b-20\">\n" +
-    "        <wizard on-finish=\"finishedWizard()\" template=\"labs/tpls/labs-wizard-create.tpl.html\">\n" +
-    "            <wz-step title=\"Lab Details\">\n" +
-    "                <form>\n" +
-    "                    <input class=\"btn btn-primary\" type=\"submit\" wz-next value=\"Lab Programs\" />\n" +
-    "                </form>\n" +
-    "            </wz-step>\n" +
-    "            <wz-step title=\"Lab Programs\">\n" +
-    "                <input class=\"btn btn-primary\" type=\"submit\" wz-previous value=\"Lab Details\" />\n" +
-    "                <input class=\"btn btn-primary pull-right\" type=\"submit\" wz-next value=\"Lab Users\" />\n" +
-    "            </wz-step>\n" +
-    "            <wz-step title=\"Lab Users\">\n" +
-    "                <input class=\"btn btn-primary\" type=\"submit\" wz-previous value=\"Lab Programs\" />\n" +
-    "                <input class=\"btn btn-primary pull-right\" type=\"submit\" wz-next value=\"Lab Contacts\" />\n" +
-    "            </wz-step>\n" +
-    "            <wz-step title=\"Lab Contacts\">\n" +
-    "                <input class=\"btn btn-primary\" type=\"submit\" wz-previous value=\"Lab Users\" />\n" +
-    "                <input class=\"btn btn-primary pull-right\" type=\"submit\" wz-next value=\"Finish\" />\n" +
-    "            </wz-step>\n" +
-    "        </wizard>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("labs/tpls/lab-details.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-details.tpl.html",
+angular.module("labs/tpls/labs/lab-details.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/lab-details.tpl.html",
     "<form name=\"lab_frm\" ng-submit=\"saveDetails(lab_frm,edit_lab)\" novalidate >\n" +
     "    <div class=\"fade-content col-sm-10 col-sm-offset-1 col-xs-12\">\n" +
     "        <drf-err-msg></drf-err-msg>\n" +
@@ -1736,7 +1595,7 @@ angular.module("labs/tpls/lab-details.tpl.html", []).run(["$templateCache", func
     "            <div class=\"form-group\">\n" +
     "                <label class=\"control-label\">Parent Laboratory</label>\n" +
     "                    <ui-select ng-model=\"select_values.parent\" name=\"parent\" api-checker register-custom-form-control>\n" +
-    "                        <ui-select-match placeholder=\"Select a parent lab...\">\n" +
+    "                        <ui-select-match placeholder=\"Select a parent lab...\" allow-clear=\"true\">\n" +
     "                            <span>{{$select.selected.name}}</span>\n" +
     "                        </ui-select-match>\n" +
     "                        <ui-select-choices repeat=\"lab.id as lab in labs | filter:$select.search\">\n" +
@@ -1760,8 +1619,8 @@ angular.module("labs/tpls/lab-details.tpl.html", []).run(["$templateCache", func
     "");
 }]);
 
-angular.module("labs/tpls/lab-edit.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-edit.tpl.html",
+angular.module("labs/tpls/labs/lab-edit.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/lab-edit.tpl.html",
     "<div class=\"content-header\">\n" +
     "   <h2 class=\"content-title\">\n" +
     "        <span class=\"main-title\"><i class=\"fa fa-{{edit_lab ? 'pencil' : 'plus-circle'}}\"></i> {{edit_lab? 'Edit' : 'Add'}} Lab</span>\n" +
@@ -1775,25 +1634,25 @@ angular.module("labs/tpls/lab-edit.tpl.html", []).run(["$templateCache", functio
     "\n" +
     "<div class=\"content-body\">\n" +
     "    <div class=\"col-xs-12 col-sm-10 col-sm-offset-1 content-card margin-t-20 margin-b-20\">\n" +
-    "        <wizard edit-mode=\"edit_lab\" template=\"labs/tpls/labs-wizard-create.tpl.html\">\n" +
+    "        <wizard edit-mode=\"edit_lab\" template=\"labs/tpls/labs/labs-wizard-create.tpl.html\">\n" +
     "            <wz-step title=\"Lab Details\">\n" +
-    "                <ng-include src=\"'labs/tpls/lab-details.tpl.html'\"></ng-include>\n" +
+    "                <include-tpl src=\"labs/tpls/labs/lab-details.tpl.html\"></include-tpl>\n" +
     "            </wz-step>\n" +
     "            <span ng-controller=\"huqas.labs.controllers.lab_programs\">\n" +
     "                <wz-step title=\"Lab Programs\" canexit=\"multi.exitValidation\">\n" +
-    "                    <include-tpl src=\"labs/tpls/lab-programs.tpl.html\">\n" +
+    "                    <include-tpl src=\"labs/tpls/labs/lab-programs.tpl.html\">\n" +
     "                    </include-tpl>\n" +
     "                </wz-step>\n" +
     "            </span>\n" +
     "            <span ng-controller=\"huqas.labs.controllers.lab_users\">\n" +
     "                <wz-step title=\"Lab Users\" canexit=\"multi.exitValidation\">\n" +
-    "                    <include-tpl src=\"labs/tpls/lab-users.tpl.html\">\n" +
+    "                    <include-tpl src=\"labs/tpls/labs/lab-users.tpl.html\">\n" +
     "                    </include-tpl>\n" +
     "                </wz-step>\n" +
     "            </span>\n" +
     "            <span ng-controller=\"huqas.labs.controllers.lab_contacts\">\n" +
     "                <wz-step title=\"Lab Contacts\" canexit=\"multi.exitValidation\">\n" +
-    "                    <include-tpl src=\"labs/tpls/lab-contacts.tpl.html\">\n" +
+    "                    <include-tpl src=\"labs/tpls/labs/lab-contacts.tpl.html\">\n" +
     "                    </include-tpl>\n" +
     "                </wz-step>\n" +
     "            </span>\n" +
@@ -1803,8 +1662,8 @@ angular.module("labs/tpls/lab-edit.tpl.html", []).run(["$templateCache", functio
     "");
 }]);
 
-angular.module("labs/tpls/lab-programs.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-programs.tpl.html",
+angular.module("labs/tpls/labs/lab-programs.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/lab-programs.tpl.html",
     "<div class=\"col-sm-10 fade-content col-sm-offset-1 col-xs-12\">\n" +
     "\n" +
     "    <!-- lab program form-->\n" +
@@ -1826,7 +1685,7 @@ angular.module("labs/tpls/lab-programs.tpl.html", []).run(["$templateCache", fun
     "                    <div class=\"form-group col-xs-12\">\n" +
     "                        <label class=\"fs-14 control-label\">Program<span class=\"text-danger\">&#42;</span></label>\n" +
     "                        <ui-select ng-model=\"multi.select_values.program\" required name=\"program\" api-checker register-custom-form-control>\n" +
-    "                            <ui-select-match placeholder=\"Select a program...\">\n" +
+    "                            <ui-select-match placeholder=\"Select a program...\" allow-clear=\"true\">\n" +
     "                                <span>{{$select.selected.name}}</span>\n" +
     "                            </ui-select-match>\n" +
     "                            <ui-select-choices repeat=\"prog.id as prog in programs | filter:$select.search\">\n" +
@@ -1954,8 +1813,8 @@ angular.module("labs/tpls/lab-programs.tpl.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("labs/tpls/lab-users.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/lab-users.tpl.html",
+angular.module("labs/tpls/labs/lab-users.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/lab-users.tpl.html",
     "<div class=\"col-sm-10 fade-content col-sm-offset-1 col-xs-12\">\n" +
     "\n" +
     "    <!-- lab user form-->\n" +
@@ -1983,7 +1842,7 @@ angular.module("labs/tpls/lab-users.tpl.html", []).run(["$templateCache", functi
     "                    <div class=\"form-group col-xs-12\">\n" +
     "                        <label class=\"fs-14 control-label\">User<span class=\"text-danger\">&#42;</span></label>\n" +
     "                        <ui-select ng-model=\"multi.select_values.user\" required name=\"user\" api-checker register-custom-form-control>\n" +
-    "                            <ui-select-match placeholder=\"Select a user...\">\n" +
+    "                            <ui-select-match placeholder=\"Select a user...\" allow-clear=\"true\">\n" +
     "                                <span>{{$select.selected.first_name}} {{$select.selected.last_name}}</span>\n" +
     "                            </ui-select-match>\n" +
     "                            <ui-select-choices repeat=\"user.id as user in users | filter:$select.search\">\n" +
@@ -2066,8 +1925,8 @@ angular.module("labs/tpls/lab-users.tpl.html", []).run(["$templateCache", functi
     "");
 }]);
 
-angular.module("labs/tpls/labs-grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/labs-grid.tpl.html",
+angular.module("labs/tpls/labs/labs-grid.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/labs-grid.tpl.html",
     "<div class=\"content-header\">\n" +
     "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
     "        <a tooltip-placement=\"bottom\" tooltip=\"Add Lab\" class=\"action-btn action-btn-md action-btn-primary\" ui-sref=\"labs.create\">\n" +
@@ -2086,7 +1945,7 @@ angular.module("labs/tpls/labs-grid.tpl.html", []).run(["$templateCache", functi
     "\n" +
     "<div class=\"content-body\">\n" +
     "    <div class=\"col-xs-12 content-card margin-t-20 margin-b-20\">\n" +
-    "        <sil-grid template=\"labs/tpls/labs-list.tpl.html\" grid-for=\"labs\" api-key=\"labs\"\n" +
+    "        <sil-grid template=\"labs/tpls/labs/labs-list.tpl.html\" grid-for=\"labs\" api-key=\"labs\"\n" +
     "            data=\"labs\" filters=\"filters\" error=\"alert\">\n" +
     "        </sil-grid>\n" +
     "    </div>\n" +
@@ -2094,14 +1953,14 @@ angular.module("labs/tpls/labs-grid.tpl.html", []).run(["$templateCache", functi
     "");
 }]);
 
-angular.module("labs/tpls/labs-list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/labs-list.tpl.html",
+angular.module("labs/tpls/labs/labs-list.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/labs-list.tpl.html",
     "<div>\n" +
     "    <div id=\"no-more-tables\" class=\"col-xs-12 margin-t-15\">\n" +
-    "        <table class=\"table table-hover table-condensed fs-14\">\n" +
+    "        <table class=\"table table-hover fs-14\">\n" +
     "            <thead>\n" +
     "                <th>Name</th>\n" +
-    "                <th>Active</th>\n" +
+    "                <th class=\"text-center\">Active</th>\n" +
     "                <th></th>\n" +
     "            </thead>\n" +
     "            <tbody class=\"example-animate-container\">\n" +
@@ -2109,10 +1968,22 @@ angular.module("labs/tpls/labs-list.tpl.html", []).run(["$templateCache", functi
     "                    <td data-title=\"Name\" class=\"pad-t-15\">\n" +
     "                        {{lab.name}}\n" +
     "                    </td>\n" +
-    "                    <td data-title=\"Name\" class=\"pad-t-15\">\n" +
-    "                        {{lab.active}}\n" +
+    "                    <td data-title=\"Active\" class=\"pad-t-15 text-center\">\n" +
+    "                        <span>\n" +
+    "                            <span ng-if=\"lab.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
+    "                            </span>\n" +
+    "                            <span ng-if=\"!lab.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
+    "                              <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                              <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
+    "                            </span>\n" +
+    "                        </span>\n" +
     "                    </td>\n" +
-    "                    <td class=\"text-right\">\n" +
+    "                    <td data-title=\"Actions\" class=\"text-right\">\n" +
+    "                        <a ui-sref=\"labs.lab_programs({lab_id:lab.id})\" class=\"btn btn-primary\">Analytes</a>\n" +
+    "                        <a ui-sref=\"labs.lab_instruments({lab_id:lab.id})\" class=\"btn btn-warning margin-h-10\">Instruments</a>\n" +
+    "                        <a ui-sref=\"labs.report({lab_id:lab.id})\" class=\"btn btn-info margin-r-10\">Reports</a>\n" +
     "                        <a ui-sref=\"labs.edit({lab_id:lab.id})\" class=\"action-btn action-btn-grid action-btn-success\" tooltip=\"Edit\">\n" +
     "                            <i class=\"fa fa-pencil\"></i>\n" +
     "                        </a>\n" +
@@ -2129,8 +2000,8 @@ angular.module("labs/tpls/labs-list.tpl.html", []).run(["$templateCache", functi
     "");
 }]);
 
-angular.module("labs/tpls/labs-wizard-create.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("labs/tpls/labs-wizard-create.tpl.html",
+angular.module("labs/tpls/labs/labs-wizard-create.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("labs/tpls/labs/labs-wizard-create.tpl.html",
     "<div class=\"margin-t-10\">\n" +
     "    <ul class=\"steps-indicator steps-{{getEnabledSteps().length}}\" ng-if=\"!hideIndicators\">\n" +
     "      <li ng-class=\"{default: !step.completed && !step.selected, current: step.selected && !step.completed, done: step.completed && !step.selected, editing: step.selected && step.completed}\" ng-repeat=\"step in getEnabledSteps()\">\n" +
@@ -2144,21 +2015,6 @@ angular.module("labs/tpls/labs-wizard-create.tpl.html", []).run(["$templateCache
     "      </li>\n" +
     "    </ul>\n" +
     "    <div class=\"steps\" ng-transclude></div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("reports/tpls/main.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("reports/tpls/main.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\"> <i class=\"fa fa-clipboard\"></i> Reports</span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
     "</div>\n" +
     "");
 }]);
@@ -2235,47 +2091,10 @@ angular.module("results/tpls/main.tpl.html", []).run(["$templateCache", function
     "        <span class=\"main-title\"><i class=\"fa fa-clipboard\"></i> Results</span>\n" +
     "   </h2>\n" +
     "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
     "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"fade-content col-md-3 col-xs-12 pad-r-0 margin-t-10 content-card\">\n" +
-    "        <div class=\"col-xs-12 category-title\">\n" +
-    "            <h4 class=\"lato-light fw-500 fs-20 margin-b-10\">Registered Programs</h4>\n" +
-    "            <div class=\"form-group input-group\">\n" +
-    "                <span class=\"white-addon input-group-addon\" id=\"basic-addon1\">\n" +
-    "                  <i class=\"fa fa-search\"></i>\n" +
-    "                </span>\n" +
-    "                <input class=\"white-input form-control\" ng-model=\"lab_program.query\" placeholder=\"Search Programs\">\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"program-list col-xs-12 pad-0 margin-b-10\">\n" +
-    "            <div class=\"program-item col-xs-12 pad-l-0 pad-r-0 pad-b-5 pad-t-5 fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50\" ng-repeat=\"program in lab_programs | filter : lab_program.query\" ui-sref-active=\"active\">\n" +
-    "                <a class=\"col-xs-12 pad-l-0 pad-r-0\" ui-sref=\"results.programs({program_id : program.id})\">\n" +
-    "                <div class=\"col-md-2 col-xs-2 pad-t-3\">\n" +
-    "                    <span class=\"fa-stack fa-lg fs-15 pull-right\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-sitemap fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </div>\n" +
-    "                <div class=\"col-md-10 col-xs-10 margin-t-0 pad-t-3 margin-b-0 fs-15 fw-600 pad-l-0\" style=\"font-family : 'Lato Light', sans-serif;\">\n" +
-    "                    <span class=\"pad-l-0 col-md-10 col-xs-10\">\n" +
-    "                        {{program.program_name}}\n" +
-    "                    </span>\n" +
-    "                    <span class=\"col-md-2 col-xs-2 pointer text-purple pad-r-0\">\n" +
-    "                        <i class=\"fa fa-chevron-right\"></i>\n" +
-    "                    </span>\n" +
-    "                </div>\n" +
-    "                </a>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"fade-content col-md-9 col-xs-12 margin-t-10 pad-0\">\n" +
-    "        <div class=\"fx-fade-up fx-speed-500fx-fade-up fx-speed-500 col-xs-12 pad-0 content-card\" style=\"border-left: 1px solid #e0e0e0;\" ui-view=\"side-view\"></div>\n" +
-    "    </div>\n" +
+    "    Crowd funding\n" +
     "</div>\n" +
+    "<div ui-view=\"footer\"></div>\n" +
     "");
 }]);
 
@@ -2560,2235 +2379,90 @@ angular.module("results/tpls/reverse_enrollment.tpl.html", []).run(["$templateCa
     "");
 }]);
 
-angular.module("setup/tpls/analyte/analyte_setup.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/analyte_setup.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-gears\"></i> Analyte Setup\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "\n" +
-    "    <div class=\"col-md-3 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"analyte_setup.analytes\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-40 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-flask fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"analyte_setup.analytes\">\n" +
-    "            <p class=\"lato-light fw-500 fs-18 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Analytes\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-3 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"analyte_setup.manufacturers\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-40 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-building fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"analyte_setup.manufacturers\">\n" +
-    "            <p class=\"lato-light fw-500 fs-18 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Manufacturers\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-3 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"analyte_setup.reagents\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-40 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-database fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"analyte_setup.reagents\">\n" +
-    "            <p class=\"lato-light fw-500 fs-18 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Reagents\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-3 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"analyte_setup.methods\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-40 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-server fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"analyte_setup.methods\">\n" +
-    "            <p class=\"lato-light fw-500 fs-18 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Methods\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/analytes_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/analytes_form.tpl.html",
+angular.module("showcase/tpls/instruments_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("showcase/tpls/instruments_grid.tpl.html",
     "<div class=\"content-header\">\n" +
     "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.analytes.add_analyte\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Analyte\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"analyte_frm\"  ng-submit=\"save(analyte_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"analyte.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Program <span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"program\" ng-model=\"analyte.program\" api-checker required>\n" +
-    "                      <option value=\"\" disabled>Select Program</option>\n" +
-    "                      <option ng-repeat=\"program in programs\" ng-selected=\"{{program.id == analyte.program}}\" value=\"{{program.id}}\">{{program.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Units <span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"units\" ng-model=\"analyte.unit\" api-checker required>\n" +
-    "                      <option value=\"\" disabled>Select Unit</option>\n" +
-    "                      <option ng-repeat=\"unit in units\" ng-selected=\"{{unit.id == analyte.unit}}\" value=\"{{unit.id}}\">{{unit.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Coefficient of Variation</label>\n" +
-    "                  <input class=\"form-control\" name=\"cv\" ng-model=\"analyte.cv\" placeholder=\"Coefficient of Variation\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"analyte.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"analyte.active\" tooltip=\"Check if analyte is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_quantitative\" name=\"is_quantitative\" ng-model=\"analyte.is_quantitative\" api-checker >\n" +
-    "                    Quantitative\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_multi_response\" name=\"is_multi_response\" ng-model=\"analyte.is_multi_response\"\n" +
-    "                    api-checker >\n" +
-    "                    Multiresponse\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_parasitology\" name=\"is_parasitology\" ng-model=\"analyte.is_parasitology\" api-checker >\n" +
-    "                    Parasitology\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_bacteriology\" name=\"is_bacteriology\" ng-model=\"analyte.is_bacteriology\" api-checker >\n" +
-    "                    Bacteriology\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <!-- TODO add sample overide Add multiresponse options depending on multiresponse selection -->\n" +
-    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.analytes\">Cancel</a>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/analytes_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/analytes_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Analyte\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.analytes.add_analyte\">\n" +
+    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Instrument\" class=\"action-btn action-btn-md action-btn-warm\" ui-sref=\"lab_instruments.add_instrument\">\n" +
     "            <i class=\"fa fa-plus\"></i>\n" +
     "        </a>\n" +
     "   </div>\n" +
     "   <h2 class=\"content-title\">\n" +
     "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-flask\"></i> Analytes\n" +
+    "            <i class=\"fa fa-sliders\"></i> Lab Instruments\n" +
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/analyte/analytes_list.tpl.html\" grid-for=\"events\" api-key=\"analytes\" data=\"analytes\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/analytes_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/analytes_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Analytes List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-3\">Name</th>\n" +
-    "                <th class=\"col-md-3\">Program</th>\n" +
-    "                <th class=\"col-md-2\">Unit</th>\n" +
-    "                <th class=\"col-md-1 text-center\">Active</th>\n" +
-    "                <th class=\"col-md-2 text-center\">Configuration</th>\n" +
-    "                <th class=\"col-md-1\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"analyte in analytes\">\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{analyte.name}}</td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Prgoram:\" class=\"pad-t-15\">{{analyte.program_name}}</td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{analyte.unit_name}}</td>\n" +
-    "                <td class=\"col-md-1 pad-t-15 text-center\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"analyte.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!analyte.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-center\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-info\" ui-sref=\"analyte_setup.analyte.edit_analyte({analyte_id: analyte.id})\">\n" +
-    "                        <i class=\"fa fa-gears\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-1 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.analytes.edit_analyte({analyte_id: analyte.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/manufacturers_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/manufacturers_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"analyte_setup.manufacturer.add_manufacturer\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Manufacturer\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"manufacturer_frm\"  ng-submit=\"save(manufacturer_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"manufacturer.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"manufacturer.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"manufacturer.active\" tooltip=\"Check if method is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.manufacturers\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/manufacturers_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/manufacturers_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.manufacturers.add_manufacturer\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-building\"></i> Manufacturers\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/analyte/manufacturers_list.tpl.html\" grid-for=\"events\" api-key=\"manufacturers\" data=\"manufacturers\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/manufacturers_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/manufacturers_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Manufacturers List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"manu in manufacturers\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{manu.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"manu.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!manu.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.manufacturers.edit_manufacturer({manu_id: manu.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/methods_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/methods_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"analyte_setup.methods.add_method\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Method\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"method_frm\"  ng-submit=\"save(method_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"method.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"method.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"method.active\" tooltip=\"Check if method is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.methods\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/methods_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/methods_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.methods.add_method\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-tasks\"></i> Methods\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/analyte/methods_list.tpl.html\" grid-for=\"events\" api-key=\"methods\" data=\"methods\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/methods_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/methods_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Methods List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"method in methods\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{method.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"method.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!method.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.methods.edit_method({method_id: method.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/reagents_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/reagents_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Reagent\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.reagents.add_reagent\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Reagent\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"reagent_frm\"  ng-submit=\"save(reagent_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"reagent.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Manufacturer <span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"manufacturer\" ng-model=\"reagent.manufacturer\" api-checker required>\n" +
-    "                      <option value=\"\" disabled>Select Manufacturer</option>\n" +
-    "                      <option ng-repeat=\"manu in manufacturers\" ng-selected=\"{{manu.id == reagent.manufacturer}}\" value=\"{{manu.id}}\">{{manu.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"reagent.active\" tooltip=\"Check if reagent is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.reagents\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/reagents_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/reagents_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Reagent\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.reagents.add_reagent\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-database\"></i> Reagents\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/analyte/reagents_list.tpl.html\" grid-for=\"events\" api-key=\"reagents\" data=\"reagents\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/analyte/reagents_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/analyte/reagents_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Reagents List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-4\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Manufacturer</th>\n" +
-    "                <th class=\"col-md-2\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"reagent in reagents\">\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{reagent.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{reagent.manufacturer_name}}</td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"reagent.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!reagent.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.reagents.edit_reagent({reagent_id: reagent.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/categories/categories_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/categories/categories_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.category.add_category\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Category\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"cat_frm\"  ng-submit=\"save(cat_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"category.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"category.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"category.active\" tooltip=\"Check if category is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.categories\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "      <!-- Listing category programs -->\n" +
-    "      <div class=\"col-xs-12 margin-b-10 margin-t-10 pad-0\" ng-if=\"edit_view\">\n" +
-    "        <div class=\"col-sm-10 col-sm-offset-1 fade-content margin-t-20 pad-0\">\n" +
-    "            <sil-grid template=\"setup/tpls/categories/program_categories.tpl.html\" grid-for=\"events\" api-key=\"programs\"\n" +
-    "                data=\"programs\" filters=\"filters\" error=\"alert\">\n" +
-    "            </sil-grid>\n" +
-    "        </div>\n" +
+    "<div class=\"col-xs-12 pad-0\">\n" +
+    "    <section class=\"parallax parallax-demo-two\">\n" +
+    "      <div class=\"col-xs-12 margin-t-50\">\n" +
+    "        <h1 class=\"text-white lato-light fs-30\">Checkout our showcases of potential investments opportunities</h1>\n" +
     "      </div>\n" +
-    "    </div>\n" +
+    "    </section>\n" +
     "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/categories/categories_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/categories/categories_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.categories.add_category\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-book\"></i> Categories\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/categories/categories_list.tpl.html\" grid-for=\"events\" api-key=\"categories\" data=\"categories\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/categories/categories_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/categories/categories_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Categories List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"cat in categories\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{cat.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"cat.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!cat.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.categories.edit_category({cat_id: cat.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/categories/program_categories.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/categories/program_categories.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-18\">\n" +
-    "        Programs in Category\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed table-fixed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-3\">Code</th>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-3\">Active</th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"program in programs\">\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{program.code}}</td>\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{program.name}}</td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"program.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!program.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "            <tr ng-if=\"programs.length === 0\">\n" +
-    "                <td colspan=\"3\" class=\"fs-16 lato-light fw-500 bg-grey col-xs-12\">\n" +
-    "                    <i class=\"fa fa-info-circle\"></i> Category has no related Programs currently\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/coa/coa_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/coa/coa_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a tooltip-placement=\"bottom\" tooltip=\"Add COA\" class=\"action-btn action-btn-md action-btn-primary\" ui-sref=\"coa.create\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\"> Certificate of Analysis</span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "\n" +
-    "<div class=\"content-body\">\n" +
-    "    <ul class=\"col-xs-3 col-lg-2 margin-t-20 pad-0 margin-b-20\">\n" +
-    "        <li class=\"nav-left\" ng-repeat=\"event in events\" ng-class=\"{'active': css ==  $index}\">\n" +
-    "            <a ng-click=\"getCoa(event.id, $index)\" ng-class=\"{'notch-right active': css ==  $index}\"\n" +
-    "             href=\"\">{{event.name}}</a>\n" +
-    "        </li>\n" +
-    "    </ul>\n" +
-    "    <div class= \"col-xs-9 col-lg-10 content-card margin-t-20 margin-b-20\">\n" +
-    "        <table class=\"table table-hover table-condensed\">\n" +
-    "                <thead>\n" +
-    "                    <tr>\n" +
-    "                        <th>Analyte</th>\n" +
-    "                        <th>Sample</th>\n" +
-    "                        <th>Response</th>\n" +
-    "                    </tr>\n" +
-    "                </thead>\n" +
-    "                <tbody class=\"fade-content\">\n" +
-    "                    <tr>\n" +
-    "                       <td>Qualitative</td>\n" +
-    "                    </tr>\n" +
-    "                    <tr ng-repeat=\"coa in coa_qualitative\">\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Analyte:\">{{coa.analyte_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Sample:\">{{coa.sample_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Response:\">{{coa.response}}</td>\n" +
-    "                    </tr>\n" +
-    "                </tbody>\n" +
-    "                <tbody class=\"fade-content\">\n" +
-    "                    <tr>\n" +
-    "                       <td>Quantitative</td>\n" +
-    "                    </tr>\n" +
-    "                    <tr ng-repeat=\"coa in coa_quantitative\">\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Analyte:\">{{coa.analyte_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Sample:\">{{coa.sample_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Response:\">{{coa.response}}</td>\n" +
-    "                    </tr>\n" +
-    "                </tbody>\n" +
-    "                <tbody class=\"fade-content\">\n" +
-    "                    <tr>\n" +
-    "                       <td>Semi </td>\n" +
-    "                    </tr>\n" +
-    "                    <tr ng-repeat=\"coa in coa_semi\">\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Analyte:\">{{coa.analyte_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Sample:\">{{coa.sample_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Response:\">{{coa.response}}</td>\n" +
-    "                    </tr>\n" +
-    "                </tbody>\n" +
-    "                <tbody class=\"fade-content\">\n" +
-    "                    <tr>\n" +
-    "                       <td>Drugs</td>\n" +
-    "                    </tr>\n" +
-    "                    <tr ng-repeat=\"coa in coa_drugs\">\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Analyte:\">{{coa.analyte_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Sample:\">{{coa.sample_name}}</td>\n" +
-    "                        <td class=\"col-md-2 pad-t-15\" data-title=\"Response:\">{{coa.response}}</td>\n" +
-    "                    </tr>\n" +
-    "                </tbody>\n" +
-    "        </table>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/drugs/drugs_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/drugs/drugs_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Drug\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.drugs.add_drug\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Drug\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"drug_frm\"  ng-submit=\"save(drug_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"drug.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Classification\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"classification\" ng-model=\"drug.classification\" api-checker>\n" +
-    "                      <option value=\"\" disabled>Select Classification</option>\n" +
-    "                      <option ng-repeat=\"classification in classifications\" ng-selected=\"{{classification.value == drug.classification}}\" value=\"{{classification.value}}\">{{classification.\n" +
-    "                      display_value}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_antibiotic\" name=\"is_antibiotic\" ng-model=\"drug.is_antibiotic\" api-checker >\n" +
-    "                    For Bacteriology\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_antiparasitic\" name=\"is_antiparasitic\" ng-model=\"drug.is_antiparasitic\"\n" +
-    "                    api-checker >\n" +
-    "                    For Parasitology\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"drug.active\" tooltip=\"Check if drug is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.samples\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/drugs/drugs_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/drugs/drugs_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Drug\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.drugs.add_drug\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-medkit\"></i> Drugs\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/drugs/drugs_list.tpl.html\" grid-for=\"events\" api-key=\"drugs\" data=\"drugs\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/drugs/drugs_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/drugs/drugs_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Drugs List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-3\">Name</th>\n" +
-    "                <th class=\"col-md-3\">Classification</th>\n" +
-    "                <th class=\"col-md-2\">For Bacteriology</th>\n" +
-    "                <th class=\"col-md-2\">For Parasitology</th>\n" +
-    "                <th class=\"col-md-1\">Active</th>\n" +
-    "                <th class=\"col-md-1\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"drug in drugs\">\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{drug.name}}</td>\n" +
-    "                <td class=\"col-md-3 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{drug.classification}}\n" +
-    "                    <span ng-if=\"!drug.classification\" class=\"fs-16 text-black\">\n" +
-    "                        <i class=\"fa fa-minus\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"drug.is_antibiotic\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!drug.is_antibiotic\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"drug.is_antiparasitic\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!drug.is_antiparasitic\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-1 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"drug.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!drug.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.drugs.edit_drug({drug_id: drug.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/evaluation_criteria/evaluation_criteria_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/evaluation_criteria/evaluation_criteria_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Evaluation Criteria\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"evaluation_criteria.add_evaluation_criterion\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Evaluation Criteria\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"eval_frm\"  ng-submit=\"save(eval_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Analyte<span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"analyte\" ng-model=\"criterion.analyte\" api-checker>\n" +
-    "                      <option value=\"\" disabled>Select Analyte</option>\n" +
-    "                      <option ng-repeat=\"analyte in analytes\" ng-selected=\"{{analyte.id == criterion.analyte}}\" value=\"{{analyte.id}}\">{{analyte.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Limit<span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"limit\" ng-model=\"criterion.limit\" ng-change=\"limitChecker(criterion.limit)\"\n" +
-    "                  api-checker>\n" +
-    "                      <option value=\"\" disabled>Select Limit</option>\n" +
-    "                      <option ng-repeat=\"limit in limits\" ng-selected=\"{{limit.value == criterion.limit}}\" value=\"{{limit.value}}\">{{limit.display_value}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\" ng-if=\"is_sd\">\n" +
-    "                  <label class=\"control-label\">SD Value<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"sd\" ng-model=\"criterion.sd\" ng-required=\"criterion.limit === 'SD'\" placeholder=\"SD Value\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\" ng-if=\"is_pc\">\n" +
-    "                  <label class=\"control-label\">Percentage Value<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"percent\" ng-model=\"criterion.percent\" ng-required=\"criterion.limit === 'PC'\" placeholder=\"Percentage Value\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\" ng-if=\"is_fv\">\n" +
-    "                  <label class=\"control-label\">Absolute Value<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"absolute\" ng-model=\"criterion.absolute\" ng-required=\"criterion.limit === 'FV'\" placeholder=\"Absolute Value\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"criterion.active\" tooltip=\"Check if evalution criterion is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.evaluation_criteria\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/evaluation_criteria/evaluation_criteria_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/evaluation_criteria/evaluation_criteria_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Drug\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.evaluation_criteria.add_evaluation_criterion\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-th-list\"></i> Evaluation Criteria\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html\" grid-for=\"events\" api-key=\"evaluation_criteria\" data=\"evaluation_criteria\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/evaluation_criteria/evaluation_criteria_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Evaluation Criteria List {{limits}}\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-2\">Analyte</th>\n" +
-    "                <th class=\"col-md-2\">Limit</th>\n" +
-    "                <th class=\"col-md-2\">Absolute Value</th>\n" +
-    "                <th class=\"col-md-2\">SD Value</th>\n" +
-    "                <th class=\"col-md-2\">Percentage Value</th>\n" +
-    "                <th class=\"col-md-1\">Active</th>\n" +
-    "                <th class=\"col-md-1\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"criterion in evaluation_criteria\">\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{criterion.analyte_name}}\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    <span ng-if=\"criterion.limit === 'SD'\">\n" +
-    "                        SD Value\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"criterion.limit === 'PC'\">\n" +
-    "                        Percentage of Target\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"criterion.limit === 'FV'\">\n" +
-    "                        Fixed Value\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"criterion.limit === 'CM'\">\n" +
-    "                        Combination Max Limit\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{criterion.absolute}}\n" +
-    "                    <i class=\"fa fa-minus fs-16\" ng-if=\"!criterion.absolute\"></i>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{criterion.sd}}\n" +
-    "                    <i class=\"fa fa-minus fs-16\" ng-if=\"!criterion.sd\"></i>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{criterion.percent}}\n" +
-    "                    <i class=\"fa fa-minus fs-16\" ng-if=\"!criterion.percent\"></i>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-1 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"criterion.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!criterion.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.evaluation_criteria.edit_evaluation_criterion({criterion_id: criterion.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/instruments/instruments_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/instruments/instruments_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Unit\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"instruments.add_instrument\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Instrument\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"unit_frm\"  ng-submit=\"save(unit_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"instrument.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "              <label class=\"control-label\">Manufacturer<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                <select class=\"form-control\" name=\"manufacturer\" ng-model=\"instrument.manufacturer\">\n" +
-    "                  <option value=\"\" disabled>Select Manufacturer</option>\n" +
-    "                  <option ng-repeat=\"manufacturer in manufacturers\" ng-selected=\"{{manufacturer.id == instrument.manufacturer}}\" value=\"{{manufacturer.id}}\">{{manufacturer.name}}</option>\n" +
+    "<div class=\"col-xs-12 margin-t-30 pad-0\">\n" +
+    "    <div class=\"col-md-4\">\n" +
+    "        <div class=\"col-xs-12 content-card\">\n" +
+    "            <h4 class=\"lato-light fs-18 margin-b-10\">\n" +
+    "                Advanced Search\n" +
+    "            </h4>\n" +
+    "            <div class=\"form-group\">\n" +
+    "                <label class=\"conrol-label\">Indusry</label>\n" +
+    "                <select class=\"form-control\" ng-model=\"lab_program.query\">\n" +
+    "                    <option value=\"\" disabled>Select Industry</option>\n" +
+    "                    <option ng-repeat=\"program in programs\" ng-selected=\"{{program.id == analyte.program}}\" value=\"{{program.id}}\">{{program.name}}</option>\n" +
     "                </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"instrument.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"instrument.active\" tooltip=\"Check if unit is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"form-group\">\n" +
+    "                <label class=\"conrol-label\">Town</label>\n" +
+    "                <select class=\"form-control\" ng-model=\"lab_program.query\">\n" +
+    "                    <option value=\"\" disabled>Select Town</option>\n" +
+    "                    <option ng-repeat=\"program in programs\" ng-selected=\"{{program.id == analyte.program}}\" value=\"{{program.id}}\">{{program.name}}</option>\n" +
+    "                </select>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\" style=\"padding: 0px;\">\n" +
-    "            <table class=\"table table-hover table-condensed col-xs-12\">\n" +
-    "              <thead class=\"grey-header\">\n" +
-    "                  <th class=\"col-xs-4\">Name&#42;</th>\n" +
-    "                  <th class=\"col-xs-4\">Description&#42;</th>\n" +
-    "                  <th class=\"col-xs-3 text-center\">Active&#42;</th>\n" +
-    "                  <th class=\"col-xs-1 text-center\"></th>\n" +
-    "              </thead>\n" +
-    "              <tbody>\n" +
-    "                  <tr ng-repeat=\"model in instrument_models\">\n" +
-    "                      <td class=\"col-xs-4\">\n" +
-    "                        <div class=\"form-group grid-inputs\">\n" +
-    "                          <input class=\"form-control\" name=\"name\" ng-model=\"model.name\" placeholder=\"Model Name\" api-checker/>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-md-8\">\n" +
+    "        <div class=\"col-xs-12 content-card pad-0\">\n" +
+    "            <div class=\"col-xs-12 margin-t-10 margin-b-10\">\n" +
+    "                <div class=\"form-group input-group\">\n" +
+    "                    <span class=\"white-addon input-group-addon\" id=\"basic-addon1\">\n" +
+    "                      <i class=\"fa fa-search\"></i>\n" +
+    "                    </span>\n" +
+    "                    <input class=\"white-input form-control\" ng-model=\"case.query\" placeholder=\"Search Organizaions\">\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "            <div class=\"col-xs-12 margin-b-10 fx-fade-down fx-dur-600 fx-ease-cubic fx-stagger-50\" ng-repeat=\"case in showcases| filter : case.query\" >\n" +
+    "                <div class=\"col-md-1 text-center pad-l-0\">\n" +
+    "                    <span class=\"fa-stack fa-lg fs-35 text-dark-green\">\n" +
+    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
+    "                      <i class=\"fa fa-building fa-stack-1x fa-inverse fs-26\"></i>\n" +
+    "                    </span>\n" +
+    "                </div>\n" +
+    "                <div class=\"col-md-11\" style=\"border-bottom: 1px solid #e0e0e0; padding-bottom: 5px;\">\n" +
+    "                    <h4 class=\"fs-18 lato-light text-dark-green margin-b-10\">\n" +
+    "                        {{case.company_name}}\n" +
+    "                    </h4>\n" +
+    "                    <div class=\"col-xs-12 pad-l-0 margin-b-10\">\n" +
+    "                        <div class=\"col-xs-6  pad-l-0\">\n" +
+    "                            <span class=\"label label-warning fs-12\">{{case.industry}}</span>\n" +
     "                        </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-4\">\n" +
-    "                        <div class=\"form-group grid-inputs\">\n" +
-    "                            <textarea class=\"form-control\" name=\"description\" ng-model=\"instrument.description\" placeholder=\"Model Description\" rows=\"1\" api-checker></textarea>\n" +
+    "                        <div class=\"col-xs-6\">\n" +
+    "                            <span class=\"pull-right\">{{case.town}} Town</span>\n" +
     "                        </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-3 text-center\">\n" +
-    "                          <div class=\"form-group checkbox\">\n" +
-    "                            <label>\n" +
-    "                              <input type=\"checkbox\" id=\"selected\" name=\"selected\" ng-model=\"model.active\" tooltip-placement=\"bottom\" api-checker >\n" +
-    "                              Active\n" +
-    "                             </label>\n" +
-    "                          </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-1 text-center\">\n" +
-    "                          <a ng-click=\"removeModel(model)\" style=\"cursor: pointer;\">\n" +
-    "                              <i class=\"fa fa-times-circle fa-2x grid-inputs text-danger\"></i>\n" +
-    "                          </a>\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "                  <tr ng-if=\"option_group.options.length < 1\" class=\"\">\n" +
-    "                      <td colspan=\"3\">\n" +
-    "                          <i class=\"fa fa-info-circle\"></i> No Instrument Model added to Instrument\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "              </tbody>\n" +
-    "          </table>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-10 col-sm-offset-1 pad-0 text-right margin-t-10 margin-b-10\">\n" +
-    "            <a class=\"btn btn-primary pull-right\" ng-click=\"addModel()\" >\n" +
-    "                <i class=\"fa fa-plus-square-o\"></i> Add\n" +
-    "            </a>\n" +
-    "        </div>\n" +
-    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.instruments\">Cancel</a>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/instruments/instruments_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/instruments/instruments_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Instrument\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.instruments.add_instrument\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-sliders\"></i> Instruments\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/instruments/instruments_list.tpl.html\" grid-for=\"events\" api-key=\"instruments\" data=\"instruments\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/instruments/instruments_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/instruments/instruments_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Instruments List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-4\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Manufacturer</th>\n" +
-    "                <th class=\"col-md-2\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"instrument in instruments\">\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{instrument.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{instrument.manufacturer_name}}\n" +
-    "                    <span ng-if=\"!instrument.manufacturer\" class=\"fs-16 text-black\">\n" +
-    "                        <i class=\"fa fa-minus\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"instrument.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!instrument.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.instruments.edit_instrument({instrument_id: instrument.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/programs/programs_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/programs/programs_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.programs.add_program\" ui-sref-opts=\"{reload:true}\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Program\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"program_frm\"  ng-submit=\"save(program_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Code<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"code\" ng-model=\"program.code\" required placeholder=\"Code\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"program.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Category <span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"category\" ng-model=\"program.category\" api-checker required>\n" +
-    "                      <option value=\"\" disabled>Select Category</option>\n" +
-    "                      <option ng-repeat=\"cat in categories\" ng-selected=\"{{cat.id == program.category}}\" value=\"{{cat.id}}\">{{cat.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Number of Shipments per year<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input type=\"number\" class=\"form-control\" name=\"number_of_shipments_per_year\" ng-model=\"program.number_of_shipments_per_year\" required placeholder=\"Number of shipments per year\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Size of Shipment<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"size_of_shipment\" ng-model=\"program.size_of_shipment\" required placeholder=\"Size of shipment\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Shipment Unit <span class=\"text-danger\">&#42;</span>\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"shipment_unit\" ng-model=\"program.shipment_unit\" api-checker required>\n" +
-    "                      <option value=\"\" disabled>Select Shipment Unit</option>\n" +
-    "                      <option ng-repeat=\"unit in units\" ng-selected=\"{{unit.id == program.shipment_unit}}\" value=\"{{unit.id}}\">{{unit.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Price<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"price\" ng-model=\"program.price\" required placeholder=\"Price\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"\">\n" +
-    "                      Sample Type\n" +
-    "                  </label>\n" +
-    "                  <select class=\"form-control\" name=\"sample_type\" ng-model=\"program.sample_type\" api-checker>\n" +
-    "                      <option value=\"\" disabled>Select Sample Type</option>\n" +
-    "                      <option ng-repeat=\"sample_type in sample_types\" ng-selected=\"{{sample_type.id == program.sample_type}}\" value=\"{{sample_type.id}}\">{{sample_type.name}}</option>\n" +
-    "                  </select>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"program.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Compatibility Information</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"compatibility_information\" ng-model=\"program.compatibility_information\" placeholder=\"Compatibility Information\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"program.active\" tooltip=\"Check if Program is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
+    "                    </div>\n" +
+    "                    <div class=\"col-xs-12 margin-t-5 lato-light pad-l-0\">\n" +
+    "                        <p class=\"lato-light fs-14\">\n" +
+    "                            {{case.overview}}\n" +
+    "                        </p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
     "            </div>\n" +
+    "            <div class=\"clearfix margin-t-10 margin-b-10\"></div>\n" +
     "        </div>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\" style=\"padding: 0px;\">\n" +
-    "            <table class=\"table table-hover table-condensed col-xs-12\">\n" +
-    "              <thead class=\"grey-header\">\n" +
-    "                  <th class=\"col-md-8\">Sample&#42;</th>\n" +
-    "                  <th class=\"col-md-4 text-center\">Active</th>\n" +
-    "              </thead>\n" +
-    "              <tbody>\n" +
-    "                  <tr ng-repeat=\"prog_sample in program.samples\">\n" +
-    "                      <td class=\"col-xs-4\">\n" +
-    "                        <div class=\"form-group grid-inputs\">\n" +
-    "                          <select class=\"form-control\" name=\"sample{{$index}}\" ng-model=\"prog_sample.sample\" api-checker>\n" +
-    "                            <option value=\"\" disabled>Select Sample</option>\n" +
-    "                            <option ng-repeat=\"a_sample in samples\" ng-selected=\"{{a_sample.id == prog_sample.sample}}\" value=\"{{a_sample.id}}\">{{a_sample.name}}</option>\n" +
-    "                        </select>\n" +
-    "                        </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-3 text-center\">\n" +
-    "                          <div class=\"form-group checkbox\" ng-if=\"prog_sample.id\">\n" +
-    "                            <label>\n" +
-    "                              <input type=\"checkbox\" id=\"active_sample{{prog_sample}}\" name=\"active_sample{{prog_sample}}\" ng-model=\"prog_sample.active\" tooltip-placement=\"bottom\" api-checker>\n" +
-    "                              Active\n" +
-    "                             </label>\n" +
-    "                          </div>\n" +
-    "                          <a ng-show=\"!prog_sample.id\" ng-click=\"removeSample(sample)\" style=\"cursor: pointer;\">\n" +
-    "                              <i class=\"fa fa-times-circle fa-2x grid-inputs text-danger\"></i>\n" +
-    "                          </a>\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "                  <tr ng-if=\"option_group.options.length < 1\" class=\"\">\n" +
-    "                      <td colspan=\"3\">\n" +
-    "                          <i class=\"fa fa-info-circle\"></i> No Instrument Model added to Instrument\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "              </tbody>\n" +
-    "          </table>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-10 col-sm-offset-1 pad-0 text-right margin-t-10 margin-b-10\">\n" +
-    "            <a class=\"btn btn-primary pull-right\" ng-click=\"addSample()\" >\n" +
-    "                <i class=\"fa fa-plus-square-o\"></i> Add\n" +
-    "            </a>\n" +
-    "        </div>\n" +
-    "        <div class=\"pull-left col-md-10 col-md-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.programs\">Cancel</a>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
     "    </div>\n" +
     "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/programs/programs_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/programs/programs_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Program\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.programs.add_program\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-sitemap\"></i> Programs\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/programs/programs_list.tpl.html\" grid-for=\"events\" api-key=\"programs\" data=\"programs\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/programs/programs_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/programs/programs_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Programs List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-3\">Code</th>\n" +
-    "                <th class=\"col-md-4\">Name</th>\n" +
-    "                <th class=\"col-md-3\">Sample Type</th>\n" +
-    "                <th class=\"col-md-1\">Active</th>\n" +
-    "                <th class=\"col-md-1\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"program in programs\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Code:\" class=\"pad-t-15\">{{program.code}}</td>\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{program.name}}</td>\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Sample Type:\" class=\"pad-t-15\">\n" +
-    "                    {{program.sample_type_name}}\n" +
-    "                    <span ng-if=\"!program.sample_type_name\">\n" +
-    "                        <i class=\"fa fa-minus fs-14 text-balck\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"program.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!program.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.programs.edit_program({program_id: program.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/result_codes/result_codes_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/result_codes/result_codes_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"result_codes.add_result_code\" ui-sref-opts=\"{reload:true}\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Result Code\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"result_code_frm\"  ng-submit=\"save(result_code_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\"\n" +
-    "                  ng-model=\"result_code.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Description</label>\n" +
-    "                  <textarea class=\"form-control\" name=\"description\" ng-model=\"result_code.description\" placeholder=\"Description\" rows=\"2\" api-checker></textarea>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"result_code.active\" tooltip=\"Check if result code is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_error_code\" name=\"is_error_code\" ng-model=\"result_code.is_error_code\" api-checker >\n" +
-    "                    Error Code\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_valid_for_qualitative_analyte\" name=\"is_valid_for_qualitative_analyte\" ng-model=\"result_code.is_valid_for_qualitative_analyte\" api-checker >\n" +
-    "                    Valid for Qualitative Analyte\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.result_codes\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/result_codes/result_codes_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/result_codes/result_codes_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Category\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.result_codes.add_result_code\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-barcode\"></i> Result Codes\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/result_codes/result_codes_list.tpl.html\" grid-for=\"events\" api-key=\"result_codes\" data=\"result_codes\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/result_codes/result_codes_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/result_codes/result_codes_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Result Codes List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-3\">Name</th>\n" +
-    "                <th class=\"col-md-2 text-center\">Active</th>\n" +
-    "                <th class=\"col-md-2 text-center\">Error Code</th>\n" +
-    "                <th class=\"col-md-3 text-center\">Valid for Qualitative Programs</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"code in result_codes\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{code.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15 text-center\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"code.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!code.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-4 pad-t-15 text-center\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"code.is_error_code\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!code.is_error_code\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-4 pad-t-15 text-center\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"code.is_valid_for_qualitative_analyte\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!code.is_valid_for_qualitative_analyte\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.result_codes.edit_result_code({code_id: code.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/sample_setup.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/sample_setup.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-eyedropper\"></i> Sample Setup\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-md-10 col-md-offset-1 col-xs-12 margin-t-30\">\n" +
-    "\n" +
-    "    <div class=\"col-md-6 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"sample_setup.samples\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-55 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-eyedropper fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"sample_setup.samples\">\n" +
-    "            <p class=\"lato-light fw-500 fs-20 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Samples\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-6 col-xs-6 text-center\">\n" +
-    "        <a ui-sref=\"sample_setup.sample_types\">\n" +
-    "            <p class=\"margin-b-0\">\n" +
-    "                <span class=\"fa-stack fa-lg fs-55 text-blue dashboard-icon\">\n" +
-    "                  <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                  <i class=\"fa fa-archive fa-stack-1x fa-inverse\"></i>\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "        <a ui-sref=\"sample_setup.sample_types\">\n" +
-    "            <p class=\"lato-light fw-500 fs-20 dashboard-icon\">\n" +
-    "                <span>\n" +
-    "                    Sample Types\n" +
-    "                </span>\n" +
-    "            </p>\n" +
-    "        </a>\n" +
-    "    </div>\n" +
-    "\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/sample_types_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/sample_types_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Sample Type\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.sample_types.add_sample_type\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Sample Type\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"sample_type_frm\"  ng-submit=\"save(sample_type_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"sample_type.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"sample_type.active\" tooltip=\"Check if sample type is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.sample_types\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/sample_types_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/sample_types_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Sample Type\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.sample_types.add_sample_type\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-pie-chart\"></i> Sample Types\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/sample/sample_types_list.tpl.html\" grid-for=\"events\" api-key=\"sample_types\" data=\"sample_types\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/sample_types_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/sample_types_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Sample Types List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"sample_type in sample_types\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{sample_type.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"sample_type.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!sample_type.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\"\n" +
-    "                    ui-sref=\"dashboard.sample_types.edit_sample_type({sample_type_id: sample_type.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/samples_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/samples_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Samples\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.samples.add_sample\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Sample\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"sample_frm\"  ng-submit=\"save(sample_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"sample.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"sample.active\" tooltip=\"Check if sample is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"pull-left col-sm-12 pad-0 margin-t-10 margin-b-20\">\n" +
-    "                <button class=\"btn btn-primary\">Save</button>\n" +
-    "                <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.samples\">Cancel</a>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/samples_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/samples_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"New Sample\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.samples.add_sample\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-eyedropper\"></i> Samples\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/sample/samples_list.tpl.html\" grid-for=\"events\" api-key=\"samples\" data=\"samples\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/sample/samples_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/sample/samples_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Samples List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-6\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"sample in samples\">\n" +
-    "                <td class=\"col-md-6 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{sample.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"sample.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!sample.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.samples.edit_sample({sample_id: sample.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/units/units_form.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/units/units_form.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a ng-if=\"edit_view\" tooltip-placement=\"bottom\" tooltip=\"Delete Unit\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"units.add_unit\">\n" +
-    "            <i class=\"fa fa-trash text-danger\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "          <i class=\"fa {{edit_view ? 'fa-edit' : 'fa-plus-circle'}}\"></i> {{edit_view ? 'Edit' : 'Add'}} Unit\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
-    "    <div ui-view=\"delete\"></div>\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "      <form name=\"unit_frm\"  ng-submit=\"save(unit_frm)\" novalidate>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
-    "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Name<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"name\" ng-model=\"unit.name\" required placeholder=\"Name\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group\">\n" +
-    "                  <label class=\"control-label\">Symbol<span class=\"text-danger\">&#42;</span></label>\n" +
-    "                  <input class=\"form-control\" name=\"symbol\" ng-model=\"unit.symbol\" required placeholder=\"Symbol\" api-checker/>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"active\" name=\"active\" ng-model=\"unit.active\" tooltip=\"Check if unit is not retired\" api-checker >\n" +
-    "                    Active\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\" style=\"padding: 0px;\">\n" +
-    "            <table class=\"table table-hover table-condensed col-xs-12\">\n" +
-    "              <thead class=\"grey-header\">\n" +
-    "                  <th class=\"col-xs-4\">Analyte&#42;</th>\n" +
-    "                  <th class=\"col-xs-4\">Multiplier Factor&#42;</th>\n" +
-    "                  <th class=\"col-xs-3 text-center\">Active&#42;</th>\n" +
-    "                  <th class=\"col-xs-1 text-center\"></th>\n" +
-    "              </thead>\n" +
-    "              <tbody>\n" +
-    "                  <tr ng-repeat=\"unit_con in unit_conversions\">\n" +
-    "                      <td class=\"col-xs-4\">\n" +
-    "                        <div class=\"form-group grid-inputs\">\n" +
-    "                          <select class=\"form-control\" name=\"analyte\" ng-model=\"unit_con.analyte\">\n" +
-    "                            <option value=\"\" disabled>Select Analyte</option>\n" +
-    "                            <option ng-repeat=\"analyte in analytes\" ng-selected=\"{{analyte.id == unit_con.analyte}}\" value=\"{{analyte.id}}\">{{analyte.name}}</option>\n" +
-    "                          </select>\n" +
-    "                        </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-4\">\n" +
-    "                        <div class=\"form-group grid-inputs\">\n" +
-    "                            <input class=\"form-control\" name=\"multiplier_factor\" ng-model=\"unit_con.multiplier_factor\" placeholder=\"Multiplier Factor\" required />\n" +
-    "                        </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-3 text-center\">\n" +
-    "                          <div class=\"form-group checkbox\">\n" +
-    "                            <label>\n" +
-    "                              <input type=\"checkbox\" id=\"selected\" name=\"selected\" ng-model=\"unit_con.active\" tooltip-placement=\"bottom\" tooltip=\"Check Program to add to unit conversion\" api-checker >\n" +
-    "                              Active\n" +
-    "                             </label>\n" +
-    "                          </div>\n" +
-    "                      </td>\n" +
-    "                      <td class=\"col-xs-1 text-center\">\n" +
-    "                          <a ng-click=\"removeConversion(unit_con)\" style=\"cursor: pointer;\">\n" +
-    "                              <i class=\"fa fa-times-circle fa-2x grid-inputs text-danger\"></i>\n" +
-    "                          </a>\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "                  <tr ng-if=\"option_group.options.length < 1\" class=\"\">\n" +
-    "                      <td colspan=\"3\">\n" +
-    "                          <i class=\"fa fa-info-circle\"></i> No Unit Conversion added to Unit\n" +
-    "                      </td>\n" +
-    "                  </tr>\n" +
-    "              </tbody>\n" +
-    "          </table>\n" +
-    "        </div>\n" +
-    "        <div class=\"col-sm-10 col-sm-offset-1 pad-0 text-right margin-t-10 margin-b-10\">\n" +
-    "            <a class=\"btn btn-primary pull-right\" ng-click=\"addConversion()\" >\n" +
-    "                <i class=\"fa fa-plus-square-o\"></i> Add\n" +
-    "            </a>\n" +
-    "        </div>\n" +
-    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard.units\">Cancel</a>\n" +
-    "        </div>\n" +
-    "      </form>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/units/units_grid.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/units/units_grid.tpl.html",
-    "<div class=\"content-header\">\n" +
-    "    <div class=\"action-container content-header-extra pad-r-20\">\n" +
-    "        <a  tooltip-placement=\"bottom\" tooltip=\"Add Unit\" class=\"action-btn action-btn-md action-btn-default\" ui-sref=\"dashboard.units.add_unit\">\n" +
-    "            <i class=\"fa fa-plus\"></i>\n" +
-    "        </a>\n" +
-    "   </div>\n" +
-    "   <h2 class=\"content-title\">\n" +
-    "        <span class=\"main-title\">\n" +
-    "            <i class=\"fa fa-superscript\"></i> Units\n" +
-    "        </span>\n" +
-    "   </h2>\n" +
-    "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12 margin-t-30\">\n" +
-    "    <div class=\"col-xs-12\">\n" +
-    "        <sil-grid template=\"setup/tpls/units/units_list.tpl.html\" grid-for=\"events\" api-key=\"units\" data=\"units\" filters=\"filters\" error=\"alert\"></sil-grid>\n" +
-    "    </div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
-angular.module("setup/tpls/units/units_list.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("setup/tpls/units/units_list.tpl.html",
-    "<div class=\"col-xs-12 content-card\">\n" +
-    "    <h4 class=\"lato-light margin-b-10 fs-20\">\n" +
-    "        Units List\n" +
-    "    </h4>\n" +
-    "    <table class=\"table table-hover table-condensed fs-14\" id=\"no-more-tables\">\n" +
-    "        <thead>\n" +
-    "            <tr>\n" +
-    "                <th class=\"col-md-4\">Name</th>\n" +
-    "                <th class=\"col-md-4\">Symbol</th>\n" +
-    "                <th class=\"col-md-2\">Active</th>\n" +
-    "                <th class=\"col-md-2\"></th>\n" +
-    "            </tr>\n" +
-    "        </thead>\n" +
-    "        <tbody class=\"fade-content\">\n" +
-    "            <tr  ng-repeat=\"unit in units\">\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">{{unit.name}}</td>\n" +
-    "                <td class=\"col-md-4 pad-t-15\" data-title=\"Name:\" class=\"pad-t-15\">\n" +
-    "                    {{unit.symbol}}\n" +
-    "                    <span ng-if=\"!unit.symbol\" class=\"fs-16 text-black\">\n" +
-    "                        <i class=\"fa fa-minus\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td class=\"col-md-2 pad-t-15\" data-title=\"Active\">\n" +
-    "                    <span ng-if=\"unit.active\" class=\"fa-stack fa-lg fs-14 text-success\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-check fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                    <span ng-if=\"!unit.active\" class=\"fa-stack fa-lg fs-14 text-danger\">\n" +
-    "                      <i class=\"fa fa-circle fa-stack-2x\"></i>\n" +
-    "                      <i class=\"fa fa-close fa-stack-1x fa-inverse\"></i>\n" +
-    "                    </span>\n" +
-    "                </td>\n" +
-    "                <td data-title=\"Actions:\" class=\"col-md-2 text-right\">\n" +
-    "                    <a class=\"action-btn action-btn-grid action-btn-success\" ui-sref=\"dashboard.units.edit_unit({unit_id: unit.id})\" class=\"btn btn-success\">\n" +
-    "                        <i class=\"fa fa-pencil\"></i>\n" +
-    "                    </a>\n" +
-    "                </td>\n" +
-    "            </tr>\n" +
-    "        </tbody>\n" +
-    "    </table>\n" +
-    "    <sil-grid-pagination> </sil-grid-pagination>\n" +
-    "</div>\n" +
+    "<div ui-view=\"footer\"></div>\n" +
     "");
 }]);
 
@@ -4816,18 +2490,16 @@ angular.module("users/tpls/user-edit.tpl.html", []).run(["$templateCache", funct
     "        </span>\n" +
     "   </h2>\n" +
     "</div>\n" +
-    "<div class=\"content-control\">\n" +
-    "    <!--breadcrumb-->\n" +
-    "    <div ncy-breadcrumb></div>\n" +
-    "    <!--/breadcrumb-->\n" +
-    "</div>\n" +
-    "<div class=\"col-xs-12\">\n" +
+    "<div class=\"col-xs-12 margin-t-20\">\n" +
     "    <div ui-view=\"delete\"></div>\n" +
     "    <div class=\"col-xs-12\">\n" +
     "      <form name=\"unit_frm\"  ng-submit=\"save(unit_frm)\" novalidate>\n" +
     "        <div class=\"fade-content col-sm-10 col-sm-offset-1 margin-t-20 content-card\">\n" +
+    "          <div class=\"col-xs-12 margin-t-10\">\n" +
+    "            <h3 class=\"lato-light fw-600 fs-24\">Register with us!!!</h3>\n" +
+    "          </div>\n" +
     "          <drf-err-msg></drf-err-msg>\n" +
-    "            <div class=\"col-sm-12 margin-t-20 margin-b-20\">\n" +
+    "            <div class=\"col-sm-12 margin-t-20 margin-b-10\">\n" +
     "              <div class=\"form-group\">\n" +
     "                  <label class=\"control-label\">First Name<span class=\"text-danger\">&#42;</span></label>\n" +
     "                  <input class=\"form-control\" name=\"first_name\" ng-model=\"user.first_name\" required placeholder=\"First Name\" api-checker/>\n" +
@@ -4844,39 +2516,28 @@ angular.module("users/tpls/user-edit.tpl.html", []).run(["$templateCache", funct
     "              <label class=\"control-label\">Password<span class=\"text-danger\">&#42;</span></label>\n" +
     "                  <input type=\"password\" class=\"form-control\" name=\"password\" ng-model=\"user.password\" required placeholder=\"Password\" api-checker/>\n" +
     "              </div>\n" +
-    "              <div class=\"form-group checkbox\" ng-if=\"loggedin_user.is_staff\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_staff\" name=\"is_staff\" ng-model=\"user.is_staff\" tooltip=\"Check if user is a staff\" api-checker>\n" +
-    "                    Is staff\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
     "              <div class=\"form-group checkbox\">\n" +
     "                  <label>\n" +
     "                    <input type=\"checkbox\" id=\"is_admin_contact\" name=\"is_admin_contact\" ng-model=\"user.is_admin_contact\" tooltip=\"Check if user is a admin contact\" api-checker >\n" +
-    "                    Is admin contact\n" +
+    "                    As an Investor\n" +
     "                   </label>\n" +
     "              </div>\n" +
     "              <div class=\"form-group checkbox\">\n" +
     "                  <label>\n" +
     "                    <input type=\"checkbox\" id=\"is_billing_contact\" name=\"is_billing_contact\" ng-model=\"user.is_billing_contact\" tooltip=\"Check if user is a billing contact\" api-checker >\n" +
-    "                    Is billing contact\n" +
-    "                   </label>\n" +
-    "              </div>\n" +
-    "              <div class=\"form-group checkbox\">\n" +
-    "                  <label>\n" +
-    "                    <input type=\"checkbox\" id=\"is_active\" name=\"is_active\" ng-model=\"user.is_active\" tooltip=\"Check if user is not retired\" api-checker >\n" +
-    "                    Active\n" +
+    "                    As an Inventor\n" +
     "                   </label>\n" +
     "              </div>\n" +
     "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"pull-left col-sm-10 col-sm-offset-1 pad-0 margin-t-10 margin-b-20\">\n" +
-    "          <button class=\"btn btn-primary\">Save</button>\n" +
-    "          <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"users\">Cancel</a>\n" +
+    "            <div class=\"pull-left col-xs-12 margin-t-0 margin-b-20\">\n" +
+    "              <button class=\"btn btn-primary\">Save</button>\n" +
+    "              <a class=\"margin-l-10 btn btn-default margin-l-5\" ui-sref=\"dashboard\">Cancel</a>\n" +
+    "            </div>\n" +
     "        </div>\n" +
     "      </form>\n" +
     "    </div>\n" +
     "</div>\n" +
+    "<div ui-view=\"footer\"></div>\n" +
     "");
 }]);
 
