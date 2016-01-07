@@ -52,7 +52,7 @@
                     if($scope.edit_view){
                         wrappers.users.update($scope.user_id, changed)
                         .success(function () {
-                            $state.go("users");
+                            $state.go("login");
                         })
                         .error(function (data) {
                             $scope.errors = data;
@@ -60,7 +60,7 @@
                     }else{
                         wrappers.users.create(changed)
                         .success(function (){
-                            $state.go("users");
+                            $state.go("login");
                         })
                         .error(function (data) {
                             $scope.errors = data;

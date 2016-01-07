@@ -16,21 +16,28 @@
     .config(["$stateProvider", function ($stateProvider) {
         $stateProvider
 
-        .state("results", {
-            url : "/crowdfunding",
+        .state("messages", {
+            url : "/messages",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"
                 },
-                "header@results": {
+                "header@messages": {
                     controller: "huqas.common.controllers.header",
-                    templateUrl: "common/tpls/header.tpl.html"
+                    templateUrl: "common/tpls/header-on-login.tpl.html"
                 },
-                "body@results": {
+                "body@messages": {
                     controller: "huqas.results.controllers.results",
                     templateUrl: "results/tpls/main.tpl.html"
                 },
-                "footer@results" : {
+                "side-view@messages" : {
+                    templateUrl : "results/tpls/programs.tpl.html"
+                },
+                "nested-view@messages" : {
+                    controller : "huqas.results.controllers.enrollments",
+                    templateUrl : "results/tpls/nested_content.tpl.html"
+                },
+                "footer@messages" : {
                     templateUrl : "common/tpls/footer.tpl.html"
                 }
             },

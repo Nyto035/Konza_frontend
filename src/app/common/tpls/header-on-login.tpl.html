@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right margin-t-10">
         <li ui-sref-active="active"><a ui-sref="dashboard">Home</a></li>
-        <li ui-sref-active="active"><a ui-sref="lab_instruments">Showcase</a></li>
+        <li ui-sref-active="active"><a ui-sref="admin">Showcase</a></li>
         <li class="dropdown">
         <!-- <div class="profile-nav"> -->
-          <a href class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 10px !important; padding-bottom: 13px !important;">
+          <a href class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 10px !important; padding-bottom: 15px !important;">
             <span class="profile-username text-center">
               <span class="fa-stack fa-lg fs-14 text-dark-green">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -34,7 +34,7 @@
         <!-- </div> -->
         </li>
         <li ui-sref-active="active" >
-            <a href title="Inboxs" class="dropdown-toggle" data-toggle="dropdown" role="button" style="padding-bottom: 12px !important;">
+            <a title="Inboxs" class="dropdown-toggle" data-toggle="dropdown" role="button" style="padding-bottom: 14px !important;">
                 <!-- <i class="header-menu-icon icon-only fa fa-envelope-o fs-20"></i> -->
                 <span class="header-menu-icon icon-only fa-stack fa-lg fs-16 text-dark-green" style="margin-top: -7px;">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -76,8 +76,8 @@
                       <p class="notif-text fs-13 text-grey margin-t-5">Risus suscipit urna, tristique somet...</p>
                   </a>
               </li><!-- /dropdown-alert -->
-              <li class="dropdown-footer bg-cloud">
-                  <a class="view-all" tabindex="-1" href="#">
+              <li>
+                  <a ui-sref="messages" style="cursor: pointer;">
                       <i class="fa fa-angle-right pull-right"></i> See all messages
                   </a>
               </li><!-- /dropdown-footer -->

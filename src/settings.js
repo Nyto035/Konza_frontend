@@ -4,14 +4,16 @@
     var settings = {
         "SERVER_URL": "http://localhost:8001/",
         "CREDENTIALS": {
-            "username": "antony@owaga.com",
-            "password": "antony",
+            "username": "owaga@owaga.com",
+            "password": "password1",
             "client_id": "7mfI9iDWXf8VZxn3wqiecmkppFrYhZh26A1YCDlf",
-            "client_secret": "",
+            "client_secret": "ljD9BYxsR8EYxSm3HtHhF0MeqMu5q62AC64vAjwXQ1X"+
+                "nWpRbaqMm2ipSsmc7eWZkYqeIDkiQpBUYvlKeM2cQEtZozLOUbCHweyEt"+
+                "J8cJv2fKNOrpMG8cFsnUFov8lRYN",
             "token_url": "o/token/",
             "revoke_url": "o/revoke_token/"
         },
-        "TIMEOUT": {"kickout": 540, "warning": 60}
+        "TIMEOUT": {"kickout": 640, "warning": 60}
     };
 
     settings.CREDENTIALS.token_url = settings.SERVER_URL +
