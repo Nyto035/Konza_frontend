@@ -9,7 +9,7 @@
         $stateProvider
 
         .state("admin", {
-            url : "/admin",
+            url : "/administration",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"
@@ -24,7 +24,7 @@
                 }
             },
             ncyBreadcrumb: {
-                label: "Events"
+                label: "Admin"
             }
         })
         .state("dashboard.events.add_event", {

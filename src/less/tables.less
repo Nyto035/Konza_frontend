@@ -573,7 +573,7 @@ table {
 }
 .program-list {
   width: 100%;
-  max-height: 370px;
+  height: 435px;
   overflow-x:hidden;
   overflow-y: scroll;
 }
@@ -609,9 +609,10 @@ table {
   margin-top: 2px;
 }
 .program-item:hover {
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
   color: #000;
-  border-left: 4px solid #7B1FA2;
+  cursor: pointer;
+  /*border-left: 4px solid #7B1FA2;*/
   .pointer {
     visibility: visible;
     margin-top: 3px;
@@ -620,7 +621,7 @@ table {
 .program-item.active, .program-item:focus {
   background-color: #eeeeee;
   color: #2196F3;
-  border-left: 4px solid #7B1FA2;
+  /*border-left: 4px solid #7B1FA2;*/
   border-bottom: 1px solid #bdbdbd;
   border-top: 1px solid #eeeeee;
   .pointer {
@@ -670,4 +671,20 @@ table {
 }
 .table-fixed tbody td, .table-fixed thead > tr> th {
   float: left;
+}
+.program-list::-webkit-scrollbar{
+    width:9px;
+    background-color:#FFFFFF;
+}
+.program-list::-webkit-scrollbar-thumb{
+    background-color:#cccccc;
+    border-radius:8px;
+}
+.program-list::-webkit-scrollbar-thumb:hover{
+    background-color:lighten(#cccccc, 5%);
+    border: transparent;
+}
+.program-list::-webkit-scrollbar-thumb:active{
+    background-color:#cccccc;
+    border:1px solid #e0e0e0;
 }

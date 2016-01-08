@@ -22,6 +22,7 @@
         "huqas.events",
         "huqas.lab_instruments",
         "huqas.users",
+        "huqas.results",
         "jcs-autoValidate"
     ]);
 

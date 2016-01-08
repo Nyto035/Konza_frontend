@@ -30,23 +30,141 @@
             }
         ]
     })
-    .constant("huqas.evaluation_criteria.limits", {
-        limits : [
+    .constant("konza.chat_list", {
+        list : [
             {
-                display_value : "SD",
-                value : "SD"
+                id : "1",
+                name : "Peter Otieno",
+                messages : [
+                    {
+                        mine : "Hello this is a message from me to my bro."+
+                        " I wrote this message while I was making the Konza"+
+                        "application to be utilized",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        other_time: "20/02/2015 at 09:03"
+                    },
+                    {
+                        mine : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    },
+                    {
+                        other : "Hello this is a message from me to my bro."+
+                        " I wrote this message while I was making the Konza"+
+                        "application to be utilized",
+                        other_time : "20/02/2015 at 09:00",
+                        mine : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        mine_time: "20/02/2015 at 09:03"
+                    }
+                ]
             },
             {
-                display_value : "Percentage of Target",
-                value : "PC"
+                id : "2",
+                name : "Christine Brown",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
             },
             {
-                display_value : "Fixed Value",
-                value : "FV"
+                id : "3",
+                name : "Gorge Kinyanjui",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
             },
             {
-                display_value : "Combination max limit",
-                value : "CM"
+                id : "4",
+                name : "Andrew Mwangi",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
+            },
+            {
+                id : "5",
+                name : "Peter Otieno",
+                messages : [
+                    {
+                        mine : "Hello this is a message from me to my bro."+
+                        " I wrote this message while I was making the Konza"+
+                        "application to be utilized",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        other_time: "20/02/2015 at 09:03"
+                    },
+                    {
+                        mine : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    },
+                    {
+                        other : "Hello this is a message from me to my bro."+
+                        " I wrote this message while I was making the Konza"+
+                        "application to be utilized",
+                        other_time : "20/02/2015 at 09:00",
+                        mine : "Now this is yet another message from me "+
+                        " bro. I write this message just wondering stuff ",
+                        mine_time: "20/02/2015 at 09:03"
+                    }
+                ]
+            },
+            {
+                id : "6",
+                name : "Christine Brown",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
+            },
+            {
+                id : "7",
+                name : "Gorge Kinyanjui",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
+            },
+            {
+                id : "8",
+                name : "Andrew Mwangi",
+                messages : [
+                    {
+                        mine : "Hello",
+                        mine_time : "20/02/2015 at 09:00",
+                        other : "Hello how have you been",
+                        other_time: "20/02/2015 at 09:03"
+                    }
+                ]
             }
         ]
     })
@@ -85,6 +203,25 @@
                 company_name : "Owaga",
                 town : "Nairobi",
                 industry : "IT",
+                contacts : [
+                    {
+                        type : "phone",
+                        contact : "0719333989"
+                    },
+                    {
+                        type : "email",
+                        contact : "yitchouse@inc.io"
+                    },
+                    {
+                        type : "address",
+                        contact : "Box 80100-83931, Mombasa, White House, Moi Avenue"
+                    }
+                ],
+                idea : "This is an agriculture based company specialized"+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "and rearing of fish",
                 overview : "This is an IT company specialized with "+
                 "developing software inline with financial industry. From "+
                 "ERPs to Accounting specific software"
@@ -94,6 +231,25 @@
                 company_name : "TMNT Limited",
                 town : "Nairobi",
                 industry : "Agricultural",
+                contacts : [
+                    {
+                        type : "phone",
+                        contact : "0719333989"
+                    },
+                    {
+                        type : "email",
+                        contact : "yitchouse@inc.io"
+                    },
+                    {
+                        type : "address",
+                        contact : "Box 80100-83931, Mombasa, White House, Moi Avenue"
+                    }
+                ],
+                idea : "This is an agriculture based company specialized"+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "with green houses for growing commercial plantations "+
+                    "and rearing of fish",
                 overview : "This is an agriculture based company specialized"+
                     "with green houses for growing commercial plantations."+
                     "and rearing of fish"
