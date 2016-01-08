@@ -17,7 +17,7 @@
         $stateProvider
 
         .state("messages", {
-            url : "/messages",
+            url : "/messages?user_id",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"

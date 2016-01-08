@@ -5,7 +5,8 @@
         "ui.router",
         "huqas.events.services",
         "huqas.auth.services",
-        "huqas.common.forms"
+        "huqas.common.forms",
+        "ng-fx"
     ])
 
     .controller("huqas.lab_instruments.controllers.main", ["$scope",

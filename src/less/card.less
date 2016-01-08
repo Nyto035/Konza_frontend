@@ -320,7 +320,9 @@ a.list-group-item:hover > .pull-right {
   border-bottom: 1px solid #E0E4E8;
 }
 .side-card {
-  min-height : 420px;
+  height : 424px;
+  overflow-x:hidden;
+  overflow-y: scroll;
 }
 
 /*chat bubbles */
@@ -512,4 +514,61 @@ section.parallax.parallax-demo-two {
 .message-input {
    border: transparent;
    background-color: #f1f1f1;
+}
+.msg-item {
+  max-width: 70%;
+  padding: 13px 19px 15px;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.reply-msg {
+  background-color: #ffc107;
+  color: #FFFFFF;
+}
+.my-msg {
+  background-color: #FFFFFF;
+}
+.msg-left:after {
+  content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 8px solid;
+    border-color: #ffc107 transparent transparent transparent
+}
+
+.msg-right:after {
+  content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -10px;
+    top: -1px;
+    bottom: auto;
+    border: 10px solid;
+    border-color: #FFFFFF transparent transparent transparent
+}
+.side-card::-webkit-scrollbar{
+    width: 9px;
+    background-color:#FFFFFF;
+}
+.side-card::-webkit-scrollbar-thumb{
+    background-color:#cccccc;
+    border-radius: 8px;
+}
+.side-card::-webkit-scrollbar-thumb:hover{
+    background-color:lighten(#cccccc, 5%);
+    border: transparent;
+}
+.side-card::-webkit-scrollbar-thumb:active{
+    background-color:#cccccc;
+    border:1px solid #e0e0e0;
 }

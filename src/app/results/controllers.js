@@ -13,7 +13,8 @@
     angular.module("huqas.results.controllers", [
         "ui.router",
         "huqas.events.services",
-        "huqas.auth.services"
+        "huqas.auth.services",
+        "ng-fx"
     ])
 
     /**
@@ -27,9 +28,30 @@
      */
     .controller("huqas.results.controllers.results",
         ["$scope",
-        "huqas.auth.services.login",
-        function ($scope, loginService) {
+        "huqas.auth.services.login", "$stateParams", "konza.chat_list",
+        function ($scope, loginService, $stateParams, chatlist) {
             $scope.loggedInUser = loginService.getUser();
+            $scope.chat_list = chatlist.list;
+            $scope.activeChat = function (active_id) {
+                _.each($scope.chat_list, function (chat) {
+                    if(chat.id === active_id && chat.active !== true) {
+                        /*poping program from lab_programs*/
+                        $scope.chat_list = _.without($scope.chat_list,
+                            chat);
+                        /*adding back as the first item of the array*/
+                        $scope.chat_list.unshift(chat);
+                        chat.active = true;
+                    }
+                    else if(chat.id !== active_id && chat.active === true) {
+                        chat.active = false;
+                    }
+                });
+            };
+            if($scope.chat_list) {
+                $scope.user_id = $stateParams.user_id ? $stateParams.user_id :
+                    $scope.chat_list[0].id;
+                $scope.activeChat($scope.user_id);
+            }
         }]
     )
     .controller("huqas.results.controllers.enrollments", ["$scope",
