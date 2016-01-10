@@ -172,6 +172,8 @@
         showcases : [
             {
                 id : 1,
+                user : 1,
+                owner_name : "Antony Owaga",
                 company_name : "Yitchouse",
                 town : "Mombasa",
                 industry : "IT",
@@ -200,6 +202,8 @@
             },
             {
                 id : 2,
+                user : 2,
+                owner_name : "Andrew Mwangi",
                 company_name : "Owaga",
                 town : "Nairobi",
                 industry : "IT",
@@ -228,6 +232,8 @@
             },
             {
                 id : 3,
+                user : 3,
+                owner_name : "Peter Owaga",
                 company_name : "TMNT Limited",
                 town : "Nairobi",
                 industry : "Agricultural",

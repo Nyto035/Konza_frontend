@@ -9,7 +9,7 @@
         $stateProvider
 
         .state("admin", {
-            url : "/administration",
+            url : "/administration/",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"

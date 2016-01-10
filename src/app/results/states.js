@@ -17,7 +17,7 @@
         $stateProvider
 
         .state("messages", {
-            url : "/messages?user_id",
+            url : "/messages/{user_id}",
             views : {
                 "main" : {
                     templateUrl : "common/tpls/main.tpl.html"
@@ -31,10 +31,11 @@
                     templateUrl: "results/tpls/main.tpl.html"
                 },
                 "side-view@messages" : {
+                    controller: "huqas.results.controllers.results",
                     templateUrl : "results/tpls/programs.tpl.html"
                 },
                 "nested-view@messages" : {
-                    controller : "huqas.results.controllers.enrollments",
+                    controller : "huqas.results.controllers.results",
                     templateUrl : "results/tpls/nested_content.tpl.html"
                 },
                 "footer@messages" : {

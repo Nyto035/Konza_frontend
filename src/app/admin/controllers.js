@@ -34,6 +34,28 @@
             $scope.showcases = show_case.showcases;
             $scope.user_showcase = _.findWhere($scope.showcases,
                 {"id" : $scope.loggedInUser.id});
+            $scope.show = {
+                idea : true,
+                show_case : true,
+                contacts : true
+            };
+            $scope.showDetail = function (idea) {
+                idea.details = !idea.details;
+            };
+            $scope.showIdea = function (frm_name) {
+                if(frm_name === "idea_frm"){
+                    $scope.show.idea = !$scope.show.idea;
+                }
+                else if(frm_name === "case_frm"){
+                    $scope.show.show_case = !$scope.show.show_case;
+                }
+                else if(frm_name === "contacts_frm") {
+                    $scope.show.contacts = !$scope.show.contacts;
+                }
+            };
+            $scope.save = function (frm) {
+                $scope.showIdea(frm.$name);
+            };
         }
     ])
     /*TODOs
