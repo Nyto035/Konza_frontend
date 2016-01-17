@@ -11,3 +11,4 @@ coverage/
 karma/karma.conf.js
 html_tests/
 protractor_results/
+npm-debug.log
