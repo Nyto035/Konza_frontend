@@ -10,23 +10,67 @@
         contacts : "failed to update contacts",
         fetch_contacts : "failed to fetch contacts"
     })
-    .constant("huqas.drug.classifications", {
-        classifications : [
+    .constant("konza.projects", {
+        projects : [
             {
-                display_value : "Group A",
-                value : "A"
+                id : "1",
+                title : "Konza Construction Project",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "Internal",
+                start_date : "2016-01-16T11:44:32.292313Z"
             },
             {
-                display_value : "Group B",
-                value : "B"
+                id : "2",
+                title : "Konza Online Project",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "Internal",
+                start_date : "2016-01-16T11:44:32.292313Z"
             },
             {
-                display_value : "Group C",
-                value : "C"
+                id : "3",
+                title : "Crowd Fund Project",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "External",
+                start_date : "2016-01-16T11:44:32.292313Z"
             },
             {
-                display_value : "Group U",
-                value : "U"
+                id : "4",
+                title : "Mobile Farming Project",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "Internal",
+                start_date : "2016-01-16T11:44:32.292313Z"
+            },
+            {
+                id : "5",
+                title : "Investors Enlisting Plartform",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "External",
+                start_date : "2016-01-16T11:44:32.292313Z"
+            },
+            {
+                id : "6",
+                title : "Online Crowd Funding",
+                description : "This project is about the on going construction"+
+                    " of Konza City. Konza City is to be the the East African"+
+                    " Silicon Valley. This will provide a physical plartform"+
+                    " where Inventors and Investors meet and share Ideas.",
+                category : "Internal",
+                start_date : "2016-01-16T11:44:32.292313Z"
             }
         ]
     })

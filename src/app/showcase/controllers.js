@@ -12,10 +12,30 @@
     .controller("huqas.lab_instruments.controllers.main", ["$scope",
         "huqas.events.wrappers", "huqas.auth.services.login","konza.showcases",
         function ($scope, wrappers, loginService, show_case) {
-            /*TODO replace hardcoded code with actual lab ID*/
             $scope.loggedInUser = loginService.getUser();
             /*Showcases*/
+            /*wrappers.organizations.list()
+            .success(function (data) {
+                $scope.showcases = data;
+            })
+            .error(function (data) {
+                $scope.errors = data;
+            });*/
             $scope.showcases = show_case.showcases;
+        }
+    ])
+    .controller("huqas.lab_instruments.controllers.projects", ["$scope",
+        "huqas.events.wrappers", "huqas.auth.services.login","konza.projects",
+        function ($scope, wrappers, loginService, projects) {
+            $scope.loggedInUser = loginService.getUser();
+            $scope.projects = projects.projects;
+        }
+    ])
+    .controller("huqas.lab_instruments.controllers.details", ["$scope",
+        "$stateParams", function ($scope, $stateParams) {
+            $scope.project_id = $stateParams.project_id;
+            $scope.project = _.findWhere($scope.projects,
+                {id : $scope.project_id});
         }
     ])
     .controller("huqas.lab_instruments.controllers.edit_instrument", ["$scope",
