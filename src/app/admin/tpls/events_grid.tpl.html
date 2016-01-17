@@ -210,16 +210,16 @@
                 <tr ng-repeat="idea in showcases">
                     <td class="col-xs-12 fs-14 pad-0" ng-click="showDetail(idea)">
                         <div class="col-xs-12 pad-t-5 margin-b-10 fade-content row-detail" ng-if="!idea.details" tooltip="Click to view idea details">
-                            <div class="col-md-1">
+                            <div class="col-md-1 pad-t-5">
                                 <span class="card-img fa-stack fa-lg fs-22 text-dark-green">
                                   <i class="fa fa-circle fa-stack-2x"></i>
                                   <i class="fa fa-user-secret fa-stack-1x fa-inverse"></i>
                                 </span>
                             </div>
-                            <div class="col-md-2 pad-l-0 text-black fs-14 pad-t-10 lato-light text-black">
+                            <div class="col-md-2 pad-l-0 text-black fs-16 pad-t-10 lato-light text-black">
                                 {{idea.owner_name}}
                             </div>
-                            <div class="col-md-9 pad-l-0 pad-t-10 lato-light text-dark-grey fs-13">
+                            <div class="col-md-9 pad-l-0 pad-t-10 lato-light text-dark-grey fs-15">
                                 {{idea.idea | limitTo : 150}}{{idea.idea.length > 150 ? '...' : ''}}
                             </div>
                         </div>

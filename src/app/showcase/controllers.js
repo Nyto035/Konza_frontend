@@ -38,6 +38,14 @@
                 {id : $scope.project_id});
         }
     ])
+    .controller("huqas.lab_instruments.controllers.crowd_fund", ["$scope",
+        "konza.showcases", function ($scope, showcases) {
+            $scope.showcases = showcases.showcases;
+            $scope.showDetail = function (idea) {
+                idea.details = !idea.details;
+            };
+        }
+    ])
     .controller("huqas.lab_instruments.controllers.edit_instrument", ["$scope",
         "huqas.events.wrappers", "huqas.common.forms.changes", "$state",
         "$stateParams", "huqas.auth.services.login",
