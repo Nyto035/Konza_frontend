@@ -66,6 +66,30 @@
             },
             requireUser: false,
             requireLogin: false
+        })
+        .state("crowd_fund", {
+            url : "/crowdfunding",
+            views : {
+                "main" : {
+                    templateUrl : "common/tpls/main.tpl.html"
+                },
+                "body@crowd_fund" : {
+                    controller : "huqas.lab_instruments.controllers.crowd_fund",
+                    templateUrl : "showcase/tpls/crowd_fund.tpl.html"
+                },
+                "header@crowd_fund": {
+                    controller: "huqas.common.controllers.header",
+                    templateUrl: "common/tpls/header.tpl.html"
+                },
+                "footer@crowd_fund" : {
+                    templateUrl : "common/tpls/footer.tpl.html"
+                }
+            },
+            ncyBreadcrumb: {
+                label: "Lab Instruments"
+            },
+            requireUser: false,
+            requireLogin: false
         });
     }]);
 })(window.angular);

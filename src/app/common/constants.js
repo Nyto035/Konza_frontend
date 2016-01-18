@@ -218,6 +218,11 @@
                 id : 1,
                 user : 1,
                 owner_name : "Antony Owaga",
+                listing_date : "2016-01-16T11:44:32.292313Z",
+                total_debt : 55000,
+                contribution : 15000,
+                repayment_term : 18,
+                repayment_schedule : "End of Term",
                 company_name : "Yitchouse",
                 town : "Mombasa",
                 industry : "IT",
@@ -240,6 +245,12 @@
                     "with green houses for growing commercial plantations "+
                     "with green houses for growing commercial plantations "+
                     "and rearing of fish",
+                debt_reason : "The loan will be used to build a new green house"+
+                    " in Kericho which has a more condusive climate for the"+
+                    " growth of strawberries. The business after doing its"+
+                    " financial assessments concluded that starting to grow"+
+                    " strawberries not only increases profit margin but also"+
+                    " increases overall business financial position",
                 overview : "This is an IT company specialized with "+
                 "developing software inline with financial industry. From"+
                 "ERPs to Accounting specific software"
@@ -248,6 +259,11 @@
                 id : 2,
                 user : 2,
                 owner_name : "Andrew Mwangi",
+                listing_date : "2016-01-16T11:44:32.292313Z",
+                total_debt : 35000,
+                contribution : 25000,
+                repayment_term : 18,
+                repayment_schedule : "End of Term",
                 company_name : "Owaga",
                 town : "Nairobi",
                 industry : "IT",
@@ -270,6 +286,12 @@
                     "with green houses for growing commercial plantations "+
                     "with green houses for growing commercial plantations "+
                     "and rearing of fish",
+                debt_reason : "The loan will be used to build a new green house"+
+                    " in Kericho which has a more condusive climate for the"+
+                    " growth of strawberries. The business after doing its"+
+                    " financial assessments concluded that starting to grow"+
+                    " strawberries not only increases profit margin but also"+
+                    " increases overall business financial position",
                 overview : "This is an IT company specialized with "+
                 "developing software inline with financial industry. From "+
                 "ERPs to Accounting specific software"
@@ -278,6 +300,11 @@
                 id : 3,
                 user : 3,
                 owner_name : "Peter Owaga",
+                listing_date : "2016-01-16T11:44:32.292313Z",
+                total_debt : 35000,
+                contribution : 20000,
+                repayment_term : 18,
+                repayment_schedule : "End of Term",
                 company_name : "TMNT Limited",
                 town : "Nairobi",
                 industry : "Agricultural",
@@ -300,6 +327,12 @@
                     "with green houses for growing commercial plantations "+
                     "with green houses for growing commercial plantations "+
                     "and rearing of fish",
+                debt_reason : "The loan will be used to build a new green house"+
+                    " in Kericho which has a more condusive climate for the"+
+                    " growth of strawberries. The business after doing its"+
+                    " financial assessments concluded that starting to grow"+
+                    " strawberries not only increases profit margin but also"+
+                    " increases overall business financial position",
                 overview : "This is an agriculture based company specialized"+
                     "with green houses for growing commercial plantations."+
                     "and rearing of fish"
